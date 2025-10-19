@@ -1,6 +1,5 @@
 # Dependencies
-node_modules/
-frontend/thatsalltoday/node_modules/
+**/node_modules/
 
 # Build outputs
 dist/
