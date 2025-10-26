@@ -4,6 +4,7 @@ import { BrowserProvider } from 'ethers';
 interface WalletContextType {
   account: string;
   isConnecting: boolean;
+  isLoading: boolean;
   connectWallet: () => Promise<void>;
   disconnectWallet: () => void;
   formatAddress: (address: string) => string;
@@ -26,6 +27,7 @@ interface WalletProviderProps {
 export const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
   const [account, setAccount] = useState<string>('');
   const [isConnecting, setIsConnecting] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
     checkIfWalletIsConnected();
@@ -62,6 +64,8 @@ export const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
       }
     } catch (error) {
       console.error('Error checking wallet connection:', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -105,6 +109,7 @@ export const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
   const value = {
     account,
     isConnecting,
+    isLoading,
     connectWallet,
     disconnectWallet,
     formatAddress,

@@ -1,0 +1,128 @@
+.wallet-details-page {
+  min-height: 100vh;
+  padding-top: 100px;
+  background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+  color: #fff;
+}
+
+.wallet-details-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #0194FE 0%, #00d4ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .no-wallet {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 3rem;
+  }
+
+  .loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #0194FE;
+    margin-top: 3rem;
+  }
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.detail-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 32px rgba(1, 148, 254, 0.2);
+    border-color: rgba(1, 148, 254, 0.5);
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #0194FE;
+  }
+}
+
+.address-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  .address-full {
+    flex: 1;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    word-break: break-all;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+  }
+
+  .btn-copy {
+    padding: 0.5rem 1rem;
+    border: 1px solid #0194FE;
+    background: transparent;
+    color: #0194FE;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #0194FE;
+      color: #fff;
+    }
+  }
+}
+
+.balance-box {
+  .balance-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00d4ff;
+    margin: 0;
+    font-family: 'Courier New', monospace;
+  }
+}
+
+.network-box {
+  .network-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+  }
+}
+
+.short-address-box {
+  .address-short {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Courier New', monospace;
+    margin: 0;
+  }
+}
+
