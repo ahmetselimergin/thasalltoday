@@ -306,3 +306,43 @@
   }
 }
 
+@media (max-width: 768px) {
+  .market-sentiment {
+    margin-bottom: 2rem;
+  
+    .sentiment-progress-bar {
+      display: flex;
+      height: 56px;
+      border-radius: 1em;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      .progress-bullish{
+        .sentiment-percentage{
+          text-align: right;
+          width: 100%;
+          margin-right: 8px;
+        }
+      }
+      .progress-bearish{
+        .sentiment-percentage{
+          text-align: left;
+          margin-left: 8px;
+          width: 100%;
+        }
+      }
+     .progress-bullish,
+     .progress-bearish {
+      .sentiment-content {
+        width: 100%;
+        padding: 1rem 0;
+        .sentiment-label{
+          display: none;
+        }
+      }
+    }
+    }
+  }
+}

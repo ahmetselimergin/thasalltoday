@@ -56,20 +56,28 @@ const Navigation: React.FC = () => {
                 Application
               </Nav.Link>
             )}
-            <Nav.Link className='tdy-border-button' eventKey={2}>
+            <Nav.Link className='tdy-border-button'>
               <span className='tdy-border-button-text-span'>
                 {account ? formatAddress(account) : 'Not Connected'}
               </span>
               {account ? (
-                <div className="wallet-dropdown" ref={dropdownRef}>
+                <div 
+                  className="wallet-dropdown" 
+                  ref={dropdownRef}
+                  onClick={(e) => e.stopPropagation()}
+                >
                   <Button 
                     className='tdy-border-button-text'
-                    onClick={() => setShowDropdown(!showDropdown)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      setShowDropdown(!showDropdown);
+                    }}
                   >
                     Connected
                   </Button>
                   {showDropdown && (
-                    <div className="dropdown-menu">
+                    <div className="dropdown-menu" onClick={(e) => e.stopPropagation()}>
                       <Link to="/profile" className="dropdown-item" onClick={() => setShowDropdown(false)}>
                         <span className="dropdown-icon">
                           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

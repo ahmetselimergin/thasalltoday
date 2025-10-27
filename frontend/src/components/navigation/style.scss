@@ -5,7 +5,8 @@
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
-  z-index: 1050 !important;
+  z-index: 9999 !important;
+  position: relative;
   transition: all 0.3s ease;
   backdrop-filter: blur(0px);
 
@@ -19,13 +20,25 @@
     color: #fff !important;
     font-weight: 600;
     margin-right: 1rem;
-    padding: 0.5rem 1rem !important;
-    transition: all 0.3s ease;
-    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 12px;
+    background: linear-gradient(90deg, rgba(1, 148, 254, 0.2) 0%, rgba(1, 148, 254, 0.05) 100%);
+    box-shadow: 0 4px 16px rgba(1, 148, 254, 0.25);
+    border: 1px solid rgba(1, 148, 254, 0.3);
+    text-decoration: none;
 
     &:hover {
-      color: #0194FE !important;
-      background: rgba(1, 148, 254, 0.1);
+      color: #fff !important;
+      background: rgba(1, 148, 254, 0.15);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(1, 148, 254, 0.35);
+      border-color: rgba(1, 148, 254, 0.5);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 10px rgba(1, 148, 254, 0.2);
     }
   }
 }
@@ -40,20 +53,35 @@
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  padding: 0 0em 0 1em!important;
+  padding: 0.5rem !important;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1em;
+  justify-content: space-between;
+  gap: 0;
   font-size: 14px;
   position: relative;
   overflow: visible !important;
   
   .tdy-border-button-text-span {
     color: #fff !important;
+    flex: 1;
+    padding: 0 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
     &:hover {
       color: #fff !important;
     }
+  }
+
+  .wallet-dropdown {
+    flex: 1;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -65,9 +93,13 @@
   box-shadow: 0 4px 16px rgba(1, 148, 254, 0.25);
   border: 1px solid rgba(1, 148, 254, 0.3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
   
   &:hover {
-    background: rgba(1, 148, 254, 0.1);
+    background: rgba(1, 148, 254, 0.15);
     color: rgba(255, 255, 255, 0.9);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(1, 148, 254, 0.35);
@@ -83,6 +115,7 @@
 .wallet-dropdown {
   position: relative;
   display: inline-block;
+  z-index: 10000;
 
   .dropdown-menu {
     position: absolute;
@@ -93,8 +126,8 @@
     border-radius: 12px;
     min-width: 220px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    z-index: 9999 !important;
-    overflow: hidden;
+    z-index: 10001 !important;
+    overflow: visible;
     animation: dropdownFadeIn 0.2s ease;
     backdrop-filter: blur(10px);
     display: block;
@@ -175,5 +208,195 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+// Responsive Styles
+@media (max-width: 991px) {
+  .tdy-navigation {
+    padding: 0.75rem 0 !important;
+
+    .container {
+      padding: 0 1rem;
+    }
+
+    .navbar-brand {
+      font-size: 1.25rem;
+    }
+
+    .navbar-toggler {
+      border: 1px solid rgba(1, 148, 254, 0.3);
+      padding: 0.5rem;
+      
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(1, 148, 254, 0.25);
+      }
+
+      .navbar-toggler-icon {
+        width: 1.5em;
+        height: 1.5em;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(1, 148, 254, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+    }
+
+    .navbar-collapse {
+      background: rgba(30, 30, 46, 0.98);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid rgba(1, 148, 254, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-app-link {
+      margin: 0.5rem 0;
+      padding: 0.75rem 1.5rem !important;
+      text-align: center;
+      border-radius: 12px;
+    }
+
+    .tdy-border-button {
+      margin: 1rem 0 0.5rem 0;
+      width: 100%;
+      justify-content: space-between;
+      padding: 0.5rem !important;
+      flex-direction: row;
+
+      .tdy-border-button-text-span {
+        flex: 1;
+        text-align: left;
+        padding: 0 0.75rem;
+      }
+
+      .wallet-dropdown {
+        flex: 1;
+      }
+    }
+
+    .wallet-dropdown {
+      width: 100%;
+      position: relative;
+      
+      .dropdown-menu {
+        position: absolute;
+        width: 100%;
+        margin-top: 0.5rem;
+        left: 0;
+        right: 0;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(1, 148, 254, 0.3);
+        z-index: 10001 !important;
+        background: rgba(30, 30, 46, 0.98);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tdy-navigation {
+    padding: 0.5rem 0 !important;
+
+    .container {
+      padding: 0 0.75rem;
+    }
+
+    .navbar-brand {
+      font-size: 1.1rem;
+    }
+
+    .navbar-collapse {
+      padding: 0.75rem;
+      margin-top: 0.75rem;
+    }
+
+    .nav-app-link {
+      font-size: 0.95rem;
+      padding: 0.65rem 1rem !important;
+    }
+
+    .tdy-border-button {
+      font-size: 0.9rem;
+      padding: 0.65rem 1rem !important;
+
+      .tdy-border-button-text {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    .wallet-dropdown {
+      width: 100%;
+      
+      .dropdown-menu {
+        position: absolute;
+        width: 100%;
+        z-index: 10001 !important;
+        
+        .dropdown-item {
+          padding: 12px 16px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .tdy-navigation {
+    .navbar-brand {
+      font-size: 1rem;
+    }
+
+    .navbar-toggler {
+      padding: 0.4rem;
+      
+      .navbar-toggler-icon {
+        width: 1.25em;
+        height: 1.25em;
+      }
+    }
+
+    .navbar-collapse {
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .nav-app-link {
+      font-size: 0.9rem;
+      padding: 0.6rem 0.85rem !important;
+      margin: 0.4rem 0;
+    }
+
+    .tdy-border-button {
+      font-size: 0.85rem;
+      padding: 0.6rem 0.85rem !important;
+      gap: 0.75em;
+
+      .tdy-border-button-text {
+        padding: 0.45rem 0.85rem;
+        font-size: 0.85rem;
+      }
+    }
+
+    .wallet-dropdown {
+      width: 100%;
+      
+      .dropdown-menu {
+        position: absolute;
+        width: 100%;
+        z-index: 10001 !important;
+        
+        .dropdown-item {
+          padding: 10px 14px;
+          font-size: 0.85rem;
+          gap: 10px;
+
+          .dropdown-icon svg {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
   }
 }
