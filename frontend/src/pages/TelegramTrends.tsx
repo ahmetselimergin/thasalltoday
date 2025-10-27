@@ -11,6 +11,10 @@ import solIcon from 'cryptocurrency-icons/svg/color/sol.svg';
 import adaIcon from 'cryptocurrency-icons/svg/color/ada.svg';
 import dotIcon from 'cryptocurrency-icons/svg/color/dot.svg';
 
+// Sentiment icons
+import bullishIcon from '../assets/images/bullish.png';
+import bearishIcon from '../assets/images/bearish.png';
+
 interface TrendingTopic {
   id: number;
   topic: string;
@@ -77,32 +81,29 @@ const TelegramTrends: React.FC = () => {
     <div className="telegram-trends-page">
       <Container fluid>
 
-        {/* Sentiment Overview */}
+        {/* Sentiment Overview - Progress Bar */}
         <div className="sentiment-overview">
           <h2>📊 Genel Sentiment Analizi</h2>
-          <Row>
-            <Col md={4}>
-              <div className="sentiment-card positive">
-                <div className="sentiment-icon">😊</div>
-                <h3>Pozitif</h3>
-                <p className="sentiment-value">{sentimentData.positive}%</p>
+          <div className="sentiment-progress-bar">
+            <div className="progress-positive" style={{ width: `${sentimentData.positive}%` }}>
+              <div className="sentiment-content">
+                <span className="sentiment-label">POZİTİF</span>
+                <span className="sentiment-percentage">{sentimentData.positive}%</span>
               </div>
-            </Col>
-            <Col md={4}>
-              <div className="sentiment-card neutral">
-                <div className="sentiment-icon">😐</div>
-                <h3>Nötr</h3>
-                <p className="sentiment-value">{sentimentData.neutral}%</p>
+            </div>
+            <div className="progress-neutral" style={{ width: `${sentimentData.neutral}%` }}>
+              <div className="sentiment-content">
+                <span className="sentiment-label">NÖTR</span>
+                <span className="sentiment-percentage">{sentimentData.neutral}%</span>
               </div>
-            </Col>
-            <Col md={4}>
-              <div className="sentiment-card negative">
-                <div className="sentiment-icon">😟</div>
-                <h3>Negatif</h3>
-                <p className="sentiment-value">{sentimentData.negative}%</p>
+            </div>
+            <div className="progress-negative" style={{ width: `${sentimentData.negative}%` }}>
+              <div className="sentiment-content">
+                <span className="sentiment-label">NEGATİF</span>
+                <span className="sentiment-percentage">{sentimentData.negative}%</span>
               </div>
-            </Col>
-          </Row>
+            </div>
+          </div>
         </div>
 
         {/* Trending Topics */}
@@ -136,11 +137,10 @@ const TelegramTrends: React.FC = () => {
         {/* Trending Coins */}
         <div className="section">
           <h2>💰 En Çok Konuşulan Coinler</h2>
-          <div className="coins-grid">
-            <Row>
-              {trendingCoins.map((coin) => (
-                <Col key={coin.id} md={6} lg={4}>
-                  <div className="coin-card">
+          <Row className="coins-grid">
+            {trendingCoins.map((coin) => (
+              <Col key={coin.id} md={6} xl={4}>
+                <div className="coin-card">
                     <div className="coin-header">
                       <div className="coin-title-section">
                         <img src={coinIcons[coin.symbol]} alt={coin.symbol} className="coin-icon" />
@@ -149,12 +149,15 @@ const TelegramTrends: React.FC = () => {
                           <span className="coin-symbol">{coin.symbol}</span>
                         </div>
                       </div>
-                      <span 
-                        className="coin-sentiment"
-                        style={{ color: getSentimentColor(coin.sentiment) }}
-                      >
-                        {coin.sentiment === 'bullish' ? '🐂' : coin.sentiment === 'bearish' ? '🐻' : '➡️'}
-                      </span>
+                      <div className="coin-sentiment">
+                        {coin.sentiment === 'bullish' ? (
+                          <img src={bullishIcon} alt="Bullish" className="sentiment-icon" />
+                        ) : coin.sentiment === 'bearish' ? (
+                          <img src={bearishIcon} alt="Bearish" className="sentiment-icon" />
+                        ) : (
+                          <span className="neutral-icon">→</span>
+                        )}
+                      </div>
                     </div>
                     <div className="coin-price">
                       <span className="price">{coin.price}</span>
@@ -181,7 +184,6 @@ const TelegramTrends: React.FC = () => {
                 </Col>
               ))}
             </Row>
-          </div>
         </div>
       </Container>
     </div>

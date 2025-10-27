@@ -6,32 +6,48 @@ const Sidebar: React.FC = () => {
   const menuItems = [
     {
       path: '/application',
-      icon: '🏠',
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+      ),
       label: 'Dashboard',
       exact: true
     },
     {
       path: '/application/telegram',
-      icon: '✈️',
-      label: 'Telegram Gündem'
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M22 2L11 13"></path>
+          <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+        </svg>
+      ),
+      label: 'Telegram Trends'
     },
     {
       path: '/application/twitter',
-      icon: '🐦',
-      label: 'Twitter Gündem'
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      ),
+      label: 'Twitter Trends'
     },
     {
       path: '/application/onchain',
-      icon: '⛓️',
-      label: 'Onchain Analiz'
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <line x1="12" y1="1" x2="12" y2="23"></line>
+          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+        </svg>
+      ),
+      label: 'Onchain Analysis'
     }
   ];
 
   return (
     <div className="sidebar">
-      <div className="sidebar-header">
-        <h3>Navigation</h3>
-      </div>
       <nav className="sidebar-nav">
         {menuItems.map((item) => (
           <NavLink
@@ -42,7 +58,7 @@ const Sidebar: React.FC = () => {
               `sidebar-item ${isActive ? 'active' : ''}`
             }
           >
-            <span className="sidebar-icon">{item.icon}</span>
+            <div className="sidebar-icon">{item.icon}</div>
             <span className="sidebar-label">{item.label}</span>
           </NavLink>
         ))}

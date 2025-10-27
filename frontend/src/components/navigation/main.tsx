@@ -71,16 +71,32 @@ const Navigation: React.FC = () => {
                   {showDropdown && (
                     <div className="dropdown-menu">
                       <Link to="/profile" className="dropdown-item" onClick={() => setShowDropdown(false)}>
-                        <span className="dropdown-icon">👤</span>
+                        <span className="dropdown-icon">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                          </svg>
+                        </span>
                         Profile
                       </Link>
                       <Link to="/wallet-details" className="dropdown-item" onClick={() => setShowDropdown(false)}>
-                        <span className="dropdown-icon">💳</span>
+                        <span className="dropdown-icon">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="M7 15h0M2 9.5h20"></path>
+                          </svg>
+                        </span>
                         Wallet Details
                       </Link>
                       <div className="dropdown-divider"></div>
                       <button className="dropdown-item disconnect" onClick={handleDisconnect}>
-                        <span className="dropdown-icon">🚪</span>
+                        <span className="dropdown-icon">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                            <polyline points="16 17 21 12 16 7"></polyline>
+                            <line x1="21" y1="12" x2="9" y2="12"></line>
+                          </svg>
+                        </span>
                         Disconnect
                       </button>
                     </div>

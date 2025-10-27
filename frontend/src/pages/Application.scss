@@ -32,42 +32,135 @@
 }
 
 .stat-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 2rem;
+  border-radius: 12px;
+  padding: 1.25rem 1rem;
   text-align: center;
   transition: all 0.3s ease;
   height: 100%;
   backdrop-filter: blur(10px);
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, rgba(1, 148, 254, 0.5) 50%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 32px rgba(1, 148, 254, 0.2);
-    border-color: rgba(1, 148, 254, 0.5);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(1, 148, 254, 0.2);
+    border-color: rgba(1, 148, 254, 0.4);
+
+    &::before {
+      opacity: 1;
+    }
   }
 
   .stat-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+    
+    svg {
+      width: 32px;
+      height: 32px;
+      stroke: rgba(255, 255, 255, 0.7);
+      transition: all 0.3s ease;
+    }
   }
 
   h3 {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
     margin-bottom: 0.5rem;
-    font-weight: 500;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
   .stat-value {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 800;
     color: #fff;
     margin: 0;
   }
 
-  &.balance-card .stat-value {
-    color: #00d4ff;
+  &.staked-card {
+    background: linear-gradient(135deg, rgba(1, 148, 254, 0.12) 0%, rgba(1, 148, 254, 0.04) 100%);
+    border-color: rgba(1, 148, 254, 0.25);
+
+    &::before {
+      background: linear-gradient(90deg, transparent 0%, #0194FE 50%, transparent 100%);
+    }
+
+    .stat-icon svg {
+      stroke: #0194FE;
+    }
+
+    .stat-value {
+      color: #0194FE;
+    }
+
+    &:hover .stat-icon svg {
+      stroke: #0194FE;
+      filter: drop-shadow(0 0 8px rgba(1, 148, 254, 0.5));
+    }
+  }
+
+  &.rewards-card {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.12) 0%, rgba(34, 197, 94, 0.04) 100%);
+    border-color: rgba(34, 197, 94, 0.25);
+
+    &::before {
+      background: linear-gradient(90deg, transparent 0%, #22c55e 50%, transparent 100%);
+    }
+
+    .stat-icon svg {
+      stroke: #22c55e;
+    }
+
+    .stat-value {
+      color: #22c55e;
+    }
+
+    &:hover .stat-icon svg {
+      stroke: #22c55e;
+      filter: drop-shadow(0 0 8px rgba(34, 197, 94, 0.5));
+    }
+  }
+
+  &.apy-card {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(245, 158, 11, 0.04) 100%);
+    border-color: rgba(245, 158, 11, 0.25);
+
+    &::before {
+      background: linear-gradient(90deg, transparent 0%, #f59e0b 50%, transparent 100%);
+    }
+
+    .stat-icon svg {
+      stroke: #f59e0b;
+    }
+
+    .stat-value {
+      color: #f59e0b;
+    }
+
+    &:hover .stat-icon svg {
+      stroke: #f59e0b;
+      filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.5));
+    }
   }
 }
 
@@ -200,6 +293,272 @@
       color: rgba(1, 148, 254, 0.8);
       font-weight: 500;
     }
+  }
+}
+
+// Staking Section
+.staking-section {
+  margin-top: 2rem;
+}
+
+.stake-card,
+.unstake-card {
+  background: linear-gradient(135deg, rgba(20, 20, 35, 0.8) 0%, rgba(15, 15, 25, 0.8) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.75rem;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  height: 100%;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top right, rgba(1, 148, 254, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(1, 148, 254, 0.2);
+    border-color: rgba(1, 148, 254, 0.3);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  .stake-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.35rem;
+
+      svg {
+        color: #0194FE;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .subtitle {
+      color: rgba(255, 255, 255, 0.5);
+      margin: 0;
+      font-size: 0.85rem;
+    }
+  }
+
+  .stake-body {
+    .input-group-custom {
+      margin-bottom: 1.25rem;
+
+      label {
+        display: block;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+      }
+
+      .coin-select {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 0.75rem 1rem;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%230194FE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        padding-right: 3rem;
+
+        &:hover {
+          border-color: #0194FE;
+          box-shadow: 0 0 20px rgba(1, 148, 254, 0.2);
+        }
+
+        &:focus {
+          border-color: #0194FE;
+          box-shadow: 0 0 20px rgba(1, 148, 254, 0.3);
+          background: rgba(1, 148, 254, 0.05);
+        }
+
+        option {
+          background: #1a1a2e;
+          color: #fff;
+          padding: 0.75rem;
+          font-weight: 600;
+        }
+      }
+
+      .input-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 0.5rem 0.75rem;
+        transition: all 0.3s ease;
+
+        &:focus-within {
+          border-color: #0194FE;
+          box-shadow: 0 0 20px rgba(1, 148, 254, 0.3);
+          background: rgba(1, 148, 254, 0.05);
+        }
+
+        .stake-input {
+          flex: 1;
+          background: transparent;
+          border: none;
+          color: #fff;
+          font-size: 1.5rem;
+          font-weight: 700;
+          padding: 0.4rem 0.5rem;
+          outline: none;
+
+          &::placeholder {
+            color: rgba(255, 255, 255, 0.25);
+          }
+
+          &::-webkit-inner-spin-button,
+          &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+
+        .max-btn {
+          background: linear-gradient(135deg, #0194FE 0%, #0072BD 100%);
+          border: none;
+          color: #fff;
+          padding: 0.5rem 1rem;
+          border-radius: 8px;
+          font-weight: 700;
+          font-size: 0.75rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          box-shadow: 0 2px 10px rgba(1, 148, 254, 0.3);
+
+          &:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(1, 148, 254, 0.4);
+          }
+
+          &:active {
+            transform: translateY(0);
+          }
+        }
+      }
+
+      .balance-info {
+        display: block;
+        margin-top: 0.4rem;
+        color: rgba(255, 255, 255, 0.45);
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+.stake-btn,
+.unstake-btn,
+.claim-btn {
+  width: 100%;
+  padding: 0.85rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover svg {
+    transform: translateX(3px);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.stake-btn {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+    transform: translateY(-2px);
+  }
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.75rem;
+
+  .unstake-btn,
+  .claim-btn {
+    flex: 1;
+  }
+}
+
+.unstake-btn {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+    transform: translateY(-2px);
+  }
+}
+
+.claim-btn {
+  background: linear-gradient(135deg, #0194FE 0%, #0072BD 100%);
+  box-shadow: 0 4px 15px rgba(1, 148, 254, 0.3);
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(1, 148, 254, 0.4);
+    transform: translateY(-2px);
   }
 }
 
