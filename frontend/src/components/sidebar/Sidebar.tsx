@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Sidebar.scss';
 
 const Sidebar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const menuItems = [
     {
       path: '/application',
@@ -47,23 +49,49 @@ const Sidebar: React.FC = () => {
   ];
 
   return (
-    <div className="sidebar">
-      <nav className="sidebar-nav">
-        {menuItems.map((item) => (
-          <NavLink
-            key={item.path}
-            to={item.path}
-            end={item.exact}
-            className={({ isActive }) => 
-              `sidebar-item ${isActive ? 'active' : ''}`
-            }
-          >
-            <div className="sidebar-icon">{item.icon}</div>
-            <span className="sidebar-label">{item.label}</span>
-          </NavLink>
-        ))}
-      </nav>
-    </div>
+    <>
+      {/* Mobile Menu Toggle */}
+      <button 
+        className="mobile-menu-toggle" 
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Toggle menu"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          {isOpen ? (
+            <path d="M18 6L6 18M6 6l12 12" />
+          ) : (
+            <>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </>
+          )}
+        </svg>
+      </button>
+
+      {/* Overlay */}
+      {isOpen && <div className="sidebar-overlay" onClick={() => setIsOpen(false)}></div>}
+
+      {/* Sidebar */}
+      <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+        <nav className="sidebar-nav">
+          {menuItems.map((item) => (
+            <NavLink
+              key={item.path}
+              to={item.path}
+              end={item.exact}
+              className={({ isActive }) => 
+                `sidebar-item ${isActive ? 'active' : ''}`
+              }
+              onClick={() => setIsOpen(false)}
+            >
+              <div className="sidebar-icon">{item.icon}</div>
+              <span className="sidebar-label">{item.label}</span>
+            </NavLink>
+          ))}
+        </nav>
+      </div>
+    </>
   );
 };
 

@@ -563,18 +563,128 @@
 }
 
 @media (max-width: 768px) {
-  .application-header h1 {
-    font-size: 2rem;
+  .application-page {
+    padding: 1rem;
   }
 
-  .features-section h2,
-  .activity-section h2 {
-    font-size: 1.5rem;
+  .quick-stats {
+    margin-bottom: 1.5rem;
+
+    .col-md-3 {
+      margin-bottom: 0.75rem;
+    }
   }
 
-  .stat-card,
-  .feature-card {
-    margin-bottom: 1rem;
+  .stat-card {
+    padding: 1rem 0.75rem;
+
+    .stat-icon svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    h3 {
+      font-size: 0.65rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .stat-value {
+      font-size: 1.1rem;
+    }
+  }
+
+  .staking-section {
+    .col-lg-6 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .stake-card,
+  .unstake-card {
+    padding: 1.25rem;
+
+    .stake-header {
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+
+      h2 {
+        font-size: 1rem;
+
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+
+      .subtitle {
+        font-size: 0.75rem;
+      }
+    }
+
+    .stake-body {
+      .input-group-custom {
+        margin-bottom: 1rem;
+
+        label {
+          font-size: 0.7rem;
+          margin-bottom: 0.4rem;
+        }
+
+        .coin-select {
+          padding: 0.6rem 0.85rem;
+          font-size: 0.9rem;
+        }
+
+        .input-wrapper {
+          padding: 0.4rem 0.6rem;
+
+          .stake-input {
+            font-size: 1.2rem;
+            padding: 0.3rem 0.4rem;
+          }
+
+          .max-btn {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.7rem;
+          }
+        }
+
+        .balance-info {
+          font-size: 0.7rem;
+          margin-top: 0.3rem;
+        }
+      }
+    }
+  }
+
+  .stake-btn,
+  .unstake-btn,
+  .claim-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.8rem;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .action-buttons {
+    gap: 0.5rem;
+    flex-direction: column;
+
+    .unstake-btn,
+    .claim-btn {
+      width: 100%;
+    }
+  }
+
+  .loading-spinner {
+    padding: 3rem 1rem;
+
+    p {
+      font-size: 1rem;
+    }
   }
 }
 
