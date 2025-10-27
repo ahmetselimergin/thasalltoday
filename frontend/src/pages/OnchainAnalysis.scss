@@ -2,10 +2,22 @@
   padding: 1.5rem;
   color: #fff;
   min-height: calc(100vh - 70px);
+  overflow-x: hidden;
+
+  .container-fluid {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .row {
+    margin: 0;
+    overflow-x: hidden;
+  }
 }
 
 .coin-sidebar {
   padding-right: 1rem;
+  max-width: 100%;
 }
 
 .sidebar-card {
@@ -176,6 +188,8 @@
 
 .analysis-panel {
   padding-left: 1rem;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .analysis-content {
@@ -184,6 +198,9 @@
   border-radius: 16px;
   padding: 1.5rem;
   backdrop-filter: blur(10px);
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .analysis-header {
@@ -458,6 +475,8 @@
     border-radius: 12px;
     padding: 1.5rem;
     transition: all 0.3s ease;
+    overflow: hidden;
+    width: 100%;
 
     &:hover {
       border-color: rgba(1, 148, 254, 0.2);
@@ -467,6 +486,13 @@
     // Override ApexCharts default styles
     .apexcharts-canvas {
       background: transparent !important;
+      max-width: 100%;
+      width: 100% !important;
+    }
+
+    .apexcharts-svg {
+      max-width: 100%;
+      width: 100% !important;
     }
 
     .apexcharts-tooltip {
@@ -509,15 +535,339 @@
 @media (max-width: 992px) {
   .coin-sidebar {
     padding-right: 0;
+    padding-left: 0;
     margin-bottom: 1.5rem;
+    max-width: 100%;
   }
 
   .analysis-panel {
     padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
   }
 
   .sidebar-card {
     position: static;
     max-height: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .onchain-analysis-page {
+    padding: 0.75rem;
+    overflow-x: hidden;
+
+    .container-fluid,
+    .row {
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+    }
+  }
+
+  .coin-sidebar {
+    padding-right: 0;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+
+  .analysis-panel {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .sidebar-card {
+    padding: 0.75rem;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .analysis-content {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .search-section {
+    margin-bottom: 0.75rem;
+
+    .coin-search {
+      padding: 0.6rem 0.85rem;
+      font-size: 0.9rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  .coin-list {
+    max-height: 300px;
+    padding-right: 0.25rem;
+
+    .coin-item {
+      padding: 0.65rem;
+      gap: 0.65rem;
+      margin-bottom: 0.5rem;
+      width: 100%;
+      box-sizing: border-box;
+
+      .coin-symbol {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+        flex-shrink: 0;
+      }
+
+      .coin-info {
+        flex: 1;
+        min-width: 0;
+        
+        h4 {
+          font-size: 0.9rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        span {
+          font-size: 0.75rem;
+        }
+      }
+
+      .favorite-star {
+        font-size: 1.2rem;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .selected-coin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    .coin-title {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+      }
+    }
+
+    .coin-price-large {
+      font-size: 1.8rem;
+    }
+  }
+
+  .key-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .metric-card {
+    padding: 0.85rem;
+
+    .metric-label {
+      font-size: 0.7rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .metric-value {
+      font-size: 1rem;
+    }
+
+    .metric-change {
+      font-size: 0.75rem;
+    }
+  }
+
+  .chart-section {
+    margin-bottom: 1.25rem;
+    padding: 0;
+    overflow: hidden;
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      padding: 0 0.5rem;
+    }
+
+    .chart-container {
+      padding: 0.75rem;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+
+      .apexcharts-canvas {
+        min-width: 100%;
+      }
+    }
+  }
+
+  .whale-activity,
+  .defi-stats {
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .activity-item {
+      padding: 0.75rem;
+      gap: 0.75rem;
+
+      .activity-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+      }
+
+      .activity-details {
+        h4 {
+          font-size: 0.9rem;
+        }
+
+        p {
+          font-size: 0.75rem;
+        }
+      }
+
+      .activity-amount {
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  .recent-transactions {
+    padding: 1rem;
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .transaction-item {
+      padding: 0.75rem;
+      gap: 0.75rem;
+
+      .transaction-type {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+      }
+
+      .transaction-details {
+        h4 {
+          font-size: 0.9rem;
+        }
+
+        p {
+          font-size: 0.75rem;
+        }
+      }
+
+      .transaction-amount {
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  // Chart responsive
+  .apexcharts-canvas {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .onchain-analysis-page {
+    padding: 0.5rem;
+    overflow-x: hidden;
+  }
+
+  .coin-sidebar {
+    padding-right: 0;
+    max-width: 100%;
+  }
+
+  .analysis-panel {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .sidebar-card {
+    padding: 0.5rem;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .analysis-content {
+    padding: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .search-section {
+    .coin-search {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  .coin-list {
+    .coin-item {
+      padding: 0.5rem;
+      
+      .coin-symbol {
+        width: 28px;
+        height: 28px;
+        font-size: 0.75rem;
+      }
+
+      .coin-info {
+        h4 {
+          font-size: 0.85rem;
+        }
+
+        span {
+          font-size: 0.7rem;
+        }
+      }
+
+      .favorite-star {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .key-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .selected-coin-header {
+    .coin-price-large {
+      font-size: 1.5rem;
+    }
+  }
+
+  .chart-section {
+    padding: 0;
+
+    h3 {
+      font-size: 0.95rem;
+      padding: 0 0.5rem;
+    }
+
+    .chart-container {
+      padding: 0.5rem;
+      
+      .apexcharts-canvas {
+        min-width: 320px;
+      }
+    }
   }
 }
