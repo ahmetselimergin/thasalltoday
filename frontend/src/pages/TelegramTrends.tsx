@@ -83,23 +83,23 @@ const TelegramTrends: React.FC = () => {
 
         {/* Sentiment Overview - Progress Bar */}
         <div className="sentiment-overview">
-          <h2>📊 Genel Sentiment Analizi</h2>
+          <h2>📊 Overall Sentiment Analysis</h2>
           <div className="sentiment-progress-bar">
             <div className="progress-positive" style={{ width: `${sentimentData.positive}%` }}>
               <div className="sentiment-content">
-                <span className="sentiment-label">POZİTİF</span>
+                <span className="sentiment-label">POSITIVE</span>
                 <span className="sentiment-percentage">{sentimentData.positive}%</span>
               </div>
             </div>
             <div className="progress-neutral" style={{ width: `${sentimentData.neutral}%` }}>
               <div className="sentiment-content">
-                <span className="sentiment-label">NÖTR</span>
+                <span className="sentiment-label">NEUTRAL</span>
                 <span className="sentiment-percentage">{sentimentData.neutral}%</span>
               </div>
             </div>
             <div className="progress-negative" style={{ width: `${sentimentData.negative}%` }}>
               <div className="sentiment-content">
-                <span className="sentiment-label">NEGATİF</span>
+                <span className="sentiment-label">NEGATIVE</span>
                 <span className="sentiment-percentage">{sentimentData.negative}%</span>
               </div>
             </div>
@@ -108,7 +108,7 @@ const TelegramTrends: React.FC = () => {
 
         {/* Trending Topics */}
         <div className="section">
-          <h2>🔥 En Çok Konuşulan Konular</h2>
+          <h2>🔥 Most Discussed Topics</h2>
           <div className="topics-list">
             {trendingTopics.map((topic, index) => (
               <div key={topic.id} className="topic-item">
@@ -136,7 +136,7 @@ const TelegramTrends: React.FC = () => {
 
         {/* Trending Coins */}
         <div className="section">
-          <h2>💰 En Çok Konuşulan Coinler</h2>
+          <h2>💰 Most Discussed Coins</h2>
           <Row className="coins-grid">
             {trendingCoins.map((coin) => (
               <Col key={coin.id} md={6} xl={4}>

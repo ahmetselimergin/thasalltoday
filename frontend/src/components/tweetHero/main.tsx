@@ -12,7 +12,7 @@ interface Tweet {
 }
 
 const TweetHero: React.FC = () => {
-  // Bitcoin & Crypto tweets (Şerit 1)
+  // Bitcoin & Crypto tweets (Strip 1)
   const tweets1: Tweet[] = [
     { id: 1, username: 'CryptoWhale', handle: '@cryptowhale', content: '🚀 Bitcoin just broke $50k! The bull run is here! #BTC #Crypto', avatar: '₿', likes: 5420, retweets: 1230 },
     { id: 2, username: 'Satoshi_Fan', handle: '@satoshi_fan', content: '📈 BTC dominance at 45%, altcoin season incoming! HODL strong 💎', avatar: '₿', likes: 3200, retweets: 890 },
@@ -23,7 +23,7 @@ const TweetHero: React.FC = () => {
     { id: 7, username: 'CryptoMiner', handle: '@cryptominer', content: '⛏️ Mining profitability at highest levels in months. Hashrate soaring!', avatar: '⛏️', likes: 1234, retweets: 345 },
   ];
 
-  // Ethereum, DeFi & Smart Contracts (Şerit 2)
+  // Ethereum, DeFi & Smart Contracts (Strip 2)
   const tweets2: Tweet[] = [
     { id: 8, username: 'ETH_Trader', handle: '@eth_trader', content: '💎 Ethereum 2.0 staking rewards are amazing! 5.5% APY and growing!', avatar: 'Ξ', likes: 4200, retweets: 1100 },
     { id: 9, username: 'DeFi_Master', handle: '@defi_master', content: '🔥 New DeFi protocol launched with innovative yield farming strategies!', avatar: '🌊', likes: 3100, retweets: 890 },
@@ -34,7 +34,7 @@ const TweetHero: React.FC = () => {
     { id: 14, username: 'GasOptimizer', handle: '@gasoptimizer', content: '⚡ Gas fees on mainnet lowest in 6 months. Perfect time to interact!', avatar: '⛽', likes: 1890, retweets: 456 },
   ];
 
-  // Web3, NFTs, DAOs & Metaverse (Şerit 3)
+  // Web3, NFTs, DAOs & Metaverse (Strip 3)
   const tweets3: Tweet[] = [
     { id: 15, username: 'NFT_Collector', handle: '@nft_collector', content: '🎨 Just minted an incredible generative art NFT collection! Floor rising 📈', avatar: '🖼️', likes: 2890, retweets: 670 },
     { id: 16, username: 'Web3_Builder', handle: '@web3_builder', content: '🛠️ Building the future of decentralized apps. Web3 is unstoppable!', avatar: '🔷', likes: 4100, retweets: 1200 },
@@ -72,7 +72,7 @@ const TweetHero: React.FC = () => {
       </div>
 
       <div className="tweets-container">
-        {/* Şerit 1 - Soldan Sağa (Bitcoin & Crypto) */}
+        {/* Strip 1 - Left to Right (Bitcoin & Crypto) */}
         <div className="tweet-strip">
           <div className="tweet-track scroll-right">
             {[...tweets1, ...tweets1].map((tweet, index) => (
@@ -83,7 +83,7 @@ const TweetHero: React.FC = () => {
           </div>
         </div>
 
-        {/* Şerit 2 - Sağdan Sola (Ethereum & DeFi) */}
+        {/* Strip 2 - Right to Left (Ethereum & DeFi) */}
         <div className="tweet-strip">
           <div className="tweet-track scroll-left">
             {[...tweets2, ...tweets2].map((tweet, index) => (
@@ -94,7 +94,7 @@ const TweetHero: React.FC = () => {
           </div>
         </div>
 
-        {/* Şerit 3 - Soldan Sağa (Web3, NFTs & Metaverse) */}
+        {/* Strip 3 - Left to Right (Web3, NFTs & Metaverse) */}
         <div className="tweet-strip">
           <div className="tweet-track scroll-right">
             {[...tweets3, ...tweets3].map((tweet, index) => (
