@@ -8,9 +8,8 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 const Application: React.FC = () => {
-  const { account, formatAddress } = useWallet();
+  const { account } = useWallet();
   const [balance, setBalance] = useState<string>('0');
-  const [network, setNetwork] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(true);
   const [stakeAmount, setStakeAmount] = useState<string>('');
   const [unstakeAmount, setUnstakeAmount] = useState<string>('');
@@ -34,9 +33,6 @@ const Application: React.FC = () => {
         
         const balance = await provider.getBalance(account);
         setBalance((Number(balance) / 1e18).toFixed(4));
-
-        const network = await provider.getNetwork();
-        setNetwork(network.name.charAt(0).toUpperCase() + network.name.slice(1));
       }
     } catch (error) {
       console.error('Error fetching wallet data:', error);
