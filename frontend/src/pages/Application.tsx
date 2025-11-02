@@ -23,6 +23,9 @@ const Application: React.FC = () => {
   useEffect(() => {
     if (account) {
       fetchWalletData();
+    } else {
+      // Wallet bağlı değilse loading'i kapat
+      setLoading(false);
     }
   }, [account]);
 

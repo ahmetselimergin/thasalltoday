@@ -1,19 +1,19 @@
-
-
 .hero-section {
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 50vh;
+  min-height: 100vh;
 
   .hero-content {
     text-align: center;
     max-width: 1200px;
+    margin-bottom: 6rem;
 
     h1 {
       font-size: 3.5rem;
@@ -29,6 +29,7 @@
       font-size: 1.25rem;
       opacity: 0.8;
       margin-bottom: 2rem;
+      color: rgba(255, 255, 255, 0.9);
     }
 
     .wallet-connected {
@@ -46,12 +47,138 @@
       }
     }
   }
+
+  // Features Section
+  .features-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .features-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: rgba(255, 255, 255, 0.9);
+
+      .gradient-text {
+        background: linear-gradient(135deg, #E2742D 0%, #881776 50%, #0776F5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+
+    .features-subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 3rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+
+      @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-card {
+        background: linear-gradient(135deg, rgba(30, 30, 46, 0.8) 0%, rgba(45, 45, 68, 0.8) 100%);
+        border: 1px solid rgba(1, 148, 254, 0.2);
+        border-radius: 16px;
+        padding: 2rem;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+          background: linear-gradient(135deg, rgba(30, 30, 46, 0.95) 0%, rgba(45, 45, 68, 0.95) 100%);
+
+          .feature-glow {
+            opacity: 0.15;
+          }
+
+          .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+          }
+        }
+
+        .feature-glow {
+          position: absolute;
+          bottom: -50%;
+          right: -50%;
+          width: 200%;
+          height: 200%;
+          opacity: 0.08;
+          border-radius: 50%;
+          filter: blur(60px);
+          transition: opacity 0.3s ease;
+          pointer-events: none;
+          z-index: 0;
+        }
+
+        .feature-icon {
+          width: 80px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          margin-bottom: 1.5rem;
+          transition: all 0.3s ease;
+          z-index: 1;
+          position: relative;
+
+          svg {
+            width: 48px;
+            height: 48px;
+          }
+        }
+
+        .feature-title {
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: #fff;
+          margin-bottom: 0.75rem;
+          z-index: 1;
+          position: relative;
+        }
+
+        .feature-description {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          color: rgba(255, 255, 255, 0.7);
+          margin: 0;
+          z-index: 1;
+          position: relative;
+        }
+      }
+    }
+  }
 }
 
 // Responsive
 @media (max-width: 768px) {
   .hero-section {
+    padding: 3rem 1.5rem;
+
     .hero-content {
+      margin-bottom: 4rem;
+
       h1 {
         font-size: 2rem;
       }
@@ -60,7 +187,42 @@
         font-size: 1rem;
       }
     }
+
+    .features-container {
+      .features-title {
+        font-size: 1.8rem;
+      }
+
+      .features-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .features-grid {
+        gap: 1.5rem;
+
+        .feature-card {
+          padding: 1.5rem;
+
+          .feature-icon {
+            width: 64px;
+            height: 64px;
+
+            svg {
+              width: 36px;
+              height: 36px;
+            }
+          }
+
+          .feature-title {
+            font-size: 1.1rem;
+          }
+
+          .feature-description {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
   }
 }
-
-

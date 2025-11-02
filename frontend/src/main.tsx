@@ -4,11 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.scss'
 import App from './App.tsx'
 import { WalletProvider } from './context/WalletContext'
+import { AuthProvider } from './context/AuthContext'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <WalletProvider>
-      <App />
+      <AuthProvider>
+        <App />
+      </AuthProvider>
     </WalletProvider>
   </StrictMode>,
 )

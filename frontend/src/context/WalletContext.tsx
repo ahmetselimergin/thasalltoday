@@ -51,6 +51,33 @@ export const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
       setAccount('');
     } else {
       setAccount(accounts[0]);
+      updateBackendWallet(accounts[0]);
+    }
+  };
+
+  const updateBackendWallet = async (walletAddress: string) => {
+    try {
+      const token = localStorage.getItem('token');
+      if (!token) return;
+
+      const response = await fetch('http://localhost:5001/api/auth/wallet', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ walletAddress })
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data.success) {
+          localStorage.setItem('user', JSON.stringify(data.data));
+          console.log('Wallet address updated in backend');
+        }
+      }
+    } catch (error) {
+      console.error('Error updating wallet in backend:', error);
     }
   };
 
@@ -60,7 +87,9 @@ export const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
         const provider = new BrowserProvider(window.ethereum);
         const accounts = await provider.listAccounts();
         if (accounts.length > 0) {
-          setAccount(accounts[0].address);
+          const address = accounts[0].address;
+          setAccount(address);
+          updateBackendWallet(address);
         }
       }
     } catch (error) {
@@ -84,6 +113,7 @@ export const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
       
       if (accounts.length > 0) {
         setAccount(accounts[0]);
+        await updateBackendWallet(accounts[0]);
         console.log('Wallet connected:', accounts[0]);
       }
     } catch (error: any) {

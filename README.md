@@ -1,230 +1,298 @@
-# ThatsAllToday 🚀
+# ThatsAllToday
 
-A modern web3 application showcasing crypto community sentiment through animated tweet streams.
+Crypto analytics platform with wallet integration and authentication system.
 
-## ✨ Features
+## 🚀 Features
 
-- 🔗 **Wallet Integration** - Connect with MetaMask or compatible wallets
-- 📱 **Responsive Design** - Beautiful UI that works on all devices
-- 🎨 **Modern UI/UX** - Glassmorphism effects and smooth animations
-- 🎭 **Animated Tweet Streams** - 3 scrolling tweet strips with crypto content
-- ⚡ **Built with React + TypeScript** - Type-safe, modern development
-
-## 🛠️ Tech Stack
-
-- **Frontend:** React 18, TypeScript, Vite
-- **Styling:** SCSS, Bootstrap
-- **Web3:** ethers.js, MetaMask integration
-- **Animation:** CSS animations
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Node.js 18+ installed
-- npm or yarn package manager
-
-### Installation & Setup
-
-1. Clone the repository:
-```bash
-git clone <your-repo-url>
-cd thasalltoday
-```
-
-2. Install dependencies:
-```bash
-cd frontend/thatsalltoday
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-4. Open your browser:
-```
-http://localhost:5173
-```
+- **User Authentication**: Login/Register with JWT
+- **MetaMask Integration**: Connect crypto wallets
+- **MongoDB Database**: User and wallet data storage
+- **Real-time Updates**: Wallet address sync with backend
+- **Protected Routes**: Secure application pages
+- **Modern UI**: Responsive design with React & SCSS
 
 ## 📁 Project Structure
 
 ```
 thasalltoday/
-├── frontend/
-│   └── thatsalltoday/
-│       ├── src/
-│       │   ├── components/
-│       │   │   ├── navigation/      # Navigation bar with wallet connect
-│       │   │   ├── heroSection/     # Hero landing section
-│       │   │   └── tweetHero/       # Animated tweet streams
-│       │   ├── context/
-│       │   │   └── WalletContext.tsx # Web3 wallet management
-│       │   ├── types/
-│       │   │   └── ethereum.d.ts    # TypeScript declarations
-│       │   └── assets/              # Images and static files
-│       └── package.json
+├── frontend/          # React + TypeScript + Vite
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── types/
+│   └── package.json
+│
+├── backend/           # Node.js + Express + MongoDB
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   └── package.json
+│
 └── README.md
 ```
 
-## 🎯 Key Components
+## 🛠️ Installation
 
-### TweetHero Component
+### Prerequisites
 
-The main attraction - displays crypto community tweets in three animated scrolling strips:
+- Node.js (v16+)
+- MongoDB (v5+)
+- MetaMask browser extension
+- npm or yarn
 
-- **Strip 1:** Bitcoin & General Crypto (scrolls left to right →)
-- **Strip 2:** Ethereum & DeFi (scrolls right to left ←)
-- **Strip 3:** Web3, NFTs & Metaverse (scrolls left to right →)
+### 1. Clone the repository
 
-Features:
-- Infinite scroll animation
-- Pause on hover
-- Like & retweet counts
-- Responsive design
+```bash
+git clone <your-repo-url>
+cd thasalltoday
+```
 
-### Wallet Context
+### 2. Backend Setup
 
-Manages Web3 wallet connections:
-- Connect/disconnect wallet
-- Account management
-- Network detection
-- Balance tracking
+```bash
+cd backend
+npm install
 
-### Navigation
+# Create .env file
+cp .env.example .env
 
-Sticky navigation bar with:
-- Brand logo
-- Wallet connection button
-- Address display when connected
+# Update .env with your MongoDB URI and JWT secret
+# Note: Backend runs on PORT 5001 (5000 is used by macOS AirPlay)
 
-## 🎨 Customization
+# Start MongoDB (if using local)
+# macOS: brew services start mongodb-community
+# Linux: sudo systemctl start mongod
+# Windows: net start MongoDB
 
-### Adding More Tweets
+# Start backend server
+npm run dev
+```
 
-Edit `src/components/tweetHero/main.tsx`:
+Backend will run on http://localhost:5001
+
+### 3. Frontend Setup
+
+```bash
+cd frontend
+npm install
+
+# Start frontend dev server
+npm run dev
+```
+
+Frontend will run on http://localhost:5173
+
+## 🔧 Configuration
+
+### Backend Environment Variables
+
+Create `/backend/.env`:
+
+```env
+PORT=5001
+MONGODB_URI=mongodb://localhost:27017/thasalltoday
+JWT_SECRET=your_super_secret_jwt_key
+JWT_EXPIRE=7d
+NODE_ENV=development
+```
+
+**Note:** Port 5001 is used because macOS uses port 5000 for AirPlay Receiver.
+
+### Frontend API URL
+
+Update `/frontend/src/services/api.ts` if needed:
 
 ```typescript
-const tweets1: Tweet[] = [
-  { 
-    id: 1, 
-    username: 'YourName', 
-    handle: '@yourhandle', 
-    content: 'Your tweet content here!', 
-    avatar: '🚀',
-    likes: 1234,
-    retweets: 567 
-  },
-  // Add more tweets...
-];
+const API_URL = 'http://localhost:5001/api';
 ```
 
-### Changing Animation Speed
+## 📖 Usage
 
-Edit `src/components/tweetHero/style.scss`:
+### 1. Register
 
-```scss
-&.scroll-left {
-  animation: scrollLeft 30s linear infinite; // Change duration
-}
-```
+- Go to http://localhost:5173/register
+- Fill in name, email, and password
+- Click "Kayıt Ol"
+- MetaMask will automatically prompt to connect
 
-### Styling
+### 2. Login
 
-All styles are in SCSS files:
-- `App.scss` - Global styles
-- `index.scss` - Base styles
-- Component-specific `style.scss` files
+- Go to http://localhost:5173/login
+- Enter email and password
+- Click "Giriş Yap"
+- MetaMask will automatically prompt to connect
 
-## 🔧 Available Scripts
+### 3. Application
+
+- After successful login and wallet connection
+- Access protected routes: Application, Profile, Wallet Details
+
+## 🔐 Authentication Flow
+
+1. User registers/logs in
+2. Backend creates JWT token
+3. Token stored in localStorage
+4. MetaMask connection prompt appears
+5. Wallet address saved to MongoDB
+6. User can access protected routes
+
+## 🛡️ Security Features
+
+- Password hashing with bcrypt
+- JWT authentication
+- Protected API routes
+- Environment variables for secrets
+- CORS configuration
+- Input validation
+
+## 📡 API Endpoints
+
+### Public Routes
+
+- `POST /api/auth/register` - Register new user
+- `POST /api/auth/login` - Login user
+
+### Protected Routes
+
+- `GET /api/auth/me` - Get current user
+- `PUT /api/auth/wallet` - Update wallet address
+
+## 🧪 Testing
+
+### Test Registration
 
 ```bash
-# Development
-npm run dev          # Start dev server with hot reload
-
-# Build
-npm run build        # Production build
-
-# Preview
-npm run preview      # Preview production build
-
-# Lint
-npm run lint         # Run ESLint
+curl -X POST http://localhost:5001/api/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Test User",
+    "email": "test@example.com",
+    "password": "password123"
+  }'
 ```
 
-## 🌐 Web3 Features
-
-### Wallet Connection
-
-The app supports:
-- MetaMask
-- Any injected Ethereum provider
-- Network switching
-- Account change detection
-
-### Requirements
-
-- Modern browser with Web3 wallet extension
-- Ethereum-compatible wallet (MetaMask recommended)
-
-## 📱 Responsive Design
-
-Fully responsive breakpoints:
-- Desktop: Full experience
-- Tablet: Optimized layout
-- Mobile: Touch-friendly interface
-
-## 🎭 Design Features
-
-- **Glassmorphism** - Modern frosted glass effects
-- **Gradient Text** - Eye-catching color gradients
-- **Smooth Animations** - Buttery smooth 60fps animations
-- **Dark Theme** - Easy on the eyes
-
-## 🚀 Deployment
-
-### Build for Production
+### Test Login
 
 ```bash
+curl -X POST http://localhost:5001/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "test@example.com",
+    "password": "password123"
+  }'
+```
+
+## 🎨 Tech Stack
+
+### Frontend
+
+- React 19
+- TypeScript
+- Vite
+- React Router
+- Axios
+- Ethers.js
+- SCSS
+- Bootstrap
+
+### Backend
+
+- Node.js
+- Express
+- MongoDB
+- Mongoose
+- JWT
+- bcryptjs
+- CORS
+
+## 📝 Development Scripts
+
+### Frontend
+
+```bash
+npm run dev      # Start dev server
+npm run build    # Build for production
+npm run preview  # Preview production build
+npm run lint     # Run linter
+```
+
+### Backend
+
+```bash
+npm run dev      # Start with nodemon
+npm start        # Start production server
+```
+
+## 🐛 Troubleshooting
+
+### MongoDB Connection Error
+
+- Check if MongoDB is running
+- Verify `MONGODB_URI` in `.env`
+- Check MongoDB logs
+
+### MetaMask Not Working
+
+- Install MetaMask extension
+- Check browser console for errors
+- Ensure you're on localhost
+
+### Port Already in Use
+
+**Note:** macOS uses port 5000 for AirPlay Receiver by default. This project uses port 5001 for backend.
+
+If port 5001 is also in use:
+```bash
+# Find process using port 5001
+lsof -i :5001
+
+# Kill process
+kill -9 <PID>
+```
+
+### CORS Issues
+
+- Check backend CORS configuration
+- Ensure frontend URL matches in `server.js`
+
+## 📦 Deployment
+
+### Frontend (Vercel)
+
+```bash
+cd frontend
 npm run build
+# Deploy dist/ folder to Vercel
 ```
 
-This creates an optimized production build in the `dist` folder.
+### Backend (Heroku/Railway/Render)
 
-### Deploy to Vercel
-
-```bash
-npm i -g vercel
-vercel
-```
-
-### Deploy to Netlify
-
-```bash
-npm run build
-# Drag and drop 'dist' folder to Netlify
-```
+- Update MongoDB URI to cloud instance (MongoDB Atlas)
+- Set environment variables on hosting platform
+- Deploy backend code
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest features
-- Submit pull requests
+1. Fork the project
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
-## 📝 License
+## 📄 License
 
-MIT License - feel free to use this project for your own purposes.
+ISC
+
+## 👥 Authors
+
+Your Team
 
 ## 🙏 Acknowledgments
 
-- Inspired by modern crypto Twitter
-- Built with love for the Web3 community
-- Powered by React and Web3 technologies
-
----
-
-**Happy Building! 🚀**
-
-For questions or support, please open an issue.
+- MetaMask for wallet integration
+- MongoDB for database
+- React team for amazing framework

@@ -1,15 +1,15 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import { useWallet } from '../context/WalletContext';
+import { useAuth } from '../context/AuthContext';
 
 interface ProtectedRouteProps {
   children: React.ReactNode;
 }
 
 const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
-  const { account, isLoading } = useWallet();
+  const { isAuthenticated, isLoading } = useAuth();
 
-  // Wallet durumu kontrol edilene kadar bekle
+  // Auth durumu kontrol edilene kadar bekle
   if (isLoading) {
     return (
       <div style={{
@@ -41,9 +41,10 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
     );
   }
 
-  // Wallet bağlı değilse anasayfaya yönlendir
-  if (!account) {
-    return <Navigate to="/" replace />;
+  // Sadece authentication kontrolü yap
+  // Wallet bağlantısı opsiyonel
+  if (!isAuthenticated) {
+    return <Navigate to="/login" replace />;
   }
 
   return <>{children}</>;

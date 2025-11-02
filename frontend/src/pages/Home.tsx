@@ -1,11 +1,11 @@
 import HeroSection from '../components/heroSection/main';
-import TweetHero from '../components/tweetHero/main';
+import TweetCarousel from '../components/tweetCarousel/main';
 
 function Home() {
   return (
     <>
       <HeroSection />
-      <TweetHero />
+      <TweetCarousel />
     </>
   );
 }

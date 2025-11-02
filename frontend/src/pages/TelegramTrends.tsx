@@ -1,194 +1,174 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { telegramAPI } from '../services/api';
+import TrendingCoins from '../components/trendingCoins/main';
 import './TelegramTrends.scss';
 
-// Crypto icons
-import btcIcon from 'cryptocurrency-icons/svg/color/btc.svg';
-import ethIcon from 'cryptocurrency-icons/svg/color/eth.svg';
-import solIcon from 'cryptocurrency-icons/svg/color/sol.svg';
-import adaIcon from 'cryptocurrency-icons/svg/color/ada.svg';
-import dotIcon from 'cryptocurrency-icons/svg/color/dot.svg';
-
-// Sentiment icons
-import bullishIcon from '../assets/images/bullish.png';
-import bearishIcon from '../assets/images/bearish.png';
-
-interface TrendingTopic {
-  id: number;
-  topic: string;
-  mentions: number;
-  sentiment: 'positive' | 'negative' | 'neutral';
-  change: number;
-}
-
-interface TrendingCoin {
-  id: number;
-  name: string;
-  symbol: string;
-  mentions: number;
-  sentiment: 'bullish' | 'bearish' | 'neutral';
-  price: string;
-  change24h: number;
-}
-
 const TelegramTrends: React.FC = () => {
-  const trendingTopics: TrendingTopic[] = [
-    { id: 1, topic: 'Bitcoin Halving', mentions: 15420, sentiment: 'positive', change: 25 },
-    { id: 2, topic: 'Ethereum ETF', mentions: 12350, sentiment: 'positive', change: 18 },
-    { id: 3, topic: 'DeFi Summer', mentions: 9870, sentiment: 'neutral', change: -5 },
-    { id: 4, topic: 'NFT Market', mentions: 8540, sentiment: 'negative', change: -15 },
-    { id: 5, topic: 'Layer 2 Solutions', mentions: 7650, sentiment: 'positive', change: 32 },
-  ];
+  const [channels, setChannels] = useState<any[]>([]);
+  const [selectedChannel, setSelectedChannel] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
 
-  const coinIcons: Record<string, string> = {
-    BTC: btcIcon,
-    ETH: ethIcon,
-    SOL: solIcon,
-    ADA: adaIcon,
-    DOT: dotIcon,
-  };
+  useEffect(() => {
+    fetchTrendingChannels();
+  }, []);
 
-  const trendingCoins: TrendingCoin[] = [
-    { id: 1, name: 'Bitcoin', symbol: 'BTC', mentions: 25430, sentiment: 'bullish', price: '$45,234', change24h: 5.2 },
-    { id: 2, name: 'Ethereum', symbol: 'ETH', mentions: 18920, sentiment: 'bullish', price: '$2,456', change24h: 3.8 },
-    { id: 3, name: 'Solana', symbol: 'SOL', mentions: 12340, sentiment: 'neutral', price: '$98.45', change24h: -1.2 },
-    { id: 4, name: 'Cardano', symbol: 'ADA', mentions: 9870, sentiment: 'bearish', price: '$0.52', change24h: -4.5 },
-    { id: 5, name: 'Polkadot', symbol: 'DOT', mentions: 7650, sentiment: 'bullish', price: '$7.23', change24h: 8.7 },
-  ];
-
-  const sentimentData = {
-    positive: 58,
-    neutral: 27,
-    negative: 15
-  };
-
-  const getSentimentColor = (sentiment: string) => {
-    switch (sentiment) {
-      case 'positive':
-      case 'bullish':
-        return '#22c55e';
-      case 'negative':
-      case 'bearish':
-        return '#ef4444';
-      default:
-        return '#94a3b8';
+  const fetchTrendingChannels = async () => {
+    try {
+      setLoading(true);
+      const response = await telegramAPI.getTrending();
+      if (response.success) {
+        setChannels(response.data);
+        // İlk kanalı otomatik seç
+        if (response.data.length > 0) {
+          setSelectedChannel(response.data[0]);
+        }
+      }
+    } catch (err: any) {
+      console.error('Error fetching channels:', err);
+      setError(err.response?.data?.message || 'Failed to fetch Telegram data');
+    } finally {
+      setLoading(false);
     }
+  };
+
+  const formatDate = (timestamp: number) => {
+    const date = new Date(timestamp * 1000);
+    const now = new Date();
+    const diffMs = now.getTime() - date.getTime();
+    const diffMins = Math.floor(diffMs / 60000);
+    const diffHours = Math.floor(diffMs / 3600000);
+    const diffDays = Math.floor(diffMs / 86400000);
+
+    if (diffMins < 1) return 'Just now';
+    if (diffMins < 60) return `${diffMins}m ago`;
+    if (diffHours < 24) return `${diffHours}h ago`;
+    if (diffDays < 7) return `${diffDays}d ago`;
+    return date.toLocaleDateString();
   };
 
   return (
     <div className="telegram-trends-page">
       <Container fluid>
 
-        {/* Sentiment Overview - Progress Bar */}
-        <div className="sentiment-overview">
-          <h2>📊 Overall Sentiment Analysis</h2>
-          <div className="sentiment-progress-bar">
-            <div className="progress-positive" style={{ width: `${sentimentData.positive}%` }}>
-              <div className="sentiment-content">
-                <span className="sentiment-label">POSITIVE</span>
-                <span className="sentiment-percentage">{sentimentData.positive}%</span>
-              </div>
-            </div>
-            <div className="progress-neutral" style={{ width: `${sentimentData.neutral}%` }}>
-              <div className="sentiment-content">
-                <span className="sentiment-label">NEUTRAL</span>
-                <span className="sentiment-percentage">{sentimentData.neutral}%</span>
-              </div>
-            </div>
-            <div className="progress-negative" style={{ width: `${sentimentData.negative}%` }}>
-              <div className="sentiment-content">
-                <span className="sentiment-label">NEGATIVE</span>
-                <span className="sentiment-percentage">{sentimentData.negative}%</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Trending Coins Component */}
+        <TrendingCoins />
 
-        {/* Trending Topics */}
-        <div className="section">
-          <h2>🔥 Most Discussed Topics</h2>
-          <div className="topics-list">
-            {trendingTopics.map((topic, index) => (
-              <div key={topic.id} className="topic-item">
-                <div className="topic-rank">#{index + 1}</div>
-                <div className="topic-content">
-                  <h4>{topic.topic}</h4>
-                  <div className="topic-stats">
-                    <span className="mentions">💬 {topic.mentions.toLocaleString()} mentions</span>
-                    <span 
-                      className="sentiment-badge"
-                      style={{ background: getSentimentColor(topic.sentiment) + '20', color: getSentimentColor(topic.sentiment) }}
-                    >
-                      {topic.sentiment === 'positive' ? '📈' : topic.sentiment === 'negative' ? '📉' : '➡️'} 
-                      {topic.sentiment}
-                    </span>
+        {loading && (
+          <div className="loading-spinner">
+            <div className="spinner"></div>
+            <p>Loading Telegram data...</p>
+          </div>
+        )}
+
+        {error && (
+          <div className="error-message">
+            <p>{error}</p>
+            <button onClick={fetchTrendingChannels}>Retry</button>
+          </div>
+        )}
+
+        {!loading && !error && channels.length > 0 && (
+          <div className="telegram-layout">
+            {/* Sol taraf - Kanallar Listesi */}
+            <div className="channels-sidebar">
+              <h2>📱 Monitored Channels</h2>
+              <div className="channels-list">
+                {channels.map((channel, index) => (
+                  <div 
+                    key={index} 
+                    className={`channel-item ${selectedChannel?.username === channel.username ? 'active' : ''}`}
+                    onClick={() => setSelectedChannel(channel)}
+                  >
+                    <div className="channel-icon">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                      </svg>
+                    </div>
+                    <div className="channel-info">
+                      <h3>{channel.title}</h3>
+                      <span className="channel-username">{channel.username}</span>
+                      <div className="channel-meta">
+                        <span>💬Last {channel.recentMessages?.length || 0} messages</span>
+                      </div>
+                    </div>
+                    {selectedChannel?.username === channel.username && (
+                      <div className="active-indicator"></div>
+                    )}
                   </div>
-                </div>
-                <div className={`topic-change ${topic.change > 0 ? 'positive' : 'negative'}`}>
-                  {topic.change > 0 ? '↑' : '↓'} {Math.abs(topic.change)}%
-                </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
+            </div>
 
-        {/* Trending Coins */}
-        <div className="section">
-          <h2>💰 Most Discussed Coins</h2>
-          <Row className="coins-grid">
-            {trendingCoins.map((coin) => (
-              <Col key={coin.id} md={6} xl={4}>
-                <div className="coin-card">
-                    <div className="coin-header">
-                      <div className="coin-title-section">
-                        <img src={coinIcons[coin.symbol]} alt={coin.symbol} className="coin-icon" />
-                        <div>
-                          <h3>{coin.name}</h3>
-                          <span className="coin-symbol">{coin.symbol}</span>
+            {/* Sağ taraf - Mesajlar */}
+            <div className="messages-content">
+              {selectedChannel ? (
+                <>
+                  <div className="content-header">
+                    <div className="channel-details">
+                      <h2>{selectedChannel.title}</h2>
+                      <span className="channel-username">{selectedChannel.username}</span>
+                    </div>
+                    <div className="channel-stats-header">
+                      <div className="stat-badge">
+                        <span className="stat-icon">💬</span>
+                        <span className="stat-label text-capitalize">Last</span>
+                        <span className="stat-value">{selectedChannel.recentMessages?.length || 0}</span>
+                        <span className="stat-label">messages</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="messages-list">
+                    {selectedChannel.recentMessages && selectedChannel.recentMessages.length > 0 ? (
+                      selectedChannel.recentMessages.map((message: any, idx: number) => (
+                        <div key={idx} className="message-card">
+                          <div className="message-header">
+                            <span className="message-number">#{idx + 1}</span>
+                            <span className="message-time">{formatDate(message.date)}</span>
+                          </div>
+                          <div className="message-body">
+                            <p>{message.text || 'No content'}</p>
+                          </div>
+                          <div className="message-footer">
+                            <span className="message-views">
+                              👁️ {message.views?.toLocaleString() || 0} views
+                            </span>
+                            <a 
+                              href={`https://t.me/${selectedChannel.username.replace('@', '')}/${message.id}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="view-telegram-btn"
+                            >
+                              View in Telegram →
+                            </a>
+                          </div>
                         </div>
+                      ))
+                    ) : (
+                      <div className="no-messages">
+                        <p>No messages available for this channel</p>
                       </div>
-                      <div className="coin-sentiment">
-                        {coin.sentiment === 'bullish' ? (
-                          <img src={bullishIcon} alt="Bullish" className="sentiment-icon" />
-                        ) : coin.sentiment === 'bearish' ? (
-                          <img src={bearishIcon} alt="Bearish" className="sentiment-icon" />
-                        ) : (
-                          <span className="neutral-icon">→</span>
-                        )}
-                      </div>
-                    </div>
-                    <div className="coin-price">
-                      <span className="price">{coin.price}</span>
-                      <span className={`price-change ${coin.change24h > 0 ? 'positive' : 'negative'}`}>
-                        {coin.change24h > 0 ? '+' : ''}{coin.change24h}%
-                      </span>
-                    </div>
-                    <div className="coin-mentions">
-                      💬 {coin.mentions.toLocaleString()} mentions
-                    </div>
-                    <div 
-                      className="sentiment-bar"
-                      style={{ background: getSentimentColor(coin.sentiment) + '30' }}
-                    >
-                      <div 
-                        className="sentiment-fill"
-                        style={{ 
-                          width: `${(coin.mentions / trendingCoins[0].mentions) * 100}%`,
-                          background: getSentimentColor(coin.sentiment)
-                        }}
-                      ></div>
-                    </div>
+                    )}
                   </div>
-                </Col>
-              ))}
-            </Row>
-        </div>
+                </>
+              ) : (
+                <div className="no-channel-selected">
+                  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                  <h3>Select a channel to view messages</h3>
+                  <p>Choose a channel from the left sidebar to see recent messages</p>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
       </Container>
     </div>
   );
 };
 
 export default TelegramTrends;
-

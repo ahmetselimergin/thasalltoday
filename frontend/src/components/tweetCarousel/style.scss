@@ -1,0 +1,278 @@
+.tweet-carousel {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+  overflow: hidden;
+  position: relative;
+
+  .tweet-carousel-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+
+    .carousel-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: rgba(255, 255, 255, 0.9);
+
+      .gradient-text {
+        background: linear-gradient(135deg, #0194FE 0%, #E2742D 50%, #881776 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+
+    .carousel-subtitle {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0;
+    }
+  }
+
+  .tweets-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .tweet-row {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    &::before {
+      left: 0;
+      background: linear-gradient(to right, rgba(30, 30, 46, 1) 0%, rgba(30, 30, 46, 0) 100%);
+    }
+
+    &::after {
+      right: 0;
+      background: linear-gradient(to left, rgba(30, 30, 46, 1) 0%, rgba(30, 30, 46, 0) 100%);
+    }
+  }
+
+  .tweet-track {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+
+    &-left {
+      animation: scrollLeft 60s linear infinite;
+    }
+
+    &-right {
+      animation: scrollRight 60s linear infinite;
+    }
+  }
+
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes scrollRight {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .tweet-card {
+    min-width: 350px;
+    max-width: 350px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px solid rgba(1, 148, 254, 0.2);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-5px);
+      border-color: rgba(1, 148, 254, 0.5);
+      box-shadow: 0 10px 30px rgba(1, 148, 254, 0.2);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+
+      .tweet-track-left &,
+      .tweet-track-right & {
+        animation-play-state: paused;
+      }
+    }
+
+    .tweet-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+
+      .tweet-avatar {
+        width: 48px;
+        height: 48px;
+        background: linear-gradient(135deg, rgba(1, 148, 254, 0.2) 0%, rgba(1, 148, 254, 0.05) 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        flex-shrink: 0;
+      }
+
+      .tweet-author-info {
+        flex: 1;
+        min-width: 0;
+
+        .tweet-author {
+          font-size: 1rem;
+          font-weight: 600;
+          color: #fff;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .tweet-username {
+          font-size: 0.85rem;
+          color: rgba(255, 255, 255, 0.6);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    .tweet-content {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 1rem;
+      min-height: 60px;
+    }
+
+    .tweet-stats {
+      display: flex;
+      gap: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+      .tweet-stat {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.6);
+        transition: color 0.3s ease;
+
+        svg {
+          width: 16px;
+          height: 16px;
+          stroke: rgba(255, 255, 255, 0.6);
+          transition: stroke 0.3s ease;
+        }
+
+        &:hover {
+          color: #0194FE;
+
+          svg {
+            stroke: #0194FE;
+          }
+        }
+      }
+    }
+  }
+
+  // Pause animation on hover over the entire row
+  .tweet-row:hover .tweet-track {
+    animation-play-state: paused;
+  }
+
+  // Responsive
+  @media (max-width: 768px) {
+    padding: 3rem 0;
+
+    .tweet-carousel-header {
+      margin-bottom: 2rem;
+
+      .carousel-title {
+        font-size: 1.8rem;
+      }
+
+      .carousel-subtitle {
+        font-size: 1rem;
+      }
+    }
+
+    .tweets-container {
+      gap: 1rem;
+    }
+
+    .tweet-card {
+      min-width: 280px;
+      max-width: 280px;
+      padding: 1.25rem;
+    }
+
+    .tweet-track {
+      gap: 1rem;
+
+      &-left {
+        animation: scrollLeft 45s linear infinite;
+      }
+
+      &-right {
+        animation: scrollRight 45s linear infinite;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tweet-card {
+      min-width: 250px;
+      max-width: 250px;
+      padding: 1rem;
+
+      .tweet-header {
+        .tweet-avatar {
+          width: 40px;
+          height: 40px;
+          font-size: 1.25rem;
+        }
+
+        .tweet-author-info {
+          .tweet-author {
+            font-size: 0.9rem;
+          }
+
+          .tweet-username {
+            font-size: 0.75rem;
+          }
+        }
+      }
+
+      .tweet-content {
+        font-size: 0.85rem;
+        min-height: 50px;
+      }
+    }
+  }
+}
+
