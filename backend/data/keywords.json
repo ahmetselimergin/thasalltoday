@@ -1,0 +1,210 @@
+{
+  "stopwords": {
+    "english_common": [
+      "THE", "BE", "TO", "OF", "AND", "A", "IN", "THAT", "HAVE", "I", "IT", "FOR", "NOT",
+      "ON", "WITH", "HE", "AS", "YOU", "DO", "AT", "THIS", "BUT", "HIS", "BY", "FROM",
+      "THEY", "WE", "SAY", "HER", "SHE", "OR", "AN", "WILL", "MY", "ONE", "ALL", "WOULD",
+      "THERE", "THEIR", "WHAT", "SO", "UP", "OUT", "IF", "ABOUT", "WHO", "GET", "WHICH",
+      "GO", "ME", "WHEN", "MAKE", "CAN", "LIKE", "TIME", "NO", "JUST", "HIM", "KNOW",
+      "TAKE", "PEOPLE", "INTO", "YEAR", "YOUR", "GOOD", "SOME", "COULD", "THEM", "SEE",
+      "OTHER", "THAN", "THEN", "NOW", "LOOK", "ONLY", "COME", "ITS", "OVER", "THINK",
+      "ALSO", "BACK", "AFTER", "USE", "TWO", "HOW", "OUR", "WORK", "FIRST", "WELL",
+      "WAY", "EVEN", "NEW", "WANT", "BECAUSE", "ANY", "THESE", "GIVE", "DAY", "MOST",
+      "US", "IS", "WAS", "ARE", "BEEN", "HAS", "HAD", "WERE", "SAID", "DID", "HAVING",
+      "EACH", "FIND", "MAY", "MUST", "SUCH", "THROUGH", "WHERE", "WHILE", "BOTH",
+      "BEFORE", "BETWEEN", "DURING", "UNDER", "ABOVE", "BELOW", "SAME", "DIFFERENT",
+      "ANOTHER", "ACROSS", "AROUND", "AGAINST", "AMONG", "WITHIN", "WITHOUT", "INSTEAD",
+      "TOWARD", "TOWARDS", "ALTHOUGH", "HOWEVER", "THEREFORE", "MOREOVER", "FURTHERMORE",
+      "NEVERTHELESS", "NONETHELESS", "MEANWHILE", "OTHERWISE", "ELSEWHERE", "SEVERAL",
+      "MANY", "FEW", "MUCH", "LITTLE", "MORE", "LESS", "MOST", "LEAST", "EVERY", "EACH",
+      "EITHER", "NEITHER", "BOTH", "HALF", "TWICE", "ONCE", "ALWAYS", "NEVER", "OFTEN",
+      "SOMETIMES", "USUALLY", "RARELY", "SELDOM", "ALREADY", "STILL", "YET", "AGAIN",
+      "SOON", "LATE", "EARLY", "YESTERDAY", "TOMORROW", "TODAY", "TONIGHT"
+    ],
+    "crypto_general": [
+      "CRYPTO", "CRYPTOCURRENCY", "CRYPTOCURRENCIES", "COIN", "COINS", "TOKEN", "TOKENS",
+      "BLOCKCHAIN", "DIGITAL", "ASSET", "ASSETS", "MARKET", "MARKETS", "EXCHANGE",
+      "PLATFORM", "NETWORK", "PROTOCOL", "WALLET", "ADDRESS", "TRANSACTION", "TRANSACTIONS",
+      "BLOCK", "BLOCKS", "CHAIN", "MINING", "MINER", "MINERS", "NODE", "NODES",
+      "DECENTRALIZED", "CENTRALIZED", "PEER", "CONTRACT", "CONTRACTS"
+    ],
+    "crypto_actions": [
+      "TRADE", "TRADING", "TRADED", "TRADER", "TRADERS", "BUY", "BUYING", "BOUGHT",
+      "SELL", "SELLING", "SOLD", "HOLD", "HOLDING", "HODL", "SWAP", "SWAPPING",
+      "STAKE", "STAKING", "STAKED", "FARM", "FARMING", "YIELD", "MINT", "MINTING",
+      "BRIDGE", "BRIDGING", "LOCK", "LOCKED", "UNLOCK", "VEST", "VESTING"
+    ],
+    "crypto_metrics": [
+      "PRICE", "PRICES", "VALUE", "VOLUME", "VOLUMES", "CAP", "MARKET CAP", "MARKETCAP",
+      "SUPPLY", "CIRCULATING", "TOTAL", "MAX", "LIQUIDITY", "TVL", "APR", "APY",
+      "FDV", "MCAP", "DOMINANCE", "PERCENT", "PERCENTAGE", "RATIO", "RATE"
+    ],
+    "crypto_content": [
+      "CHART", "CHARTS", "ANALYSIS", "TECHNICAL", "FUNDAMENTAL", "NEWS", "UPDATE",
+      "UPDATES", "ANNOUNCEMENT", "ALERT", "ALERTS", "SIGNAL", "SIGNALS", "INDICATOR",
+      "INDICATORS", "REPORT", "REPORTS", "DATA", "STATS", "STATISTICS", "METRICS"
+    ],
+    "social_media": [
+      "READ", "MORE", "HERE", "LINK", "LINKS", "CLICK", "JOIN", "FOLLOW", "SHARE",
+      "RETWEET", "LIKE", "SUBSCRIBE", "CHANNEL", "CHANNELS", "GROUP", "GROUPS",
+      "TELEGRAM", "TWITTER", "DISCORD", "REDDIT", "YOUTUBE", "MEDIUM", "BLOG"
+    ],
+    "web_tech": [
+      "HTTPS", "HTTP", "WWW", "COM", "ORG", "NET", "IO", "APP", "WEBSITE", "SITE",
+      "URL", "API", "GITHUB", "GITLAB", "REPO", "CODE", "DOCS", "DOCUMENTATION"
+    ],
+    "time_references": [
+      "TODAY", "TONIGHT", "TOMORROW", "YESTERDAY", "WEEK", "MONTH", "YEAR", "DAY",
+      "DAYS", "WEEKS", "MONTHS", "YEARS", "HOUR", "HOURS", "MINUTE", "MINUTES",
+      "SECOND", "SECONDS", "RECENTLY", "LATEST", "UPCOMING", "PAST", "FUTURE",
+      "CURRENT", "PREVIOUS", "NEXT", "LAST", "FIRST"
+    ],
+    "intensifiers": [
+      "JUST", "VERY", "MUCH", "MANY", "TOO", "QUITE", "REALLY", "EXTREMELY",
+      "ABSOLUTELY", "TOTALLY", "COMPLETELY", "FULLY", "ENTIRELY", "PERFECTLY"
+    ],
+    "modal_verbs": [
+      "SHOULD", "WOULD", "COULD", "MAY", "MIGHT", "MUST", "CAN", "CANT", "CANNOT",
+      "WILL", "WONT", "SHALL", "OUGHT"
+    ]
+  },
+  "sentiment": {
+    "positive": {
+      "keywords": [
+        "BULLISH", "BULL", "MOON", "MOONING", "PUMP", "PUMPING", "PUMPED",
+        "UP", "HIGH", "HIGHER", "RISE", "RISING", "ROSE", "RALLY", "RALLYING",
+        "BREAKOUT", "BREAKTHROUGH", "ATH", "ALL TIME HIGH", "PROFIT", "PROFITS",
+        "GAIN", "GAINS", "GAINED", "WIN", "WINNER", "WINNING", "WON",
+        "STRONG", "STRONGER", "STRENGTH", "MOMENTUM", "SURGE", "SURGING",
+        "BOOM", "BOOMING", "EXPLODE", "EXPLODING", "ROCKET", "SKYROCKET",
+        "GREEN", "RECOVERY", "RECOVERING", "BOUNCE", "BOUNCING", "REBOUND",
+        "SUPPORT", "SUPPORTED", "BUY", "ACCUMULATE", "ACCUMULATING",
+        "LONG", "UNDERVALUED", "CHEAP", "OPPORTUNITY", "POTENTIAL",
+        "ADOPTION", "GROWING", "GROWTH", "EXPANSION", "EXPANDING",
+        "LAUNCH", "LAUNCHING", "LAUNCHED", "SUCCESS", "SUCCESSFUL",
+        "UPGRADE", "UPGRADED", "IMPROVEMENT", "IMPROVED", "INNOVATION",
+        "PARTNERSHIP", "PARTNERED", "INTEGRATION", "INTEGRATED",
+        "LISTING", "LISTED", "MILESTONE", "ACHIEVEMENT"
+      ],
+      "emojis": [
+        "🚀", "📈", "💎", "🔥", "💪", "✅", "🟢", "⬆️", "📊", "💰",
+        "🎯", "🌙", "⭐", "✨", "💚", "🎉", "🏆", "👍", "🙌", "💪",
+        "🔝", "📶", "💹", "🌟", "⚡", "💵", "💴", "💶", "💷"
+      ]
+    },
+    "negative": {
+      "keywords": [
+        "BEARISH", "BEAR", "DUMP", "DUMPING", "DUMPED", "DOWN", "LOWER",
+        "CRASH", "CRASHED", "CRASHING", "DROP", "DROPPED", "DROPPING",
+        "FALL", "FALLING", "FELL", "FALLEN", "DIP", "DIPPING", "DIPPED",
+        "LOSS", "LOSSES", "LOSING", "LOST", "LOSE", "SELL", "SELLING",
+        "WEAK", "WEAKER", "WEAKNESS", "DECLINE", "DECLINING", "DECLINED",
+        "CORRECTION", "CORRECTING", "LIQUIDATION", "LIQUIDATED", "LIQUIDATING",
+        "RIP", "DEAD", "DYING", "SCAM", "SCAMMED", "FRAUD", "FRAUDULENT",
+        "RUG", "RUGPULL", "EXPLOIT", "EXPLOITED", "HACK", "HACKED", "HACKING",
+        "RED", "BLOOD", "BLEEDING", "BLEED", "PANIC", "PANICKING",
+        "SHORT", "SHORTING", "SHORTED", "OVERVALUED", "EXPENSIVE",
+        "RESIST", "RESISTANCE", "REJECTION", "REJECTED", "FAILURE",
+        "FAILED", "FAILING", "RISK", "RISKY", "DANGER", "DANGEROUS",
+        "WARNING", "WARN", "ALERT", "CAUTION", "PROBLEM", "PROBLEMS",
+        "ISSUE", "ISSUES", "BUG", "BUGS", "ERROR", "ERRORS",
+        "DELISTING", "DELISTED", "SUSPEND", "SUSPENDED", "HALT", "HALTED",
+        "BANKRUPT", "BANKRUPTCY", "INSOLVENT", "COLLAPSE", "COLLAPSED"
+      ],
+      "emojis": [
+        "📉", "🔻", "⬇️", "🔴", "❌", "⚠️", "💔", "😢", "🩸",
+        "😭", "💀", "☠️", "🚨", "⛔", "🛑", "❗", "‼️", "📛"
+      ]
+    },
+    "neutral": {
+      "keywords": [
+        "STABLE", "CONSOLIDATION", "CONSOLIDATING", "SIDEWAYS", "FLAT",
+        "RANGE", "RANGING", "WAITING", "WATCHING", "OBSERVE", "OBSERVING",
+        "MONITOR", "MONITORING", "TESTING", "TEST", "LEVEL", "LEVELS",
+        "SUPPORT", "RESISTANCE", "ZONE", "AREA", "PATTERN", "PATTERNS",
+        "MOVING", "AVERAGE", "TREND", "TRENDLINE", "BREAKOUT", "BREAKDOWN"
+      ]
+    }
+  },
+  "categories": {
+    "technology": [
+      "LAYER", "LAYER2", "L2", "SCALING", "SIDECHAIN", "ROLLUP", "ROLLUPS",
+      "ZKEVM", "ZKROLLUP", "OPTIMISTIC", "PLASMA", "STATE CHANNEL",
+      "SHARDING", "CONSENSUS", "POS", "POW", "DPOS", "PROOF OF STAKE",
+      "PROOF OF WORK", "VALIDATOR", "VALIDATORS", "STAKING",
+      "SMART CONTRACT", "SMARTCONTRACT", "DEFI", "NFT", "NFTS", "DAPP", "DAPPS",
+      "DAO", "DEX", "CEX", "AMM", "LIQUIDITY POOL", "YIELD FARMING",
+      "BRIDGE", "CROSS-CHAIN", "MULTICHAIN", "INTEROPERABILITY",
+      "ORACLE", "ORACLES", "VRF", "API3", "CHAINLINK",
+      "EVM", "WASM", "VIRTUAL MACHINE", "RUNTIME"
+    ],
+    "finance": [
+      "INFLATION", "DEFLATION", "INTEREST", "RATE", "RATES", "FED", "FEDERAL",
+      "RESERVE", "CENTRAL BANK", "MONETARY", "POLICY", "FISCAL",
+      "ECONOMY", "ECONOMIC", "RECESSION", "DEPRESSION", "EXPANSION",
+      "GDP", "CPI", "PPI", "UNEMPLOYMENT", "JOBS", "EMPLOYMENT",
+      "STOCK", "STOCKS", "EQUITY", "BOND", "BONDS", "COMMODITY",
+      "GOLD", "SILVER", "OIL", "FOREX", "DOLLAR", "EURO", "YEN",
+      "CORRELATION", "HEDGE", "HEDGING", "RISK", "VOLATILITY"
+    ],
+    "regulation": [
+      "REGULATION", "REGULATIONS", "REGULATORY", "REGULATOR", "REGULATORS",
+      "SEC", "CFTC", "FINRA", "FINCEN", "IRS", "TREASURY",
+      "LAW", "LAWS", "LEGAL", "ILLEGAL", "COMPLIANCE", "COMPLIANT",
+      "LICENSE", "LICENSED", "LICENSING", "APPROVED", "APPROVAL",
+      "BAN", "BANNED", "BANNING", "RESTRICTION", "RESTRICTIONS",
+      "SANCTION", "SANCTIONS", "ENFORCEMENT", "LAWSUIT", "LAWSUITS",
+      "COURT", "JUDGE", "RULING", "VERDICT", "SETTLEMENT",
+      "KYC", "AML", "KNOW YOUR CUSTOMER", "ANTI-MONEY LAUNDERING"
+    ],
+    "events": [
+      "HALVING", "HALVENING", "FORK", "HARD FORK", "SOFT FORK",
+      "AIRDROP", "SNAPSHOT", "DISTRIBUTION", "CLAIM", "CLAIMING",
+      "LAUNCH", "MAINNET", "TESTNET", "BETA", "ALPHA",
+      "CONFERENCE", "SUMMIT", "MEETUP", "EVENT", "ANNOUNCEMENT",
+      "PARTNERSHIP", "COLLABORATION", "MERGER", "ACQUISITION",
+      "FUNDRAISING", "ICO", "IEO", "IDO", "PRESALE", "SEED",
+      "ROUND", "SERIES", "FUNDING", "INVESTMENT", "INVESTOR",
+      "LISTING", "DELIST", "MIGRATION", "SWAP", "REBRAND"
+    ],
+    "institutions": [
+      "INSTITUTIONAL", "INSTITUTIONS", "BANK", "BANKS", "BANKING",
+      "HEDGE FUND", "PENSION", "INSURANCE", "SOVEREIGN", "GOVERNMENT",
+      "TREASURY", "NATION", "COUNTRY", "COUNTRIES", "STATE",
+      "CORPORATE", "CORPORATION", "COMPANY", "COMPANIES", "FIRM",
+      "BLACKROCK", "VANGUARD", "FIDELITY", "GRAYSCALE", "MICROSTRATEGY",
+      "TESLA", "SQUARE", "PAYPAL", "VISA", "MASTERCARD",
+      "GOLDMAN", "JPMORGAN", "MORGAN STANLEY", "CITIGROUP", "BNY"
+    ],
+    "market_structure": [
+      "WHALE", "WHALES", "RETAIL", "INSTITUTIONAL", "ACCUMULATION",
+      "DISTRIBUTION", "MANIPULATION", "MANIPULATED", "WASH TRADING",
+      "FRONT RUNNING", "FRONTRUN", "MEV", "ARBITRAGE", "ARBITRAGEUR",
+      "MAKER", "TAKER", "ORDERBOOK", "ORDER BOOK", "DEPTH",
+      "SPREAD", "BID", "ASK", "SLIPPAGE", "LIQUIDITY",
+      "VOLUME", "OPEN INTEREST", "FUNDING", "PERPETUAL", "PERP",
+      "FUTURES", "OPTIONS", "DERIVATIVES", "LEVERAGE", "MARGIN"
+    ]
+  },
+  "special_cases": {
+    "preserve": [
+      "AI", "ML", "GPT", "LLM", "DLT", "P2P", "B2B", "B2C",
+      "API", "SDK", "CLI", "GUI", "UI", "UX", "KYC", "AML",
+      "ATH", "ATL", "ROI", "APR", "APY", "TVL", "FDV", "MCAP",
+      "FOMO", "FUD", "DYOR", "NFA", "WAGMI", "GM", "GN"
+    ],
+    "ignore_as_topics": [
+      "LMAO", "LOL", "OMG", "WTF", "BTW", "IMO", "IMHO", "TBH", "AFAIK",
+      "ASAP", "FYI", "ETA", "TBA", "TBD", "AKA", "AKA", "ETC", "VSB"
+    ]
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-11-05",
+    "total_stopwords": 400,
+    "total_sentiment_keywords": 250,
+    "languages": ["en"],
+    "description": "Comprehensive keyword database for crypto trend analysis and topic detection"
+  }
+}
+

@@ -60,6 +60,11 @@ export const telegramAPI = {
     return response.data;
   },
 
+  getTrendingTopics: async () => {
+    const response = await api.get('/telegram/trending-topics');
+    return response.data;
+  },
+
   searchMessages: async (query: string, limit?: number) => {
     const response = await api.get('/telegram/search', {
       params: { query, limit }

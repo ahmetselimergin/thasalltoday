@@ -2,6 +2,7 @@ import express from 'express';
 import {
   getTrendingChannels,
   getTrendingCoins,
+  getTrendingTopics,
   searchMessages,
   getChannelStats,
   connectTelegram
@@ -16,6 +17,7 @@ router.use(protect);
 // Routes
 router.get('/trending', getTrendingChannels);
 router.get('/trending-coins', getTrendingCoins);
+router.get('/trending-topics', getTrendingTopics);
 router.get('/search', searchMessages);
 router.get('/channel/:username', getChannelStats);
 router.post('/connect', connectTelegram);

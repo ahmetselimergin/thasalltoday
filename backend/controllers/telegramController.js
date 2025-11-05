@@ -44,6 +44,28 @@ export const getTrendingCoins = async (req, res) => {
   }
 };
 
+// @desc    Get trending topics from messages
+// @route   GET /api/telegram/trending-topics
+// @access  Private
+export const getTrendingTopics = async (req, res) => {
+  try {
+    const trendingTopics = await telegramService.getTrendingTopics();
+    
+    res.status(200).json({
+      success: true,
+      count: trendingTopics.length,
+      data: trendingTopics
+    });
+  } catch (error) {
+    console.error('Get trending topics error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Error fetching trending topics',
+      error: error.message
+    });
+  }
+};
+
 // @desc    Search messages in channels
 // @route   GET /api/telegram/search
 // @access  Private

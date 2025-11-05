@@ -18,11 +18,12 @@ interface TrendingCoin {
 const TrendingCoins: React.FC = () => {
   const [trendingCoins, setTrendingCoins] = useState<TrendingCoin[]>([]);
   const [loading, setLoading] = useState(true);
+  const [lastUpdate, setLastUpdate] = useState<Date | null>(null);
 
   useEffect(() => {
     fetchTrendingCoins();
-    // Her 5 dakikada bir güncelle
-    const interval = setInterval(fetchTrendingCoins, 900000);
+    // Her 15 dakikada bir güncelle (cache TTL ile senkron)
+    const interval = setInterval(fetchTrendingCoins, 15 * 60 * 1000);
     return () => clearInterval(interval);
   }, []);
 
@@ -31,6 +32,7 @@ const TrendingCoins: React.FC = () => {
       const response = await telegramAPI.getTrendingCoins();
       if (response.success) {
         setTrendingCoins(response.data);
+        setLastUpdate(new Date());
       }
     } catch (error) {
       console.error('Error fetching trending coins:', error);
@@ -51,7 +53,12 @@ const TrendingCoins: React.FC = () => {
         <h2 className="section-title">
           <span className="gradient-text">🪙 Top Trending Coins</span>
         </h2>
-        <p className="section-subtitle">Most mentioned coins in Telegram channels (last 48 hours • updates every 15 min)</p>
+        <p className="section-subtitle">
+          Most mentioned coins in Telegram channels (last 48 hours • updates every 15 min)
+          {lastUpdate && (
+            <span className="last-update"> • Last updated: {lastUpdate.toLocaleTimeString()}</span>
+          )}
+        </p>
       </div>
 
       {loading ? (

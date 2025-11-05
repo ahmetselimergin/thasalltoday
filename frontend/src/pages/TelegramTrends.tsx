@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import { telegramAPI } from '../services/api';
 import TrendingCoins from '../components/trendingCoins/main';
+import TrendingTopics from '../components/trendingTopics/main';
 import './TelegramTrends.scss';
 
 const TelegramTrends: React.FC = () => {
@@ -54,6 +55,9 @@ const TelegramTrends: React.FC = () => {
 
         {/* Trending Coins Component */}
         <TrendingCoins />
+
+        {/* Trending Topics Component */}
+        <TrendingTopics />
 
         {loading && (
           <div className="loading-spinner">

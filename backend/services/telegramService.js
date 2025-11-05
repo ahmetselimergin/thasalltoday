@@ -14,10 +14,64 @@ const coinsData = JSON.parse(
   fs.readFileSync(path.join(__dirname, '../data/coins.json'), 'utf8')
 );
 
+// Load keywords database
+const keywordsData = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../data/keywords.json'), 'utf8')
+);
+
 class TelegramService {
   constructor() {
     this.client = null;
     // Environment variables'ı constructor'da değil connect'te okuyacağız
+    
+    // CACHE SYSTEM: Prevent excessive API calls
+    this.cache = {
+      channels: {
+        data: null,
+        timestamp: null,
+        ttl: 15 * 60 * 1000 // 15 minutes cache
+      },
+      coins: {
+        data: null,
+        timestamp: null,
+        ttl: 15 * 60 * 1000 // 15 minutes cache
+      },
+      topics: {
+        data: null,
+        timestamp: null,
+        ttl: 15 * 60 * 1000 // 15 minutes cache
+      }
+    };
+  }
+
+  // CACHE HELPERS
+  isCacheValid(cacheKey) {
+    const cache = this.cache[cacheKey];
+    if (!cache.data || !cache.timestamp) {
+      return false;
+    }
+    const now = Date.now();
+    const age = now - cache.timestamp;
+    return age < cache.ttl;
+  }
+
+  setCache(cacheKey, data) {
+    this.cache[cacheKey] = {
+      ...this.cache[cacheKey],
+      data: data,
+      timestamp: Date.now()
+    };
+    console.log(`💾 Cache set for '${cacheKey}' (TTL: ${this.cache[cacheKey].ttl / 1000 / 60} minutes)`);
+  }
+
+  getCache(cacheKey) {
+    if (this.isCacheValid(cacheKey)) {
+      const age = Math.floor((Date.now() - this.cache[cacheKey].timestamp) / 1000);
+      console.log(`✅ Cache HIT for '${cacheKey}' (age: ${age}s)`);
+      return this.cache[cacheKey].data;
+    }
+    console.log(`❌ Cache MISS for '${cacheKey}' (expired or empty)`);
+    return null;
   }
 
   async connect() {
@@ -62,6 +116,12 @@ class TelegramService {
 
   async getTrendingChannels() {
     try {
+      // CHECK CACHE FIRST
+      const cachedData = this.getCache('channels');
+      if (cachedData) {
+        return cachedData;
+      }
+
       // Sadece gerçek Telegram API kullan - Mock data yok!
       console.log('📱 Fetching REAL Telegram data from API...');
       console.log('📋 Environment check:', {
@@ -178,6 +238,10 @@ class TelegramService {
       }
 
       console.log(`✅ Successfully fetched data from ${channelsData.length} channels`);
+      
+      // CACHE THE RESULT
+      this.setCache('channels', channelsData);
+      
       return channelsData;
     } catch (error) {
       console.error('❌ Failed to fetch Telegram data:', error.message);
@@ -187,7 +251,13 @@ class TelegramService {
 
   async getTrendingCoins() {
     try {
-      // Önce kanallardan verileri al
+      // CHECK CACHE FIRST
+      const cachedCoins = this.getCache('coins');
+      if (cachedCoins) {
+        return cachedCoins;
+      }
+
+      // Önce kanallardan verileri al (bu da cache'den gelebilir)
       const channels = await this.getTrendingChannels();
       
       // Load known coins from JSON database (200+ coins)
@@ -199,17 +269,15 @@ class TelegramService {
       // Blacklist from JSON
       const blacklist = new Set(coinsData.blacklist);
 
-      // Sentiment keywords
+      // Sentiment keywords from JSON
       const positiveKeywords = [
-        'BULLISH', 'BULL', 'MOON', 'PUMP', 'UP', 'HIGH', 'RISE', 'RISING', 'RALLY',
-        'BREAKOUT', 'ATH', 'PROFIT', 'GAIN', 'WIN', 'STRONG', 'MOMENTUM', 'SURGE',
-        '🚀', '📈', '💎', '🔥', '💪', '✅', '🟢', '⬆️', '📊', '💰', '🎯'
+        ...keywordsData.sentiment.positive.keywords,
+        ...keywordsData.sentiment.positive.emojis
       ];
 
       const negativeKeywords = [
-        'BEARISH', 'BEAR', 'DUMP', 'DOWN', 'CRASH', 'DROP', 'FALL', 'FALLING', 'DIP',
-        'LOSS', 'SELL', 'WEAK', 'DECLINE', 'CORRECTION', 'LIQUIDATION', 'RIP', 'SCAM',
-        '📉', '🔻', '⬇️', '🔴', '❌', '⚠️', '💔', '😢', '🩸'
+        ...keywordsData.sentiment.negative.keywords,
+        ...keywordsData.sentiment.negative.emojis
       ];
 
       const coinData = {};
@@ -330,6 +398,10 @@ class TelegramService {
         .slice(0, 15); // Top 15 (increased from 10)
 
       console.log(`🪙 Trending coins with sentiment (DYNAMIC DETECTION - ${coinsData.coins.length} coins in database):`, trendingCoins);
+      
+      // CACHE THE RESULT
+      this.setCache('coins', trendingCoins);
+      
       return trendingCoins;
     } catch (error) {
       console.error('Error getting trending coins:', error);
@@ -445,6 +517,117 @@ class TelegramService {
       };
     } catch (error) {
       console.error('Error getting channel stats:', error);
+      throw error;
+    }
+  }
+
+  async getTrendingTopics() {
+    try {
+      // CHECK CACHE FIRST
+      const cachedTopics = this.getCache('topics');
+      if (cachedTopics) {
+        return cachedTopics;
+      }
+
+      // Get channel data (will use cache if available)
+      const channels = await this.getTrendingChannels();
+
+      // STOPWORDS: Load from JSON database (400+ words across all categories)
+      const stopwords = new Set([
+        ...keywordsData.stopwords.english_common,
+        ...keywordsData.stopwords.crypto_general,
+        ...keywordsData.stopwords.crypto_actions,
+        ...keywordsData.stopwords.crypto_metrics,
+        ...keywordsData.stopwords.crypto_content,
+        ...keywordsData.stopwords.social_media,
+        ...keywordsData.stopwords.web_tech,
+        ...keywordsData.stopwords.time_references,
+        ...keywordsData.stopwords.intensifiers,
+        ...keywordsData.stopwords.modal_verbs,
+        ...keywordsData.special_cases.ignore_as_topics
+      ]);
+
+      // Load blacklisted coin symbols (to exclude from topics)
+      const coinBlacklist = new Set(coinsData.blacklist);
+      
+      // Get all known coin symbols (to exclude from general topics)
+      const knownCoinSymbols = new Set(coinsData.coins.map(coin => coin.symbol));
+
+      // Frequency map for words and phrases
+      const wordFrequency = {};
+      const phraseFrequency = {};
+
+      // Analyze messages from all channels
+      channels.forEach(channel => {
+        if (channel.recentMessages && channel.recentMessages.length > 0) {
+          channel.recentMessages.forEach(message => {
+            const text = (message.text || '').toUpperCase();
+            
+            // Extract words (2-15 characters, letters only)
+            const words = text.match(/\b[A-Z]{2,15}\b/g) || [];
+            
+            words.forEach(word => {
+              // Skip if stopword, coin symbol, or blacklisted
+              if (stopwords.has(word) || knownCoinSymbols.has(word) || coinBlacklist.has(word)) {
+                return;
+              }
+              
+              wordFrequency[word] = (wordFrequency[word] || 0) + 1;
+            });
+
+            // Extract 2-word phrases (bigrams)
+            for (let i = 0; i < words.length - 1; i++) {
+              const word1 = words[i];
+              const word2 = words[i + 1];
+              
+              // Skip if either word is stopword or coin
+              if (stopwords.has(word1) || stopwords.has(word2) ||
+                  knownCoinSymbols.has(word1) || knownCoinSymbols.has(word2) ||
+                  coinBlacklist.has(word1) || coinBlacklist.has(word2)) {
+                continue;
+              }
+              
+              const phrase = `${word1} ${word2}`;
+              phraseFrequency[phrase] = (phraseFrequency[phrase] || 0) + 1;
+            }
+          });
+        }
+      });
+
+      // Sort and get top topics
+      const topWords = Object.entries(wordFrequency)
+        .filter(([_, count]) => count >= 3) // Minimum 3 mentions
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 10)
+        .map(([word, count]) => ({
+          topic: word,
+          type: 'keyword',
+          mentions: count
+        }));
+
+      const topPhrases = Object.entries(phraseFrequency)
+        .filter(([_, count]) => count >= 2) // Minimum 2 mentions for phrases
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 5)
+        .map(([phrase, count]) => ({
+          topic: phrase,
+          type: 'phrase',
+          mentions: count
+        }));
+
+      // Combine and sort by mentions
+      const allTopics = [...topWords, ...topPhrases]
+        .sort((a, b) => b.mentions - a.mentions)
+        .slice(0, 10); // Top 10 overall
+
+      console.log(`📌 Top trending topics:`, allTopics);
+
+      // CACHE THE RESULT
+      this.setCache('topics', allTopics);
+
+      return allTopics;
+    } catch (error) {
+      console.error('Error getting trending topics:', error);
       throw error;
     }
   }
