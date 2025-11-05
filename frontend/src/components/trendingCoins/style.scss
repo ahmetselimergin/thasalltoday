@@ -144,11 +144,23 @@
           font-size: 0.75rem;
           color: rgba(255, 255, 255, 0.6);
           line-height: 1.2;
+          display: flex;
+          align-items: center;
+          gap: 0.25rem;
 
           .mentions-count {
             font-weight: 600;
             color: #fff;
-            margin-right: 0.25rem;
+          }
+
+          .channel-count {
+            font-size: 0.65rem;
+            color: rgba(1, 148, 254, 0.8);
+            font-weight: 500;
+            padding: 0.1rem 0.3rem;
+            background: rgba(1, 148, 254, 0.15);
+            border-radius: 4px;
+            margin-left: 0.15rem;
           }
 
           .mentions-label {

@@ -1,6 +1,18 @@
 import { TelegramClient } from 'telegram';
 import { StringSession } from 'telegram/sessions/index.js';
 import input from 'input';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// ES Module __dirname equivalent
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Load coins database
+const coinsData = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../data/coins.json'), 'utf8')
+);
 
 class TelegramService {
   constructor() {
@@ -91,7 +103,11 @@ class TelegramService {
           try {
             console.log(`📊 Fetching data from ${channel}...`);
             const entity = await this.client.getEntity(channel);
-            const messages = await this.client.getMessages(entity, { limit: 20 }); // Optimized: 50 → 20
+            
+            // ADAPTIVE MESSAGE FETCHING: Fetch more messages to ensure we get recent ones
+            // Aktif kanallar için 50 mesaj yeterli, pasif kanallar için daha fazla gerekebilir
+            const initialLimit = 100; // Increased from 20 to 100 for better time coverage
+            const messages = await this.client.getMessages(entity, { limit: initialLimit });
 
             // Tam kanal bilgisini al
             let participantsCount = 0;
@@ -108,10 +124,12 @@ class TelegramService {
               participantsCount = entity.participantsCount || 0;
             }
 
-            // Filter messages: Only from last 7 days
-            const sevenDaysAgo = Math.floor(Date.now() / 1000) - (7 * 24 * 60 * 60);
-            const recentMessages = messages
-              .filter(msg => msg.date >= sevenDaysAgo)
+            // TIME-BASED FILTERING: Only from last 48 hours (more relevant for trends)
+            // 48 saat = 2 gün, güncel trendler için daha doğru
+            const fortyEightHoursAgo = Math.floor(Date.now() / 1000) - (48 * 60 * 60);
+            
+            let recentMessages = messages
+              .filter(msg => msg.date >= fortyEightHoursAgo)
               .map(msg => ({
                 id: msg.id,
                 text: msg.message || '',
@@ -119,14 +137,25 @@ class TelegramService {
                 views: msg.views || 0,
               }));
 
+            // NORMALIZE: Limit to max 20 messages per channel for fair weight distribution
+            // Her kanaldan maksimum 20 mesaj al, böylece aktif kanallar dominant olmaz
+            if (recentMessages.length > 20) {
+              // En yeni 20 mesajı al
+              recentMessages = recentMessages.slice(0, 20);
+            }
+
             const channelInfo = {
               username: channel,
               title: entity.title || channel,
               participantsCount: participantsCount,
-              recentMessages: recentMessages
+              recentMessages: recentMessages,
+              messageTimeRange: recentMessages.length > 0 ? {
+                oldest: new Date(recentMessages[recentMessages.length - 1].date * 1000).toISOString(),
+                newest: new Date(recentMessages[0].date * 1000).toISOString(),
+              } : null
             };
 
-            console.log(`✅ Fetched ${recentMessages.length}/${messages.length} recent messages from ${channel} (last 7 days)`);
+            console.log(`✅ Fetched ${recentMessages.length} messages from ${channel} (last 48h from ${initialLimit} checked)`);
             return channelInfo;
           } catch (err) {
             console.error(`❌ Error fetching ${channel}:`, err.message);
@@ -161,29 +190,14 @@ class TelegramService {
       // Önce kanallardan verileri al
       const channels = await this.getTrendingChannels();
       
-      // Popüler coinlerin listesi ve alternatifleri
-      const coinPatterns = {
-        'BTC': ['BTC', 'BITCOIN', '₿'],
-        'ETH': ['ETH', 'ETHEREUM', 'Ξ'],
-        'SOL': ['SOL', 'SOLANA'],
-        'BNB': ['BNB', 'BINANCE'],
-        'XRP': ['XRP', 'RIPPLE'],
-        'ADA': ['ADA', 'CARDANO'],
-        'DOGE': ['DOGE', 'DOGECOIN'],
-        'MATIC': ['MATIC', 'POLYGON'],
-        'DOT': ['DOT', 'POLKADOT'],
-        'AVAX': ['AVAX', 'AVALANCHE'],
-        'LINK': ['LINK', 'CHAINLINK'],
-        'UNI': ['UNI', 'UNISWAP'],
-        'ATOM': ['ATOM', 'COSMOS'],
-        'TON': ['TON', 'TONCOIN'],
-        'SHIB': ['SHIB', 'SHIBA'],
-        'ARB': ['ARB', 'ARBITRUM'],
-        'OP': ['OP', 'OPTIMISM'],
-        'PEPE': ['PEPE'],
-        'WIF': ['WIF', 'DOGWIFHAT'],
-        'BONK': ['BONK']
-      };
+      // Load known coins from JSON database (200+ coins)
+      const knownCoins = {};
+      coinsData.coins.forEach(coin => {
+        knownCoins[coin.symbol] = coin.aliases;
+      });
+
+      // Blacklist from JSON
+      const blacklist = new Set(coinsData.blacklist);
 
       // Sentiment keywords
       const positiveKeywords = [
@@ -199,71 +213,104 @@ class TelegramService {
       ];
 
       const coinData = {};
+      const channelCoinData = {}; // Per-channel coin tracking for normalization
       
       // Her kanalın mesajlarını tara
       channels.forEach(channel => {
-        if (channel.recentMessages) {
+        if (channel.recentMessages && channel.recentMessages.length > 0) {
+          // Initialize per-channel data
+          const channelCoins = {};
+          
           channel.recentMessages.forEach(message => {
             const text = (message.text || '').toUpperCase();
+            const originalText = message.text || '';
             
-            // Her coin için pattern kontrol et
-            Object.entries(coinPatterns).forEach(([coin, patterns]) => {
-              patterns.forEach(pattern => {
-                // Kelime sınırlarıyla ara (tüm kelime eşleşmesi)
-                const regex = new RegExp(`\\b${pattern}\\b`, 'g');
-                const matches = text.match(regex);
-                if (matches) {
-                  // Initialize coin data if not exists
-                  if (!coinData[coin]) {
-                    coinData[coin] = {
-                      mentions: 0,
-                      positive: 0,
-                      negative: 0,
-                      neutral: 0
-                    };
-                  }
-                  
-                  coinData[coin].mentions += matches.length;
-                  
-                  // Sentiment analizi
-                  let hasPositive = false;
-                  let hasNegative = false;
-                  
-                  positiveKeywords.forEach(keyword => {
-                    if (text.includes(keyword)) hasPositive = true;
-                  });
-                  
-                  negativeKeywords.forEach(keyword => {
-                    if (text.includes(keyword)) hasNegative = true;
-                  });
-                  
-                  // Sentiment kategorize et
-                  if (hasPositive && !hasNegative) {
-                    coinData[coin].positive++;
-                  } else if (hasNegative && !hasPositive) {
-                    coinData[coin].negative++;
-                  } else {
-                    coinData[coin].neutral++;
-                  }
+            // DYNAMIC DETECTION - Method 1: Find $SYMBOL patterns
+            const dollarSignPattern = /\$([A-Z]{2,6})\b/g;
+            let match;
+            while ((match = dollarSignPattern.exec(originalText)) !== null) {
+              const symbol = match[1].toUpperCase();
+              if (!blacklist.has(symbol)) {
+                this.addCoinMention(channelCoins, symbol, text, positiveKeywords, negativeKeywords);
+              }
+            }
+            
+            // DYNAMIC DETECTION - Method 2: Find uppercase 2-6 letter words
+            const upperCasePattern = /\b([A-Z]{2,6})\b/g;
+            while ((match = upperCasePattern.exec(originalText)) !== null) {
+              const symbol = match[1];
+              // Skip if blacklisted or if it's a sentiment keyword
+              if (!blacklist.has(symbol) && 
+                  !positiveKeywords.includes(symbol) && 
+                  !negativeKeywords.includes(symbol)) {
+                this.addCoinMention(channelCoins, symbol, text, positiveKeywords, negativeKeywords);
+              }
+            }
+            
+            // KNOWN COINS - Check against known coin names
+            Object.entries(knownCoins).forEach(([symbol, aliases]) => {
+              // Check main symbol
+              const symbolRegex = new RegExp(`\\b${symbol}\\b`, 'g');
+              if (symbolRegex.test(text)) {
+                this.addCoinMention(channelCoins, symbol, text, positiveKeywords, negativeKeywords);
+              }
+              
+              // Check aliases
+              aliases.forEach(alias => {
+                const aliasRegex = new RegExp(`\\b${alias}\\b`, 'gi');
+                if (aliasRegex.test(text)) {
+                  this.addCoinMention(channelCoins, symbol, text, positiveKeywords, negativeKeywords);
                 }
               });
             });
           });
+          
+          // CHANNEL NORMALIZATION: Add this channel's coins to global with equal weight
+          // Her kanal eşit ağırlıkta, aktif kanallar dominant olmaz
+          Object.entries(channelCoins).forEach(([symbol, data]) => {
+            if (!coinData[symbol]) {
+              coinData[symbol] = {
+                mentions: 0,
+                positive: 0,
+                negative: 0,
+                neutral: 0,
+                channelCount: 0 // Kaç kanal bu coin'den bahsetti
+              };
+            }
+            
+            // Normalize by channel: Add weighted data
+            // Her kanaldan maksimum katkı sınırlı (örn: 1 channel = 1 vote weight)
+            coinData[symbol].mentions += Math.min(data.mentions, 5); // Max 5 mention per channel
+            coinData[symbol].positive += data.positive;
+            coinData[symbol].negative += data.negative;
+            coinData[symbol].neutral += data.neutral;
+            coinData[symbol].channelCount++;
+          });
         }
       });
 
+      // Filter out coins with less than 2 mentions or mentioned in less than 2 channels
+      // Bu sayede sadece 1 kanalda çok bahsedilen coinler filtreleniyor
+      const filteredCoinData = Object.entries(coinData)
+        .filter(([_, data]) => data.mentions >= 2 && data.channelCount >= 2);
+
       // En çok bahsedilen coinleri sırala ve sentiment ekle
-      const trendingCoins = Object.entries(coinData)
+      const trendingCoins = filteredCoinData
         .map(([coin, data]) => {
           const total = data.mentions;
           const positivePercent = total > 0 ? Math.round((data.positive / total) * 100) : 0;
           const negativePercent = total > 0 ? Math.round((data.negative / total) * 100) : 0;
           const neutralPercent = 100 - positivePercent - negativePercent;
           
+          // Trend score: mentions + channel diversity bonus
+          // Daha fazla kanalda bahsedilen coinler daha önemli
+          const trendScore = data.mentions + (data.channelCount * 2);
+          
           return {
             symbol: coin,
             mentions: total,
-            trend: total > 10 ? 'hot' : total > 5 ? 'rising' : 'normal',
+            channelCount: data.channelCount,
+            trend: trendScore > 15 ? 'hot' : trendScore > 8 ? 'rising' : 'normal',
             sentiment: {
               positive: positivePercent,
               negative: negativePercent,
@@ -272,14 +319,57 @@ class TelegramService {
             }
           };
         })
-        .sort((a, b) => b.mentions - a.mentions)
-        .slice(0, 10); // Top 10
+        .sort((a, b) => {
+          // Primary sort: channel diversity (daha fazla kanal = daha güvenilir trend)
+          if (b.channelCount !== a.channelCount) {
+            return b.channelCount - a.channelCount;
+          }
+          // Secondary sort: mentions
+          return b.mentions - a.mentions;
+        })
+        .slice(0, 15); // Top 15 (increased from 10)
 
-      console.log('🪙 Trending coins with sentiment:', trendingCoins);
+      console.log(`🪙 Trending coins with sentiment (DYNAMIC DETECTION - ${coinsData.coins.length} coins in database):`, trendingCoins);
       return trendingCoins;
     } catch (error) {
       console.error('Error getting trending coins:', error);
       throw error;
+    }
+  }
+
+  // Helper method to add coin mention and analyze sentiment
+  addCoinMention(coinData, symbol, text, positiveKeywords, negativeKeywords) {
+    // Initialize coin data if not exists
+    if (!coinData[symbol]) {
+      coinData[symbol] = {
+        mentions: 0,
+        positive: 0,
+        negative: 0,
+        neutral: 0
+      };
+    }
+    
+    coinData[symbol].mentions++;
+    
+    // Sentiment analizi
+    let hasPositive = false;
+    let hasNegative = false;
+    
+    positiveKeywords.forEach(keyword => {
+      if (text.includes(keyword)) hasPositive = true;
+    });
+    
+    negativeKeywords.forEach(keyword => {
+      if (text.includes(keyword)) hasNegative = true;
+    });
+    
+    // Sentiment kategorize et
+    if (hasPositive && !hasNegative) {
+      coinData[symbol].positive++;
+    } else if (hasNegative && !hasPositive) {
+      coinData[symbol].negative++;
+    } else {
+      coinData[symbol].neutral++;
     }
   }
 

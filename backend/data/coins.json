@@ -1,0 +1,11014 @@
+{
+  "coins": [
+    {
+      "symbol": "0XBTC",
+      "name": "0xBitcoin",
+      "aliases": [
+        "0XBITCOIN"
+      ]
+    },
+    {
+      "symbol": "1INCH",
+      "name": "1inch",
+      "aliases": [
+        "ONEINCH"
+      ]
+    },
+    {
+      "symbol": "1SG",
+      "name": "1SG",
+      "aliases": []
+    },
+    {
+      "symbol": "1ST",
+      "name": "FirstBlood",
+      "aliases": [
+        "FIRSTBLOOD"
+      ]
+    },
+    {
+      "symbol": "1WO",
+      "name": "1WO",
+      "aliases": []
+    },
+    {
+      "symbol": "22X",
+      "name": "22x Fund",
+      "aliases": [
+        "FUND"
+      ]
+    },
+    {
+      "symbol": "2DC",
+      "name": "DualChain",
+      "aliases": [
+        "DUALCHAIN"
+      ]
+    },
+    {
+      "symbol": "300",
+      "name": "300 Token Sparta",
+      "aliases": [
+        "TOKEN",
+        "SPARTA"
+      ]
+    },
+    {
+      "symbol": "3LT",
+      "name": "TrillionToken",
+      "aliases": [
+        "TRILLIONTOKEN"
+      ]
+    },
+    {
+      "symbol": "A18",
+      "name": "Apollo18",
+      "aliases": [
+        "APOLLO18"
+      ]
+    },
+    {
+      "symbol": "AAVE",
+      "name": "Aave",
+      "aliases": []
+    },
+    {
+      "symbol": "ABCH",
+      "name": "ABBC Cash",
+      "aliases": [
+        "ABBC",
+        "CASH"
+      ]
+    },
+    {
+      "symbol": "ABT",
+      "name": "ArcBlock Token",
+      "aliases": [
+        "ARCBLOCK",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ABYSS",
+      "name": "ABYSS",
+      "aliases": []
+    },
+    {
+      "symbol": "ACC",
+      "name": "Accelerator Network",
+      "aliases": [
+        "ACCELERATOR",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "ACE",
+      "name": "ACE",
+      "aliases": []
+    },
+    {
+      "symbol": "ADA",
+      "name": "Cardano",
+      "aliases": [
+        "CARDANO"
+      ]
+    },
+    {
+      "symbol": "ADB",
+      "name": "AdBank",
+      "aliases": [
+        "ADBANK"
+      ]
+    },
+    {
+      "symbol": "ADH",
+      "name": "AdHive Token",
+      "aliases": [
+        "ADHIVE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ADI",
+      "name": "Aditus",
+      "aliases": [
+        "ADITUS"
+      ]
+    },
+    {
+      "symbol": "ADL",
+      "name": "Adelphoi",
+      "aliases": [
+        "ADELPHOI"
+      ]
+    },
+    {
+      "symbol": "ADMC",
+      "name": "Adamant (Polygon)",
+      "aliases": [
+        "ADAMANT"
+      ]
+    },
+    {
+      "symbol": "ADST",
+      "name": "AdShares",
+      "aliases": [
+        "ADSHARES"
+      ]
+    },
+    {
+      "symbol": "ADT",
+      "name": "AdToken",
+      "aliases": [
+        "ADTOKEN"
+      ]
+    },
+    {
+      "symbol": "ADX",
+      "name": "AdEx Network",
+      "aliases": [
+        "ADEX",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "AE",
+      "name": "Aeternity",
+      "aliases": [
+        "AETERNITY"
+      ]
+    },
+    {
+      "symbol": "AERGO",
+      "name": "Aergo",
+      "aliases": []
+    },
+    {
+      "symbol": "AETHC ",
+      "name": "Ankr ETH2 Reward Bearing Certificate (Polygon)",
+      "aliases": [
+        "ANKR",
+        "ETH2",
+        "REWARD",
+        "BEARING",
+        "CERTIFICATE"
+      ]
+    },
+    {
+      "symbol": "AGI",
+      "name": "SingularityNET",
+      "aliases": [
+        "SINGULARITYNET"
+      ]
+    },
+    {
+      "symbol": "AGIX",
+      "name": "SingularityNET",
+      "aliases": [
+        "SINGULARITYNET"
+      ]
+    },
+    {
+      "symbol": "AI",
+      "name": "PolyAi",
+      "aliases": [
+        "POLYAI"
+      ]
+    },
+    {
+      "symbol": "AID",
+      "name": "AidCoin",
+      "aliases": [
+        "AIDCOIN"
+      ]
+    },
+    {
+      "symbol": "AION",
+      "name": "Aion",
+      "aliases": []
+    },
+    {
+      "symbol": "AIOZ",
+      "name": "Aioz Network (Polygon)",
+      "aliases": [
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "AIR",
+      "name": "AirToken",
+      "aliases": [
+        "AIRTOKEN"
+      ]
+    },
+    {
+      "symbol": "AIX",
+      "name": "Aigang",
+      "aliases": [
+        "AIGANG"
+      ]
+    },
+    {
+      "symbol": "AKA",
+      "name": "Akroma",
+      "aliases": [
+        "AKROMA"
+      ]
+    },
+    {
+      "symbol": "AKC",
+      "name": "ARTWOOK COIN",
+      "aliases": [
+        "ARTWOOK",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "ALCO",
+      "name": "ALCO",
+      "aliases": []
+    },
+    {
+      "symbol": "ALCX",
+      "name": "Alchemix",
+      "aliases": [
+        "ALCHEMIX"
+      ]
+    },
+    {
+      "symbol": "ALGO",
+      "name": "Algorand",
+      "aliases": [
+        "ALGORAND"
+      ]
+    },
+    {
+      "symbol": "ALI",
+      "name": "AiLink Token",
+      "aliases": [
+        "AILINK",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ALIS",
+      "name": "ALIS Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ALN",
+      "name": "Aluna (Polygon)",
+      "aliases": [
+        "ALUNA"
+      ]
+    },
+    {
+      "symbol": "ALP",
+      "name": "Alphacon",
+      "aliases": [
+        "ALPHACON"
+      ]
+    },
+    {
+      "symbol": "ALPACA",
+      "name": "Alpaca Finance",
+      "aliases": [
+        "ALPACAFINANCE"
+      ]
+    },
+    {
+      "symbol": "ALPHA",
+      "name": "Alpha Finance",
+      "aliases": [
+        "ALPHAFINANCE"
+      ]
+    },
+    {
+      "symbol": "ALTS",
+      "name": "ALTS Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ALV",
+      "name": "Alluva",
+      "aliases": [
+        "ALLUVA"
+      ]
+    },
+    {
+      "symbol": "ALX",
+      "name": "ALX",
+      "aliases": []
+    },
+    {
+      "symbol": "AMAAVE",
+      "name": "Aave Matic Market Aave (Polygon)",
+      "aliases": [
+        "AAVE",
+        "MATIC",
+        "MARKET"
+      ]
+    },
+    {
+      "symbol": "AMB",
+      "name": "Amber Token",
+      "aliases": [
+        "AMBER",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "AMDAI",
+      "name": "Aave Matic Market Dai (Polygon)",
+      "aliases": [
+        "AAVE",
+        "MATIC",
+        "MARKET",
+        "DAI"
+      ]
+    },
+    {
+      "symbol": "AMIS",
+      "name": "AMIS",
+      "aliases": []
+    },
+    {
+      "symbol": "AMLT",
+      "name": "AMLT",
+      "aliases": []
+    },
+    {
+      "symbol": "AMN",
+      "name": "Amon",
+      "aliases": [
+        "AMON"
+      ]
+    },
+    {
+      "symbol": "AMO",
+      "name": "AMO Coin",
+      "aliases": [
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "AMP",
+      "name": "Amp (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "AMPL",
+      "name": "Ampleforth",
+      "aliases": [
+        "AMPLEFORTH"
+      ]
+    },
+    {
+      "symbol": "AMTC",
+      "name": "AmberTime Coin",
+      "aliases": [
+        "AMBERTIME",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "AMUSDC ",
+      "name": "Aave Matic Market USDC (Polygon)",
+      "aliases": [
+        "AAVE",
+        "MATIC",
+        "MARKET",
+        "USDC"
+      ]
+    },
+    {
+      "symbol": "AMUSDT ",
+      "name": "Aave Matic Market USDT (Polygon)",
+      "aliases": [
+        "AAVE",
+        "MATIC",
+        "MARKET",
+        "USDT"
+      ]
+    },
+    {
+      "symbol": "AMWBTC ",
+      "name": "Aave Matic Market wBTC (Polygon)",
+      "aliases": [
+        "AAVE",
+        "MATIC",
+        "MARKET",
+        "WBTC"
+      ]
+    },
+    {
+      "symbol": "AMWETH ",
+      "name": "Aave Matic Market wETH (Polygon)",
+      "aliases": [
+        "AAVE",
+        "MATIC",
+        "MARKET",
+        "WETH"
+      ]
+    },
+    {
+      "symbol": "AMWMATIC ",
+      "name": "Aave Matic Market wMATIC (Polygon)",
+      "aliases": [
+        "AAVE",
+        "MATIC",
+        "MARKET",
+        "WMATIC"
+      ]
+    },
+    {
+      "symbol": "ANALOS",
+      "name": "Analos",
+      "aliases": []
+    },
+    {
+      "symbol": "ANKR",
+      "name": "Ankr",
+      "aliases": []
+    },
+    {
+      "symbol": "ANT",
+      "name": "Aragon",
+      "aliases": [
+        "ARAGON"
+      ]
+    },
+    {
+      "symbol": "AOA",
+      "name": "Aurora",
+      "aliases": [
+        "AURORA"
+      ]
+    },
+    {
+      "symbol": "APE",
+      "name": "ApeCoin",
+      "aliases": [
+        "APECOIN"
+      ]
+    },
+    {
+      "symbol": "APIS",
+      "name": "APIS",
+      "aliases": []
+    },
+    {
+      "symbol": "APOT",
+      "name": "Apot",
+      "aliases": []
+    },
+    {
+      "symbol": "APPC",
+      "name": "AppCoins",
+      "aliases": [
+        "APPCOINS"
+      ]
+    },
+    {
+      "symbol": "APT",
+      "name": "Aptos",
+      "aliases": [
+        "APTOS"
+      ]
+    },
+    {
+      "symbol": "AR",
+      "name": "Arweave",
+      "aliases": [
+        "ARWEAVE"
+      ]
+    },
+    {
+      "symbol": "ARB",
+      "name": "Arbitrum",
+      "aliases": [
+        "ARBITRUM"
+      ]
+    },
+    {
+      "symbol": "ARBI",
+      "name": "ARBI Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ARC",
+      "name": "ARC",
+      "aliases": []
+    },
+    {
+      "symbol": "ARCT",
+      "name": "ArbitrageCT",
+      "aliases": [
+        "ARBITRAGECT"
+      ]
+    },
+    {
+      "symbol": "ARD",
+      "name": "Accord",
+      "aliases": [
+        "ACCORD"
+      ]
+    },
+    {
+      "symbol": "ARE",
+      "name": "Aurei",
+      "aliases": [
+        "AUREI"
+      ]
+    },
+    {
+      "symbol": "ARK",
+      "name": "Ark",
+      "aliases": []
+    },
+    {
+      "symbol": "ARKM",
+      "name": "Arkham",
+      "aliases": [
+        "ARKHAM"
+      ]
+    },
+    {
+      "symbol": "ARMOR",
+      "name": "Armor (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "ARN",
+      "name": "Aeron Token",
+      "aliases": [
+        "AERON",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ART",
+      "name": "ART",
+      "aliases": []
+    },
+    {
+      "symbol": "ARTS",
+      "name": "ARTISTA",
+      "aliases": [
+        "ARTISTA"
+      ]
+    },
+    {
+      "symbol": "ARX",
+      "name": "ARX",
+      "aliases": []
+    },
+    {
+      "symbol": "ARXT",
+      "name": "Assistive Reality ARX",
+      "aliases": [
+        "ASSISTIVE",
+        "REALITY",
+        "ARX"
+      ]
+    },
+    {
+      "symbol": "ARY",
+      "name": "Block Array",
+      "aliases": [
+        "BLOCK",
+        "ARRAY"
+      ]
+    },
+    {
+      "symbol": "AST",
+      "name": "Airswap",
+      "aliases": [
+        "AIRSWAP"
+      ]
+    },
+    {
+      "symbol": "ASTRO",
+      "name": "AstroTokens",
+      "aliases": [
+        "ASTROTOKENS"
+      ]
+    },
+    {
+      "symbol": "ATH",
+      "name": "Athenian Warrior Token",
+      "aliases": [
+        "ATHENIAN",
+        "WARRIOR",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ATL",
+      "name": "ATL",
+      "aliases": []
+    },
+    {
+      "symbol": "ATM",
+      "name": "ATMChain",
+      "aliases": [
+        "ATMCHAIN"
+      ]
+    },
+    {
+      "symbol": "ATMI",
+      "name": "Atonomi",
+      "aliases": [
+        "ATONOMI"
+      ]
+    },
+    {
+      "symbol": "ATOM",
+      "name": "Cosmos",
+      "aliases": [
+        "COSMOS"
+      ]
+    },
+    {
+      "symbol": "ATS",
+      "name": "Authorship",
+      "aliases": [
+        "AUTHORSHIP"
+      ]
+    },
+    {
+      "symbol": "ATT",
+      "name": "Atmatrix Token",
+      "aliases": [
+        "ATMATRIX",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ATTN",
+      "name": "Attention Token",
+      "aliases": [
+        "ATTENTION",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ATX",
+      "name": "Aston X",
+      "aliases": [
+        "ASTON"
+      ]
+    },
+    {
+      "symbol": "AUC",
+      "name": "Auctus",
+      "aliases": [
+        "AUCTUS"
+      ]
+    },
+    {
+      "symbol": "AUDIO",
+      "name": "Audius",
+      "aliases": [
+        "AUDIUS"
+      ]
+    },
+    {
+      "symbol": "AURA",
+      "name": "Aura DAO",
+      "aliases": [
+        "DAO"
+      ]
+    },
+    {
+      "symbol": "AUTO",
+      "name": "Auto",
+      "aliases": []
+    },
+    {
+      "symbol": "AVA",
+      "name": "AVA",
+      "aliases": []
+    },
+    {
+      "symbol": "AVAX",
+      "name": "Avalanche",
+      "aliases": [
+        "AVALANCHE"
+      ]
+    },
+    {
+      "symbol": "AVT",
+      "name": "AVT",
+      "aliases": []
+    },
+    {
+      "symbol": "AWG",
+      "name": "AurusGOLD",
+      "aliases": [
+        "AURUSGOLD"
+      ]
+    },
+    {
+      "symbol": "AWP",
+      "name": "AurusPLATINUM",
+      "aliases": [
+        "AURUSPLATINUM"
+      ]
+    },
+    {
+      "symbol": "AWS",
+      "name": "AurusSILVER",
+      "aliases": [
+        "AURUSSILVER"
+      ]
+    },
+    {
+      "symbol": "AWX",
+      "name": "AurusDeFi",
+      "aliases": [
+        "AURUSDEFI"
+      ]
+    },
+    {
+      "symbol": "AX1",
+      "name": "AX1 Mining Token",
+      "aliases": [
+        "MINING",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "AXPR",
+      "name": "AXPR",
+      "aliases": []
+    },
+    {
+      "symbol": "AXS",
+      "name": "Axie Infinity",
+      "aliases": [
+        "AXIE",
+        "AXIEINFINITY"
+      ]
+    },
+    {
+      "symbol": "B2BX",
+      "name": "B2BX",
+      "aliases": []
+    },
+    {
+      "symbol": "BAC",
+      "name": "BAC (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "BADGER",
+      "name": "Badger DAO",
+      "aliases": [
+        "BADGERDAO"
+      ]
+    },
+    {
+      "symbol": "BAKE",
+      "name": "BakerySwap",
+      "aliases": [
+        "BAKERYSWAP"
+      ]
+    },
+    {
+      "symbol": "BAL",
+      "name": "Balancer",
+      "aliases": [
+        "BALANCER"
+      ]
+    },
+    {
+      "symbol": "BANCA",
+      "name": "BANCA",
+      "aliases": []
+    },
+    {
+      "symbol": "BAND",
+      "name": "Band Protocol",
+      "aliases": [
+        "BANDPROTOCOL"
+      ]
+    },
+    {
+      "symbol": "BANX",
+      "name": "BANX",
+      "aliases": []
+    },
+    {
+      "symbol": "BAR",
+      "name": "Billionaire Ambition",
+      "aliases": [
+        "BILLIONAIRE",
+        "AMBITION"
+      ]
+    },
+    {
+      "symbol": "BAS",
+      "name": "BitAsean",
+      "aliases": [
+        "BITASEAN"
+      ]
+    },
+    {
+      "symbol": "BAT",
+      "name": "Basic Attention",
+      "aliases": [
+        "BASICATTENTION"
+      ]
+    },
+    {
+      "symbol": "BAX",
+      "name": "BAX",
+      "aliases": []
+    },
+    {
+      "symbol": "BBC",
+      "name": "B2BCoin",
+      "aliases": [
+        "B2BCOIN"
+      ]
+    },
+    {
+      "symbol": "BBI",
+      "name": "Beluga Banking Infrastructure Token",
+      "aliases": [
+        "BELUGA",
+        "BANKING",
+        "INFRASTRUCTURE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BBK",
+      "name": "BRICKBLOCK TOKEN",
+      "aliases": [
+        "BRICKBLOCK",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BBN",
+      "name": "BBN",
+      "aliases": []
+    },
+    {
+      "symbol": "BBO",
+      "name": "Bigboom",
+      "aliases": [
+        "BIGBOOM"
+      ]
+    },
+    {
+      "symbol": "BC",
+      "name": "Block-Chain.com",
+      "aliases": [
+        "BLOCKCHAINCOM"
+      ]
+    },
+    {
+      "symbol": "BCAP",
+      "name": "BCAP",
+      "aliases": []
+    },
+    {
+      "symbol": "BCASH",
+      "name": "Bankcoin",
+      "aliases": [
+        "BANKCOIN"
+      ]
+    },
+    {
+      "symbol": "BCBC",
+      "name": "Beercoin",
+      "aliases": [
+        "BEERCOIN"
+      ]
+    },
+    {
+      "symbol": "BCDN",
+      "name": "BCDN",
+      "aliases": []
+    },
+    {
+      "symbol": "BCDT",
+      "name": "Blockchain Certified Data Token",
+      "aliases": [
+        "BLOCKCHAIN",
+        "CERTIFIED",
+        "DATA",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BCH",
+      "name": "Bitcoin Cash",
+      "aliases": [
+        "BITCOINCASH"
+      ]
+    },
+    {
+      "symbol": "BCL",
+      "name": "BCL",
+      "aliases": []
+    },
+    {
+      "symbol": "BCPT",
+      "name": "BCPT",
+      "aliases": []
+    },
+    {
+      "symbol": "BCV",
+      "name": "BitCapitalVendor Token",
+      "aliases": [
+        "BITCAPITALVENDOR",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BDG",
+      "name": "BitDegree Token",
+      "aliases": [
+        "BITDEGREE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BEAT",
+      "name": "BEAT Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BEE",
+      "name": "Bee Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BEERCOIN",
+      "name": "BeerCoin",
+      "aliases": []
+    },
+    {
+      "symbol": "BEPRO",
+      "name": "Betprotocoltoken (Polygon)",
+      "aliases": [
+        "BETPROTOCOLTOKEN"
+      ]
+    },
+    {
+      "symbol": "BERRY",
+      "name": "Berry",
+      "aliases": []
+    },
+    {
+      "symbol": "BET",
+      "name": "BET",
+      "aliases": []
+    },
+    {
+      "symbol": "BETA",
+      "name": "Beta Finance",
+      "aliases": [
+        "BETAFINANCE"
+      ]
+    },
+    {
+      "symbol": "BETHER",
+      "name": "Bethereum",
+      "aliases": [
+        "BETHEREUM"
+      ]
+    },
+    {
+      "symbol": "BETR",
+      "name": "BETR",
+      "aliases": []
+    },
+    {
+      "symbol": "BEZ",
+      "name": "Bezop",
+      "aliases": [
+        "BEZOP"
+      ]
+    },
+    {
+      "symbol": "BHAO",
+      "name": "BitHao Token",
+      "aliases": [
+        "BITHAO",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BHPC",
+      "name": "BHPCash",
+      "aliases": [
+        "BHPCASH"
+      ]
+    },
+    {
+      "symbol": "BHR",
+      "name": "BETHER",
+      "aliases": [
+        "BETHER"
+      ]
+    },
+    {
+      "symbol": "BIFI",
+      "name": "Beefy.finance (Polygon)",
+      "aliases": [
+        "BEEFYFINANCE"
+      ]
+    },
+    {
+      "symbol": "BIT",
+      "name": "BlockEstate Investment Token",
+      "aliases": [
+        "BLOCKESTATE",
+        "INVESTMENT",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BITCAR",
+      "name": "BitCar Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BITPARK",
+      "name": "BITPARK",
+      "aliases": []
+    },
+    {
+      "symbol": "BIX",
+      "name": "BIX Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BKB",
+      "name": "BitKeep Token",
+      "aliases": [
+        "BITKEEP",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BKC",
+      "name": "Bankcoin Cash",
+      "aliases": [
+        "BANKCOIN",
+        "CASH"
+      ]
+    },
+    {
+      "symbol": "BKRX",
+      "name": "BlockRx",
+      "aliases": [
+        "BLOCKRX"
+      ]
+    },
+    {
+      "symbol": "BKX",
+      "name": "BANKEX",
+      "aliases": [
+        "BANKEX"
+      ]
+    },
+    {
+      "symbol": "BLINK",
+      "name": "Blink",
+      "aliases": []
+    },
+    {
+      "symbol": "BLN",
+      "name": "Boleno",
+      "aliases": [
+        "BOLENO"
+      ]
+    },
+    {
+      "symbol": "BLO",
+      "name": "BLONDCOIN",
+      "aliases": [
+        "BLONDCOIN"
+      ]
+    },
+    {
+      "symbol": "BLT",
+      "name": "Bloom",
+      "aliases": [
+        "BLOOM"
+      ]
+    },
+    {
+      "symbol": "BLUE",
+      "name": "BLUE",
+      "aliases": []
+    },
+    {
+      "symbol": "BLUR",
+      "name": "Blur",
+      "aliases": []
+    },
+    {
+      "symbol": "BLX",
+      "name": "Iconomi",
+      "aliases": [
+        "ICONOMI"
+      ]
+    },
+    {
+      "symbol": "BLZ",
+      "name": "Bluzelle",
+      "aliases": [
+        "BLUZELLE"
+      ]
+    },
+    {
+      "symbol": "BMC",
+      "name": "Blackmoon Crypto BMC Token",
+      "aliases": [
+        "BLACKMOON",
+        "CRYPTO",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BMT",
+      "name": "BMT",
+      "aliases": []
+    },
+    {
+      "symbol": "BMX",
+      "name": "BitMartToken",
+      "aliases": [
+        "BITMARTTOKEN"
+      ]
+    },
+    {
+      "symbol": "BNB",
+      "name": "BNB",
+      "aliases": [
+        "BINANCE"
+      ]
+    },
+    {
+      "symbol": "BNC",
+      "name": "Bionic",
+      "aliases": [
+        "BIONIC"
+      ]
+    },
+    {
+      "symbol": "BNFT",
+      "name": "Benefits Coin",
+      "aliases": [
+        "BENEFITS",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "BNN",
+      "name": "BrokerNekoNetwork",
+      "aliases": [
+        "BROKERNEKONETWORK"
+      ]
+    },
+    {
+      "symbol": "BNT",
+      "name": "Bancor",
+      "aliases": [
+        "BANCOR"
+      ]
+    },
+    {
+      "symbol": "BNTY",
+      "name": "Bounty0x Token",
+      "aliases": [
+        "BOUNTY0X",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BOB",
+      "name": "Bob's repair",
+      "aliases": [
+        "BOBS",
+        "REPAIR"
+      ]
+    },
+    {
+      "symbol": "BOBA",
+      "name": "Boba Network",
+      "aliases": [
+        "BOBANETWORK"
+      ]
+    },
+    {
+      "symbol": "BOLT",
+      "name": "Bolt token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BOME",
+      "name": "BOOK OF MEME",
+      "aliases": [
+        "BOOKOFMEME"
+      ]
+    },
+    {
+      "symbol": "BON",
+      "name": "Bonpay",
+      "aliases": [
+        "BONPAY"
+      ]
+    },
+    {
+      "symbol": "BONE",
+      "name": "Bone Token (boneswap) (Polygon)",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BONK",
+      "name": "Bonk",
+      "aliases": []
+    },
+    {
+      "symbol": "BOP",
+      "name": "BlockOptiopns Token",
+      "aliases": [
+        "BLOCKOPTIOPNS",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BORING",
+      "name": "Boringdao(pos) (Polygon)",
+      "aliases": [
+        "BORINGDAO"
+      ]
+    },
+    {
+      "symbol": "BOU",
+      "name": "Boule Coin",
+      "aliases": [
+        "BOULE",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "BOUTS",
+      "name": "BoutsPro",
+      "aliases": [
+        "BOUTSPRO"
+      ]
+    },
+    {
+      "symbol": "BOX",
+      "name": "BOX Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BOXX",
+      "name": "BOXX",
+      "aliases": []
+    },
+    {
+      "symbol": "BPC",
+      "name": "BestPick Coin",
+      "aliases": [
+        "BESTPICK",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "BPT",
+      "name": "Blockport Token",
+      "aliases": [
+        "BLOCKPORT",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BRAT",
+      "name": "BRAT",
+      "aliases": []
+    },
+    {
+      "symbol": "BRD",
+      "name": "Bread",
+      "aliases": [
+        "BREAD"
+      ]
+    },
+    {
+      "symbol": "BRP",
+      "name": "Rental Processor Token",
+      "aliases": [
+        "RENTAL",
+        "PROCESSOR",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BSDC",
+      "name": "BSDC",
+      "aliases": []
+    },
+    {
+      "symbol": "BST",
+      "name": "BlocksquareToken",
+      "aliases": [
+        "BLOCKSQUARETOKEN"
+      ]
+    },
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "aliases": [
+        "BITCOIN",
+        "₿",
+        "BTCUSD"
+      ]
+    },
+    {
+      "symbol": "BTC2X-FLI",
+      "name": "BTC 2x Flexible Leverage Index (Polygon)",
+      "aliases": [
+        "BTC",
+        "FLEXIBLE",
+        "LEVERAGE",
+        "INDEX"
+      ]
+    },
+    {
+      "symbol": "BTCA",
+      "name": "BitAir",
+      "aliases": [
+        "BITAIR"
+      ]
+    },
+    {
+      "symbol": "BTCE",
+      "name": "EthereumBitcoin",
+      "aliases": [
+        "ETHEREUMBITCOIN"
+      ]
+    },
+    {
+      "symbol": "BTCL",
+      "name": "BTC Lite",
+      "aliases": [
+        "BTC",
+        "LITE"
+      ]
+    },
+    {
+      "symbol": "BTCONE",
+      "name": "BitCoin ONE",
+      "aliases": [
+        "BITCOIN",
+        "ONE"
+      ]
+    },
+    {
+      "symbol": "BTCP",
+      "name": "Bitcoin Private",
+      "aliases": [
+        "BITCOIN",
+        "PRIVATE"
+      ]
+    },
+    {
+      "symbol": "BTCR",
+      "name": "BitCoin Red",
+      "aliases": [
+        "BITCOIN",
+        "RED"
+      ]
+    },
+    {
+      "symbol": "BTE",
+      "name": "BTE",
+      "aliases": []
+    },
+    {
+      "symbol": "BTG",
+      "name": "Bitcoin Gold",
+      "aliases": [
+        "BITCOIN",
+        "GOLD"
+      ]
+    },
+    {
+      "symbol": "BTH",
+      "name": "Bytether",
+      "aliases": [
+        "BYTETHER"
+      ]
+    },
+    {
+      "symbol": "BTK",
+      "name": "Bitcoin Token",
+      "aliases": [
+        "BITCOIN",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "BTL",
+      "name": "BTL (Battle)",
+      "aliases": []
+    },
+    {
+      "symbol": "BTM",
+      "name": "Bytom",
+      "aliases": [
+        "BYTOM"
+      ]
+    },
+    {
+      "symbol": "BTO",
+      "name": "BTOCoin",
+      "aliases": [
+        "BTOCOIN"
+      ]
+    },
+    {
+      "symbol": "BTQ",
+      "name": "Bitcoin Boutique",
+      "aliases": [
+        "BITCOIN",
+        "BOUTIQUE"
+      ]
+    },
+    {
+      "symbol": "BTR",
+      "name": "Bitether",
+      "aliases": [
+        "BITETHER"
+      ]
+    },
+    {
+      "symbol": "BTRN",
+      "name": "BTRN",
+      "aliases": []
+    },
+    {
+      "symbol": "BTT",
+      "name": "BitTorrent",
+      "aliases": [
+        "BITTORRENT"
+      ]
+    },
+    {
+      "symbol": "BTU",
+      "name": "BTU Protocol",
+      "aliases": [
+        "PROTOCOL"
+      ]
+    },
+    {
+      "symbol": "BTZ",
+      "name": "BTZ by Bunz",
+      "aliases": [
+        "BUNZ"
+      ]
+    },
+    {
+      "symbol": "BTZC",
+      "name": "BeatzCoin (TRC10)",
+      "aliases": [
+        "BEATZCOIN"
+      ]
+    },
+    {
+      "symbol": "BUC",
+      "name": "BeeUnity Chain",
+      "aliases": [
+        "BEEUNITY",
+        "CHAIN"
+      ]
+    },
+    {
+      "symbol": "BURGER",
+      "name": "BurgerSwap",
+      "aliases": [
+        "BURGERSWAP"
+      ]
+    },
+    {
+      "symbol": "BUSD",
+      "name": "Binance USD (bep2)",
+      "aliases": [
+        "BINANCE",
+        "USD"
+      ]
+    },
+    {
+      "symbol": "BWX",
+      "name": "BlueWhaleToken",
+      "aliases": [
+        "BLUEWHALETOKEN"
+      ]
+    },
+    {
+      "symbol": "BXX (ERC20)",
+      "name": "Baanx (ERC20)",
+      "aliases": [
+        "BAANX"
+      ]
+    },
+    {
+      "symbol": "BZ",
+      "name": "BZ",
+      "aliases": []
+    },
+    {
+      "symbol": "BZNT",
+      "name": "BezantToken",
+      "aliases": [
+        "BEZANTTOKEN"
+      ]
+    },
+    {
+      "symbol": "BZX",
+      "name": "BZX Protocol Token (Polygon)",
+      "aliases": [
+        "PROTOCOL",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "C10",
+      "name": "CRYPTO10 Hedged",
+      "aliases": [
+        "CRYPTO10",
+        "HEDGED"
+      ]
+    },
+    {
+      "symbol": "C20",
+      "name": "CRYPTO20",
+      "aliases": [
+        "CRYPTO20"
+      ]
+    },
+    {
+      "symbol": "C8",
+      "name": "Carboneum",
+      "aliases": [
+        "CARBONEUM"
+      ]
+    },
+    {
+      "symbol": "CAG",
+      "name": "Change Bank",
+      "aliases": [
+        "CHANGE",
+        "BANK"
+      ]
+    },
+    {
+      "symbol": "CAKE",
+      "name": "PancakeSwap",
+      "aliases": [
+        "PANCAKESWAP"
+      ]
+    },
+    {
+      "symbol": "CAN",
+      "name": "CAN",
+      "aliases": []
+    },
+    {
+      "symbol": "CANTO",
+      "name": "Canto",
+      "aliases": []
+    },
+    {
+      "symbol": "CAPP",
+      "name": "Cappasity",
+      "aliases": [
+        "CAPPASITY"
+      ]
+    },
+    {
+      "symbol": "CAR",
+      "name": "CarBlock",
+      "aliases": [
+        "CARBLOCK"
+      ]
+    },
+    {
+      "symbol": "CARB",
+      "name": "CarbCoin",
+      "aliases": [
+        "CARBCOIN"
+      ]
+    },
+    {
+      "symbol": "CARD",
+      "name": "Cardstack Token",
+      "aliases": [
+        "CARDSTACK",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "CARE",
+      "name": "Token CARE",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "CAS",
+      "name": "Cashaa",
+      "aliases": [
+        "CASHAA"
+      ]
+    },
+    {
+      "symbol": "CAT",
+      "name": "CAT (BitClave)",
+      "aliases": []
+    },
+    {
+      "symbol": "CATS",
+      "name": "CATCOIN",
+      "aliases": [
+        "CATCOIN"
+      ]
+    },
+    {
+      "symbol": "CBC",
+      "name": "CashBetCoin",
+      "aliases": [
+        "CASHBETCOIN"
+      ]
+    },
+    {
+      "symbol": "CBIX",
+      "name": "Cubrix",
+      "aliases": [
+        "CUBRIX"
+      ]
+    },
+    {
+      "symbol": "CBM",
+      "name": "CryptoBonusMiles",
+      "aliases": [
+        "CRYPTOBONUSMILES"
+      ]
+    },
+    {
+      "symbol": "CBT",
+      "name": "CommerceBlock",
+      "aliases": [
+        "COMMERCEBLOCK"
+      ]
+    },
+    {
+      "symbol": "CC3",
+      "name": "Coal Coin",
+      "aliases": [
+        "COAL",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "CCC",
+      "name": "CryptoCrashCourse",
+      "aliases": [
+        "CRYPTOCRASHCOURSE"
+      ]
+    },
+    {
+      "symbol": "CCCX",
+      "name": "Clipper Coin Capital",
+      "aliases": [
+        "CLIPPER",
+        "COIN",
+        "CAPITAL"
+      ]
+    },
+    {
+      "symbol": "CCLC",
+      "name": "Christ Coin",
+      "aliases": [
+        "CHRIST",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "CCO",
+      "name": "Ccore",
+      "aliases": [
+        "CCORE"
+      ]
+    },
+    {
+      "symbol": "CCRB",
+      "name": "CryptoCarbon",
+      "aliases": [
+        "CRYPTOCARBON"
+      ]
+    },
+    {
+      "symbol": "CCS",
+      "name": "CacaoShares",
+      "aliases": [
+        "CACAOSHARES"
+      ]
+    },
+    {
+      "symbol": "CCT",
+      "name": "Crystal Clear Token",
+      "aliases": [
+        "CRYSTAL",
+        "CLEAR",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "CDF",
+      "name": "CryptoDivaFund (TRC10)",
+      "aliases": [
+        "CRYPTODIVAFUND"
+      ]
+    },
+    {
+      "symbol": "CDL",
+      "name": "Confideal",
+      "aliases": [
+        "CONFIDEAL"
+      ]
+    },
+    {
+      "symbol": "CDT",
+      "name": "CoinDash",
+      "aliases": [
+        "COINDASH"
+      ]
+    },
+    {
+      "symbol": "CDX",
+      "name": "CDX",
+      "aliases": []
+    },
+    {
+      "symbol": "CEEK",
+      "name": "CEEK VR Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "CEL",
+      "name": "Celsius",
+      "aliases": [
+        "CELSIUS"
+      ]
+    },
+    {
+      "symbol": "CELO",
+      "name": "Celo",
+      "aliases": []
+    },
+    {
+      "symbol": "CELR",
+      "name": "Celer Network",
+      "aliases": [
+        "CELER"
+      ]
+    },
+    {
+      "symbol": "CENNZ",
+      "name": "Centrality Token",
+      "aliases": [
+        "CENTRALITY",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "CET",
+      "name": "DICE Money Dicet",
+      "aliases": [
+        "DICE",
+        "MONEY",
+        "DICET"
+      ]
+    },
+    {
+      "symbol": "CFC",
+      "name": "CryptFillCoin",
+      "aliases": [
+        "CRYPTFILLCOIN"
+      ]
+    },
+    {
+      "symbol": "CFG",
+      "name": "Centrifuge",
+      "aliases": [
+        "CENTRIFUGE"
+      ]
+    },
+    {
+      "symbol": "CFI",
+      "name": "CFI",
+      "aliases": []
+    },
+    {
+      "symbol": "CFTY",
+      "name": "Crafty Token",
+      "aliases": [
+        "CRAFTY",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "CFX",
+      "name": "Conflux",
+      "aliases": [
+        "CONFLUX"
+      ]
+    },
+    {
+      "symbol": "CGIZA",
+      "name": "CryptoGuyInZA (TRC10)",
+      "aliases": [
+        "CRYPTOGUYINZA"
+      ]
+    },
+    {
+      "symbol": "CHP",
+      "name": "Poker Chips",
+      "aliases": [
+        "POKER",
+        "CHIPS"
+      ]
+    },
+    {
+      "symbol": "CHSB",
+      "name": "CHSB",
+      "aliases": []
+    },
+    {
+      "symbol": "CHX",
+      "name": "Chainium",
+      "aliases": [
+        "CHAINIUM"
+      ]
+    },
+    {
+      "symbol": "CHZ",
+      "name": "Chiliz",
+      "aliases": [
+        "CHILIZ"
+      ]
+    },
+    {
+      "symbol": "CJT",
+      "name": "ConnectJob",
+      "aliases": [
+        "CONNECTJOB"
+      ]
+    },
+    {
+      "symbol": "CK",
+      "name": "CK",
+      "aliases": []
+    },
+    {
+      "symbol": "CKB",
+      "name": "Nervos Network",
+      "aliases": [
+        "NERVOS"
+      ]
+    },
+    {
+      "symbol": "CKCT",
+      "name": "Clink",
+      "aliases": [
+        "CLINK"
+      ]
+    },
+    {
+      "symbol": "CL",
+      "name": "Coinlancer",
+      "aliases": [
+        "COINLANCER"
+      ]
+    },
+    {
+      "symbol": "CLB",
+      "name": "Cloudbric",
+      "aliases": [
+        "CLOUDBRIC"
+      ]
+    },
+    {
+      "symbol": "CLL",
+      "name": "CryptoLiveLeak",
+      "aliases": [
+        "CRYPTOLIVELEAK"
+      ]
+    },
+    {
+      "symbol": "CLM",
+      "name": "Claymore",
+      "aliases": [
+        "CLAYMORE"
+      ]
+    },
+    {
+      "symbol": "CLN",
+      "name": "ColuLocalNetwork",
+      "aliases": [
+        "COLULOCALNETWORK"
+      ]
+    },
+    {
+      "symbol": "CLO",
+      "name": "Callisto",
+      "aliases": [
+        "CALLISTO"
+      ]
+    },
+    {
+      "symbol": "CLP",
+      "name": "CryptoLending",
+      "aliases": [
+        "CRYPTOLENDING"
+      ]
+    },
+    {
+      "symbol": "CMBT",
+      "name": "CMBToken",
+      "aliases": [
+        "CMBTOKEN"
+      ]
+    },
+    {
+      "symbol": "CMC",
+      "name": "CryptoMart",
+      "aliases": [
+        "CRYPTOMART"
+      ]
+    },
+    {
+      "symbol": "CMCT",
+      "name": "Crowd Machine Compute Token",
+      "aliases": [
+        "CROWD",
+        "MACHINE",
+        "COMPUTE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "CNB",
+      "name": "Canabio",
+      "aliases": [
+        "CANABIO"
+      ]
+    },
+    {
+      "symbol": "CND",
+      "name": "Cindicator",
+      "aliases": [
+        "CINDICATOR"
+      ]
+    },
+    {
+      "symbol": "CNN",
+      "name": "CNN Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "CNT",
+      "name": "Cryption Network Token (Polygon)",
+      "aliases": [
+        "CRYPTION",
+        "NETWORK",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "CO2",
+      "name": "Climatecoin",
+      "aliases": [
+        "CLIMATECOIN"
+      ]
+    },
+    {
+      "symbol": "CO2BIT",
+      "name": "CO2Bit",
+      "aliases": []
+    },
+    {
+      "symbol": "COB",
+      "name": "Cobinhood Token",
+      "aliases": [
+        "COBINHOOD",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "COCOS",
+      "name": "CocosToken",
+      "aliases": [
+        "COCOSTOKEN"
+      ]
+    },
+    {
+      "symbol": "COFI",
+      "name": "CoinFi Token",
+      "aliases": [
+        "COINFI",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "COIL",
+      "name": "CoinOil",
+      "aliases": [
+        "COINOIL"
+      ]
+    },
+    {
+      "symbol": "COIN",
+      "name": "Coinvest V3 Token",
+      "aliases": [
+        "COINVEST",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "COINS",
+      "name": "Coinstar",
+      "aliases": [
+        "COINSTAR"
+      ]
+    },
+    {
+      "symbol": "COMBO",
+      "name": "Furucombo (Polygon)",
+      "aliases": [
+        "FURUCOMBO"
+      ]
+    },
+    {
+      "symbol": "COMP",
+      "name": "Compound",
+      "aliases": [
+        "COMPOUND"
+      ]
+    },
+    {
+      "symbol": "COSM",
+      "name": "CosmoCoin (ERC20)",
+      "aliases": [
+        "COSMOCOIN"
+      ]
+    },
+    {
+      "symbol": "COSS",
+      "name": "Coss Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "COV",
+      "name": "Covesting",
+      "aliases": [
+        "COVESTING"
+      ]
+    },
+    {
+      "symbol": "CPAL",
+      "name": "CreatorPAL",
+      "aliases": [
+        "CREATORPAL"
+      ]
+    },
+    {
+      "symbol": "CPAY",
+      "name": "CPAY",
+      "aliases": []
+    },
+    {
+      "symbol": "CPC",
+      "name": "CPChain",
+      "aliases": [
+        "CPCHAIN"
+      ]
+    },
+    {
+      "symbol": "CPEX",
+      "name": "CoinPulseToken",
+      "aliases": [
+        "COINPULSETOKEN"
+      ]
+    },
+    {
+      "symbol": "CPL",
+      "name": "COPYLOCK",
+      "aliases": [
+        "COPYLOCK"
+      ]
+    },
+    {
+      "symbol": "CPLO",
+      "name": "CPOLLO",
+      "aliases": [
+        "CPOLLO"
+      ]
+    },
+    {
+      "symbol": "CPT",
+      "name": "Cryptaur",
+      "aliases": [
+        "CRYPTAUR"
+      ]
+    },
+    {
+      "symbol": "CPY",
+      "name": "COPYTRACK",
+      "aliases": [
+        "COPYTRACK"
+      ]
+    },
+    {
+      "symbol": "CR7",
+      "name": "CR7Coin",
+      "aliases": [
+        "CR7COIN"
+      ]
+    },
+    {
+      "symbol": "CRB",
+      "name": "CRB",
+      "aliases": []
+    },
+    {
+      "symbol": "CRBT",
+      "name": "CRUISEBIT",
+      "aliases": [
+        "CRUISEBIT"
+      ]
+    },
+    {
+      "symbol": "CRC",
+      "name": "CryCash",
+      "aliases": [
+        "CRYCASH"
+      ]
+    },
+    {
+      "symbol": "CRED",
+      "name": "CRED",
+      "aliases": []
+    },
+    {
+      "symbol": "CREDO",
+      "name": "Credo / Bitbounce",
+      "aliases": [
+        "BITBOUNCE"
+      ]
+    },
+    {
+      "symbol": "CRGO",
+      "name": "CargoCoin",
+      "aliases": [
+        "CARGOCOIN"
+      ]
+    },
+    {
+      "symbol": "CRMT",
+      "name": "Cremit",
+      "aliases": [
+        "CREMIT"
+      ]
+    },
+    {
+      "symbol": "CRNC",
+      "name": "Current",
+      "aliases": [
+        "CURRENT"
+      ]
+    },
+    {
+      "symbol": "CRO",
+      "name": "Cronos",
+      "aliases": [
+        "CRONOS"
+      ]
+    },
+    {
+      "symbol": "CRPT",
+      "name": "CrypteriumToken",
+      "aliases": [
+        "CRYPTERIUMTOKEN"
+      ]
+    },
+    {
+      "symbol": "CRT",
+      "name": "CreamtoeCoin",
+      "aliases": [
+        "CREAMTOECOIN"
+      ]
+    },
+    {
+      "symbol": "CRV",
+      "name": "Curve",
+      "aliases": [
+        "CURVE"
+      ]
+    },
+    {
+      "symbol": "CS",
+      "name": "CREDITS",
+      "aliases": [
+        "CREDITS"
+      ]
+    },
+    {
+      "symbol": "CSNO",
+      "name": "BitDice",
+      "aliases": [
+        "BITDICE"
+      ]
+    },
+    {
+      "symbol": "CSPR",
+      "name": "Casper",
+      "aliases": [
+        "CASPER"
+      ]
+    },
+    {
+      "symbol": "CST",
+      "name": "Cryptosolartech",
+      "aliases": [
+        "CRYPTOSOLARTECH"
+      ]
+    },
+    {
+      "symbol": "CTF",
+      "name": "CryptoTask",
+      "aliases": [
+        "CRYPTOTASK"
+      ]
+    },
+    {
+      "symbol": "CTG",
+      "name": "CT Global Token",
+      "aliases": [
+        "GLOBAL",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "CTGC",
+      "name": "Convenient To Go",
+      "aliases": [
+        "CONVENIENT"
+      ]
+    },
+    {
+      "symbol": "CTI",
+      "name": "Clintex (Polygon)",
+      "aliases": [
+        "CLINTEX"
+      ]
+    },
+    {
+      "symbol": "CTL",
+      "name": "CTL",
+      "aliases": []
+    },
+    {
+      "symbol": "CTR",
+      "name": "Centra",
+      "aliases": [
+        "CENTRA"
+      ]
+    },
+    {
+      "symbol": "CTSI",
+      "name": "Cartesi",
+      "aliases": [
+        "CARTESI"
+      ]
+    },
+    {
+      "symbol": "CTT",
+      "name": "ChainTrade Token",
+      "aliases": [
+        "CHAINTRADE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "CTX",
+      "name": "CarTaxi",
+      "aliases": [
+        "CARTAXI"
+      ]
+    },
+    {
+      "symbol": "CTXC",
+      "name": "Cortex Coin",
+      "aliases": [
+        "CORTEX",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "CV",
+      "name": "carVertical",
+      "aliases": [
+        "CARVERTICAL"
+      ]
+    },
+    {
+      "symbol": "CVC",
+      "name": "CVC",
+      "aliases": []
+    },
+    {
+      "symbol": "CVT",
+      "name": "CyberVeinToken",
+      "aliases": [
+        "CYBERVEINTOKEN"
+      ]
+    },
+    {
+      "symbol": "CVX",
+      "name": "Convex Finance",
+      "aliases": [
+        "CONVEX"
+      ]
+    },
+    {
+      "symbol": "CXC",
+      "name": "CoxxxCoin",
+      "aliases": [
+        "COXXXCOIN"
+      ]
+    },
+    {
+      "symbol": "CXO",
+      "name": "CargoX",
+      "aliases": [
+        "CARGOX"
+      ]
+    },
+    {
+      "symbol": "CYFM",
+      "name": "CyberFM",
+      "aliases": [
+        "CYBERFM"
+      ]
+    },
+    {
+      "symbol": "CYMT",
+      "name": "CyberMusic",
+      "aliases": [
+        "CYBERMUSIC"
+      ]
+    },
+    {
+      "symbol": "CZR",
+      "name": "CZR",
+      "aliases": []
+    },
+    {
+      "symbol": "DAB",
+      "name": "DAB",
+      "aliases": []
+    },
+    {
+      "symbol": "DACS",
+      "name": "DACSEE",
+      "aliases": [
+        "DACSEE"
+      ]
+    },
+    {
+      "symbol": "DACX",
+      "name": "DACX Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DADI",
+      "name": "DADI",
+      "aliases": []
+    },
+    {
+      "symbol": "DAI",
+      "name": "Dai",
+      "aliases": []
+    },
+    {
+      "symbol": "DALC",
+      "name": "DaleCoin",
+      "aliases": [
+        "DALECOIN"
+      ]
+    },
+    {
+      "symbol": "DAN",
+      "name": "DaneelToken",
+      "aliases": [
+        "DANEELTOKEN"
+      ]
+    },
+    {
+      "symbol": "DAO",
+      "name": "DAO",
+      "aliases": []
+    },
+    {
+      "symbol": "DAPS",
+      "name": "DAPSTOKEN",
+      "aliases": [
+        "DAPSTOKEN"
+      ]
+    },
+    {
+      "symbol": "DASH",
+      "name": "Dash",
+      "aliases": []
+    },
+    {
+      "symbol": "DAT",
+      "name": "Datum Token",
+      "aliases": [
+        "DATUM",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DATABROKER",
+      "name": "DATABroker",
+      "aliases": []
+    },
+    {
+      "symbol": "DATACOIN",
+      "name": "DATACoin",
+      "aliases": []
+    },
+    {
+      "symbol": "DATX",
+      "name": "DATx",
+      "aliases": []
+    },
+    {
+      "symbol": "DAV",
+      "name": "DAV Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DAX",
+      "name": "DAEX Token",
+      "aliases": [
+        "DAEX",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DAXT",
+      "name": "Digital Asset Exchange Token",
+      "aliases": [
+        "DIGITAL",
+        "ASSET",
+        "EXCHANGE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DBET",
+      "name": "Decent.Bet",
+      "aliases": [
+        "DECENTBET"
+      ]
+    },
+    {
+      "symbol": "DCA",
+      "name": "DCA",
+      "aliases": []
+    },
+    {
+      "symbol": "DCC",
+      "name": "Distributed Credit Chain",
+      "aliases": [
+        "DISTRIBUTED",
+        "CREDIT",
+        "CHAIN"
+      ]
+    },
+    {
+      "symbol": "DCL",
+      "name": "DCL",
+      "aliases": []
+    },
+    {
+      "symbol": "DCN",
+      "name": "Dentacoin",
+      "aliases": [
+        "DENTACOIN"
+      ]
+    },
+    {
+      "symbol": "DCR",
+      "name": "Decred",
+      "aliases": [
+        "DECRED"
+      ]
+    },
+    {
+      "symbol": "DDF",
+      "name": "DDF",
+      "aliases": []
+    },
+    {
+      "symbol": "DEAL",
+      "name": "IPDeal",
+      "aliases": [
+        "IPDEAL"
+      ]
+    },
+    {
+      "symbol": "DEB",
+      "name": "DEBITUM",
+      "aliases": [
+        "DEBITUM"
+      ]
+    },
+    {
+      "symbol": "DEC",
+      "name": "Decentr (Polygon)",
+      "aliases": [
+        "DECENTR"
+      ]
+    },
+    {
+      "symbol": "DELTA",
+      "name": "DeltaChain Token",
+      "aliases": [
+        "DELTACHAIN",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DENT",
+      "name": "Dent",
+      "aliases": []
+    },
+    {
+      "symbol": "DEPO",
+      "name": "DEPO (Depository Network)",
+      "aliases": []
+    },
+    {
+      "symbol": "DERI",
+      "name": "Deri (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "DEVCON2",
+      "name": "Devcon2 Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DEW",
+      "name": "DEW",
+      "aliases": []
+    },
+    {
+      "symbol": "DEX",
+      "name": "DEX",
+      "aliases": []
+    },
+    {
+      "symbol": "DFYN",
+      "name": "Dfyn Token(pos) (Polygon)",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DG",
+      "name": "Decentral.games (Polygon)",
+      "aliases": [
+        "DECENTRALGAMES"
+      ]
+    },
+    {
+      "symbol": "DGB",
+      "name": "DigiByte",
+      "aliases": [
+        "DIGIBYTE"
+      ]
+    },
+    {
+      "symbol": "DGD",
+      "name": "Digix DAO",
+      "aliases": [
+        "DIGIX",
+        "DAO"
+      ]
+    },
+    {
+      "symbol": "DGPT",
+      "name": "DigiPulse",
+      "aliases": [
+        "DIGIPULSE"
+      ]
+    },
+    {
+      "symbol": "DGS",
+      "name": "Dragonglass",
+      "aliases": [
+        "DRAGONGLASS"
+      ]
+    },
+    {
+      "symbol": "DGTX",
+      "name": "DigitexFutures",
+      "aliases": [
+        "DIGITEXFUTURES"
+      ]
+    },
+    {
+      "symbol": "DGX",
+      "name": "DGX",
+      "aliases": []
+    },
+    {
+      "symbol": "DGX1",
+      "name": "DGX1",
+      "aliases": []
+    },
+    {
+      "symbol": "DHT",
+      "name": "dHedge Dao Token (Polygon)",
+      "aliases": [
+        "DHEDGE",
+        "DAO",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DICE",
+      "name": "Etheroll",
+      "aliases": [
+        "ETHEROLL"
+      ]
+    },
+    {
+      "symbol": "DIP",
+      "name": "Decentralized Insurance Protocol",
+      "aliases": [
+        "DECENTRALIZED",
+        "INSURANCE",
+        "PROTOCOL"
+      ]
+    },
+    {
+      "symbol": "DIT",
+      "name": "Inmediate",
+      "aliases": [
+        "INMEDIATE"
+      ]
+    },
+    {
+      "symbol": "DIVX",
+      "name": "DIVX",
+      "aliases": []
+    },
+    {
+      "symbol": "DLT",
+      "name": "Agrello",
+      "aliases": [
+        "AGRELLO"
+      ]
+    },
+    {
+      "symbol": "DMT",
+      "name": "DMarket Token",
+      "aliases": [
+        "DMARKET",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DNA",
+      "name": "DNA",
+      "aliases": []
+    },
+    {
+      "symbol": "DNT",
+      "name": "DistrictOx",
+      "aliases": [
+        "DISTRICTOX"
+      ]
+    },
+    {
+      "symbol": "DNX",
+      "name": "DenCity",
+      "aliases": [
+        "DENCITY"
+      ]
+    },
+    {
+      "symbol": "DOCK",
+      "name": "DOCK",
+      "aliases": []
+    },
+    {
+      "symbol": "DODO",
+      "name": "DODO",
+      "aliases": []
+    },
+    {
+      "symbol": "DOGE",
+      "name": "Dogecoin",
+      "aliases": [
+        "DOGECOIN"
+      ]
+    },
+    {
+      "symbol": "DOR",
+      "name": "DoradoToken",
+      "aliases": [
+        "DORADOTOKEN"
+      ]
+    },
+    {
+      "symbol": "DOT",
+      "name": "Polkadot",
+      "aliases": [
+        "POLKADOT"
+      ]
+    },
+    {
+      "symbol": "DOUGH",
+      "name": "Piedao Dough v2 (Polygon)",
+      "aliases": [
+        "PIEDAO"
+      ]
+    },
+    {
+      "symbol": "DOV",
+      "name": "DOVU",
+      "aliases": [
+        "DOVU"
+      ]
+    },
+    {
+      "symbol": "DOW",
+      "name": "DOW",
+      "aliases": []
+    },
+    {
+      "symbol": "DPP",
+      "name": "Digital Assets Power Play",
+      "aliases": [
+        "DIGITAL",
+        "ASSETS",
+        "POWER",
+        "PLAY"
+      ]
+    },
+    {
+      "symbol": "DPX",
+      "name": "Dopex",
+      "aliases": [
+        "DOPEX"
+      ]
+    },
+    {
+      "symbol": "DQUICK",
+      "name": "Dragon Quick (Polygon)",
+      "aliases": [
+        "DRAGON",
+        "QUICK"
+      ]
+    },
+    {
+      "symbol": "DRC",
+      "name": "DREAMCATCHER",
+      "aliases": [
+        "DREAMCATCHER"
+      ]
+    },
+    {
+      "symbol": "DREAM",
+      "name": "DREAM",
+      "aliases": []
+    },
+    {
+      "symbol": "DRGN",
+      "name": "Dragon",
+      "aliases": [
+        "DRAGON"
+      ]
+    },
+    {
+      "symbol": "DROP",
+      "name": "Dropil",
+      "aliases": [
+        "DROPIL"
+      ]
+    },
+    {
+      "symbol": "DRP",
+      "name": "Dripcoin",
+      "aliases": [
+        "DRIPCOIN"
+      ]
+    },
+    {
+      "symbol": "DRPU",
+      "name": "DRP Utility",
+      "aliases": [
+        "DRP",
+        "UTILITY"
+      ]
+    },
+    {
+      "symbol": "DRT",
+      "name": "DomRaiderToken",
+      "aliases": [
+        "DOMRAIDERTOKEN"
+      ]
+    },
+    {
+      "symbol": "DRVH",
+      "name": "Driveholic Token",
+      "aliases": [
+        "DRIVEHOLIC",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DSCP",
+      "name": "Disciplina Token",
+      "aliases": [
+        "DISCIPLINA",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DSLA",
+      "name": "DSLA (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "DST",
+      "name": "Dimensions Strike Token",
+      "aliases": [
+        "DIMENSIONS",
+        "STRIKE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DTH",
+      "name": "dether",
+      "aliases": [
+        "DETHER"
+      ]
+    },
+    {
+      "symbol": "DTR",
+      "name": "DTR",
+      "aliases": []
+    },
+    {
+      "symbol": "DTRC",
+      "name": "Datarius Credit",
+      "aliases": [
+        "DATARIUS",
+        "CREDIT"
+      ]
+    },
+    {
+      "symbol": "DTT",
+      "name": "Delphi Tech Token",
+      "aliases": [
+        "DELPHI",
+        "TECH",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "DTX",
+      "name": "DigitalTicks",
+      "aliases": [
+        "DIGITALTICKS"
+      ]
+    },
+    {
+      "symbol": "DUBI",
+      "name": "DUBI",
+      "aliases": []
+    },
+    {
+      "symbol": "DXG",
+      "name": "DEXTERG",
+      "aliases": [
+        "DEXTERG"
+      ]
+    },
+    {
+      "symbol": "DXR",
+      "name": "DEXTER",
+      "aliases": [
+        "DEXTER"
+      ]
+    },
+    {
+      "symbol": "DXT",
+      "name": "DataWallet",
+      "aliases": [
+        "DATAWALLET"
+      ]
+    },
+    {
+      "symbol": "DYDX",
+      "name": "dYdX",
+      "aliases": []
+    },
+    {
+      "symbol": "E4ROW",
+      "name": "E4ROW",
+      "aliases": []
+    },
+    {
+      "symbol": "EAGLE",
+      "name": "EagleCoin",
+      "aliases": [
+        "EAGLECOIN"
+      ]
+    },
+    {
+      "symbol": "EARTH",
+      "name": "EARTH Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "EBC",
+      "name": "EBCoin",
+      "aliases": [
+        "EBCOIN"
+      ]
+    },
+    {
+      "symbol": "EBCH",
+      "name": "eBCH",
+      "aliases": []
+    },
+    {
+      "symbol": "EBTC",
+      "name": "eBTC",
+      "aliases": []
+    },
+    {
+      "symbol": "ECN",
+      "name": "ECN",
+      "aliases": []
+    },
+    {
+      "symbol": "ECO2",
+      "name": "EtherCO2",
+      "aliases": [
+        "ETHERCO2"
+      ]
+    },
+    {
+      "symbol": "ECOM",
+      "name": "Omnitude",
+      "aliases": [
+        "OMNITUDE"
+      ]
+    },
+    {
+      "symbol": "ECP",
+      "name": "ECrypto Coin",
+      "aliases": [
+        "ECRYPTO",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "EDC",
+      "name": "Education Credits",
+      "aliases": [
+        "EDUCATION",
+        "CREDITS"
+      ]
+    },
+    {
+      "symbol": "EDG",
+      "name": "Edgeware",
+      "aliases": [
+        "EDGEWARE"
+      ]
+    },
+    {
+      "symbol": "EDN",
+      "name": "Eden Coin",
+      "aliases": [
+        "EDEN",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "EDO",
+      "name": "Eidoo",
+      "aliases": [
+        "EIDOO"
+      ]
+    },
+    {
+      "symbol": "EDR",
+      "name": "Endor Protocol Token",
+      "aliases": [
+        "ENDOR",
+        "PROTOCOL",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "EDU",
+      "name": "EDU Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "EGAS",
+      "name": "ETH GAS",
+      "aliases": [
+        "ETH",
+        "GAS"
+      ]
+    },
+    {
+      "symbol": "EGEM",
+      "name": "EtherGem",
+      "aliases": [
+        "ETHERGEM"
+      ]
+    },
+    {
+      "symbol": "EGLD",
+      "name": "MultiversX",
+      "aliases": [
+        "MULTIVERSX",
+        "ELROND"
+      ]
+    },
+    {
+      "symbol": "EGT",
+      "name": "Egretia Token",
+      "aliases": [
+        "EGRETIA",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "EHT",
+      "name": "EasyHomes",
+      "aliases": [
+        "EASYHOMES"
+      ]
+    },
+    {
+      "symbol": "EKO",
+      "name": "EchoLink",
+      "aliases": [
+        "ECHOLINK"
+      ]
+    },
+    {
+      "symbol": "EKT",
+      "name": "EDUCare",
+      "aliases": [
+        "EDUCARE"
+      ]
+    },
+    {
+      "symbol": "ELA",
+      "name": "Elastos",
+      "aliases": [
+        "ELASTOS"
+      ]
+    },
+    {
+      "symbol": "ELEC",
+      "name": "ElectrifyAsia",
+      "aliases": [
+        "ELECTRIFYASIA"
+      ]
+    },
+    {
+      "symbol": "ELF",
+      "name": "ELF Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ELIX",
+      "name": "Elixir Token",
+      "aliases": [
+        "ELIXIR",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ELON",
+      "name": "Dogelon (Polygon)",
+      "aliases": [
+        "DOGELON"
+      ]
+    },
+    {
+      "symbol": "ELTCOIN",
+      "name": "ELTCOIN",
+      "aliases": []
+    },
+    {
+      "symbol": "ELY",
+      "name": "ELYCOIN",
+      "aliases": [
+        "ELYCOIN"
+      ]
+    },
+    {
+      "symbol": "EMB",
+      "name": "Emblem",
+      "aliases": [
+        "EMBLEM"
+      ]
+    },
+    {
+      "symbol": "EMON",
+      "name": "Etheremon",
+      "aliases": [
+        "ETHEREMON"
+      ]
+    },
+    {
+      "symbol": "EMONT",
+      "name": "Etheremon Token",
+      "aliases": [
+        "ETHEREMON",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "EMT",
+      "name": "easyMINE Token",
+      "aliases": [
+        "EASYMINE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "EMV",
+      "name": "EMovieVenture",
+      "aliases": [
+        "EMOVIEVENTURE"
+      ]
+    },
+    {
+      "symbol": "ENC",
+      "name": "Ethernet.Cash",
+      "aliases": [
+        "ETHERNETCASH"
+      ]
+    },
+    {
+      "symbol": "ENG",
+      "name": "Enigma",
+      "aliases": [
+        "ENIGMA"
+      ]
+    },
+    {
+      "symbol": "ENJ",
+      "name": "Enjin",
+      "aliases": [
+        "ENJIN"
+      ]
+    },
+    {
+      "symbol": "ENQ",
+      "name": "Enecuum",
+      "aliases": [
+        "ENECUUM"
+      ]
+    },
+    {
+      "symbol": "ENS",
+      "name": "Ethereum Name Service",
+      "aliases": []
+    },
+    {
+      "symbol": "ENTRP",
+      "name": "Hut34 Entropy Token",
+      "aliases": [
+        "HUT34",
+        "ENTROPY",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "EOS",
+      "name": "EOS",
+      "aliases": []
+    },
+    {
+      "symbol": "EOSDAC",
+      "name": "eosDAC",
+      "aliases": []
+    },
+    {
+      "symbol": "EPX",
+      "name": "ethPoker.io EPX",
+      "aliases": [
+        "ETHPOKERIO"
+      ]
+    },
+    {
+      "symbol": "EPY",
+      "name": "EmphyCoin",
+      "aliases": [
+        "EMPHYCOIN"
+      ]
+    },
+    {
+      "symbol": "EQL",
+      "name": "EQUAL",
+      "aliases": [
+        "EQUAL"
+      ]
+    },
+    {
+      "symbol": "ERO",
+      "name": "EROSCOIN",
+      "aliases": [
+        "EROSCOIN"
+      ]
+    },
+    {
+      "symbol": "ERSDL",
+      "name": "Unfederalreservetoken (Polygon)",
+      "aliases": [
+        "UNFEDERALRESERVETOKEN"
+      ]
+    },
+    {
+      "symbol": "ERT",
+      "name": "Eristica",
+      "aliases": [
+        "ERISTICA"
+      ]
+    },
+    {
+      "symbol": "ERUPEE",
+      "name": "eRupee",
+      "aliases": []
+    },
+    {
+      "symbol": "ESS",
+      "name": "Essentia",
+      "aliases": [
+        "ESSENTIA"
+      ]
+    },
+    {
+      "symbol": "ESZ",
+      "name": "ESZCoin",
+      "aliases": [
+        "ESZCOIN"
+      ]
+    },
+    {
+      "symbol": "ETBS",
+      "name": "Ethbits",
+      "aliases": [
+        "ETHBITS"
+      ]
+    },
+    {
+      "symbol": "ETC",
+      "name": "Ethereum Classic",
+      "aliases": [
+        "ETHEREUMCLASSIC"
+      ]
+    },
+    {
+      "symbol": "ETCH",
+      "name": "ETCH",
+      "aliases": []
+    },
+    {
+      "symbol": "ETG",
+      "name": "Ethereum Gold",
+      "aliases": [
+        "ETHEREUM",
+        "GOLD"
+      ]
+    },
+    {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "aliases": [
+        "ETHEREUM",
+        "Ξ",
+        "ETHUSD"
+      ]
+    },
+    {
+      "symbol": "ETH2X-FLI",
+      "name": "ETH 2x Flexible Leverage Index (Polygon)",
+      "aliases": [
+        "ETH",
+        "FLEXIBLE",
+        "LEVERAGE",
+        "INDEX"
+      ]
+    },
+    {
+      "symbol": "ETHB",
+      "name": "EtherBTC",
+      "aliases": [
+        "ETHERBTC"
+      ]
+    },
+    {
+      "symbol": "ETHD",
+      "name": "Ethereum Dark",
+      "aliases": [
+        "ETHEREUM",
+        "DARK"
+      ]
+    },
+    {
+      "symbol": "ETK",
+      "name": "EnergiToken",
+      "aliases": [
+        "ENERGITOKEN"
+      ]
+    },
+    {
+      "symbol": "ETR",
+      "name": "Etheruem Risen",
+      "aliases": [
+        "ETHERUEM",
+        "RISEN"
+      ]
+    },
+    {
+      "symbol": "EURL",
+      "name": "LUGH",
+      "aliases": [
+        "LUGH"
+      ]
+    },
+    {
+      "symbol": "EURS",
+      "name": "STASIS EURS Token",
+      "aliases": [
+        "STASIS",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "EURT",
+      "name": "EUR Tether (ERC20)",
+      "aliases": [
+        "EUR",
+        "TETHER"
+      ]
+    },
+    {
+      "symbol": "EVC",
+      "name": "EventChain",
+      "aliases": [
+        "EVENTCHAIN"
+      ]
+    },
+    {
+      "symbol": "EVE",
+      "name": "EVE",
+      "aliases": []
+    },
+    {
+      "symbol": "EVN",
+      "name": "EvenCoin",
+      "aliases": [
+        "EVENCOIN"
+      ]
+    },
+    {
+      "symbol": "EVX",
+      "name": "EVX Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "EVZ",
+      "name": "EVZ",
+      "aliases": []
+    },
+    {
+      "symbol": "EWO",
+      "name": "EWO Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "EWT",
+      "name": "Energy Web Chain",
+      "aliases": [
+        "ENERGY",
+        "WEB",
+        "CHAIN"
+      ]
+    },
+    {
+      "symbol": "EXC",
+      "name": "EXCOIN CASH",
+      "aliases": [
+        "EXCOIN",
+        "CASH"
+      ]
+    },
+    {
+      "symbol": "EXMR",
+      "name": "eXMRcoin",
+      "aliases": [
+        "EXMRCOIN"
+      ]
+    },
+    {
+      "symbol": "EXP",
+      "name": "Expanse",
+      "aliases": [
+        "EXPANSE"
+      ]
+    },
+    {
+      "symbol": "EXRN",
+      "name": "EXRP Network",
+      "aliases": [
+        "EXRP",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "EXY",
+      "name": "Experty",
+      "aliases": [
+        "EXPERTY"
+      ]
+    },
+    {
+      "symbol": "EZT",
+      "name": "EZToken",
+      "aliases": [
+        "EZTOKEN"
+      ]
+    },
+    {
+      "symbol": "FACE",
+      "name": "Faceter",
+      "aliases": [
+        "FACETER"
+      ]
+    },
+    {
+      "symbol": "FAM",
+      "name": "FAM",
+      "aliases": []
+    },
+    {
+      "symbol": "FAN",
+      "name": "Fan Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FANX",
+      "name": "FANX Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FAR",
+      "name": "Far Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FCL",
+      "name": "Fractal Protocol Token (Polygon)",
+      "aliases": [
+        "FRACTAL",
+        "PROTOCOL",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FCT",
+      "name": "Factom",
+      "aliases": [
+        "FACTOM"
+      ]
+    },
+    {
+      "symbol": "FDZ",
+      "name": "Friendz Coin",
+      "aliases": [
+        "FRIENDZ",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "FEG",
+      "name": "Fegtoken (Polygon)",
+      "aliases": [
+        "FEGTOKEN"
+      ]
+    },
+    {
+      "symbol": "FEI",
+      "name": "Fei Protocol",
+      "aliases": [
+        "FEIPROTOCOL"
+      ]
+    },
+    {
+      "symbol": "FEMI",
+      "name": "Feminism",
+      "aliases": [
+        "FEMINISM"
+      ]
+    },
+    {
+      "symbol": "FET",
+      "name": "Fetch.ai",
+      "aliases": [
+        "FETCH",
+        "FETCHAI"
+      ]
+    },
+    {
+      "symbol": "FGP",
+      "name": "FingerPrint",
+      "aliases": [
+        "FINGERPRINT"
+      ]
+    },
+    {
+      "symbol": "FID",
+      "name": "Fidelium Token",
+      "aliases": [
+        "FIDELIUM",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FIH",
+      "name": "FidelityHouse Token",
+      "aliases": [
+        "FIDELITYHOUSE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FIL",
+      "name": "Filecoin",
+      "aliases": [
+        "FILECOIN"
+      ]
+    },
+    {
+      "symbol": "FIN",
+      "name": "Fuel Injection Network",
+      "aliases": [
+        "FUEL",
+        "INJECTION",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "FIO",
+      "name": "FIO Protocol",
+      "aliases": [
+        "PROTOCOL"
+      ]
+    },
+    {
+      "symbol": "FIRO",
+      "name": "Firo",
+      "aliases": []
+    },
+    {
+      "symbol": "FISH",
+      "name": "Fish (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "FKX",
+      "name": "Knoxstertoken",
+      "aliases": [
+        "KNOXSTERTOKEN"
+      ]
+    },
+    {
+      "symbol": "FLETA",
+      "name": "FLETA",
+      "aliases": []
+    },
+    {
+      "symbol": "FLIXX",
+      "name": "FLIXX",
+      "aliases": []
+    },
+    {
+      "symbol": "FLMC",
+      "name": "Filmscoin",
+      "aliases": [
+        "FILMSCOIN"
+      ]
+    },
+    {
+      "symbol": "FLOKI",
+      "name": "Floki",
+      "aliases": []
+    },
+    {
+      "symbol": "FLOT",
+      "name": "Fire Lotto",
+      "aliases": [
+        "FIRE",
+        "LOTTO"
+      ]
+    },
+    {
+      "symbol": "FLOW",
+      "name": "Flow",
+      "aliases": []
+    },
+    {
+      "symbol": "FLP",
+      "name": "FLIP Token",
+      "aliases": [
+        "FLIP",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FLUZ",
+      "name": "Fluz Fluz Global",
+      "aliases": [
+        "GLOBAL"
+      ]
+    },
+    {
+      "symbol": "FLX",
+      "name": "BitFlux",
+      "aliases": [
+        "BITFLUX"
+      ]
+    },
+    {
+      "symbol": "FMF",
+      "name": "Formosa Financial Token",
+      "aliases": [
+        "FORMOSA",
+        "FINANCIAL",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FNB",
+      "name": "FNB Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FND",
+      "name": "FundRequest",
+      "aliases": [
+        "FUNDREQUEST"
+      ]
+    },
+    {
+      "symbol": "FNKOS",
+      "name": "FNKOSToken",
+      "aliases": [
+        "FNKOSTOKEN"
+      ]
+    },
+    {
+      "symbol": "FNTB",
+      "name": "FinTab",
+      "aliases": [
+        "FINTAB"
+      ]
+    },
+    {
+      "symbol": "FOAM",
+      "name": "FOAM Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FOOD",
+      "name": "FoodCoin",
+      "aliases": [
+        "FOODCOIN"
+      ]
+    },
+    {
+      "symbol": "FORK",
+      "name": "GastroAdvisorToken",
+      "aliases": [
+        "GASTROADVISORTOKEN"
+      ]
+    },
+    {
+      "symbol": "FORTH",
+      "name": "Ampleforth Governance (Polygon)",
+      "aliases": [
+        "AMPLEFORTH",
+        "GOVERNANCE"
+      ]
+    },
+    {
+      "symbol": "FOTA",
+      "name": "FOTA",
+      "aliases": []
+    },
+    {
+      "symbol": "FOX",
+      "name": "FOX (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "FRD",
+      "name": "FARAD Cryptoken",
+      "aliases": [
+        "FARAD",
+        "CRYPTOKEN"
+      ]
+    },
+    {
+      "symbol": "FREC",
+      "name": "Freyr Coin",
+      "aliases": [
+        "FREYR",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "FREE",
+      "name": "Free Coin (Polygon)",
+      "aliases": [
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "FRNT",
+      "name": "Frontier",
+      "aliases": [
+        "FRONTIER"
+      ]
+    },
+    {
+      "symbol": "FRONT",
+      "name": "Frontier Token (Polygon)",
+      "aliases": [
+        "FRONTIER",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FRV",
+      "name": "Fitrova",
+      "aliases": [
+        "FITROVA"
+      ]
+    },
+    {
+      "symbol": "FRX",
+      "name": "Forex Coin",
+      "aliases": [
+        "FOREX",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "FSN",
+      "name": "Fusion (ERC20)",
+      "aliases": [
+        "FUSION"
+      ]
+    },
+    {
+      "symbol": "FT",
+      "name": "Fabric token",
+      "aliases": [
+        "FABRIC",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FTC",
+      "name": "FTC",
+      "aliases": []
+    },
+    {
+      "symbol": "FTI",
+      "name": "FTI",
+      "aliases": []
+    },
+    {
+      "symbol": "FTM",
+      "name": "Fantom",
+      "aliases": [
+        "FANTOM"
+      ]
+    },
+    {
+      "symbol": "FTR",
+      "name": "Futourist Token",
+      "aliases": [
+        "FUTOURIST",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FTT",
+      "name": "FTX Token",
+      "aliases": [
+        "FTX",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "FTX",
+      "name": "FintruX Network",
+      "aliases": [
+        "FINTRUX",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "FTXT",
+      "name": "FUTURAX",
+      "aliases": [
+        "FUTURAX"
+      ]
+    },
+    {
+      "symbol": "FUCK",
+      "name": "Finally Usable Crypto Karma",
+      "aliases": [
+        "FINALLY",
+        "USABLE",
+        "CRYPTO",
+        "KARMA"
+      ]
+    },
+    {
+      "symbol": "FUEL",
+      "name": "Etherparty FUEL",
+      "aliases": [
+        "ETHERPARTY"
+      ]
+    },
+    {
+      "symbol": "FUN",
+      "name": "Funfair",
+      "aliases": [
+        "FUNFAIR"
+      ]
+    },
+    {
+      "symbol": "FXC",
+      "name": "Flexacoin",
+      "aliases": [
+        "FLEXACOIN"
+      ]
+    },
+    {
+      "symbol": "FXS",
+      "name": "Frax Share",
+      "aliases": [
+        "FRAX",
+        "FRAXSHARE"
+      ]
+    },
+    {
+      "symbol": "FXT",
+      "name": "FuzeX",
+      "aliases": [
+        "FUZEX"
+      ]
+    },
+    {
+      "symbol": "FYN",
+      "name": "Fund Yourself Now",
+      "aliases": [
+        "FUND",
+        "YOURSELF",
+        "NOW"
+      ]
+    },
+    {
+      "symbol": "FYP",
+      "name": "Flyp.me",
+      "aliases": [
+        "FLYPME"
+      ]
+    },
+    {
+      "symbol": "FZCOIN",
+      "name": "Frozencoin Network",
+      "aliases": [
+        "FROZENCOIN",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "GAJ",
+      "name": "Polygaj Token (Polygon)",
+      "aliases": [
+        "POLYGAJ",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "GALA",
+      "name": "Gala",
+      "aliases": []
+    },
+    {
+      "symbol": "GAM",
+      "name": "Gambit",
+      "aliases": [
+        "GAMBIT"
+      ]
+    },
+    {
+      "symbol": "GAME",
+      "name": "GameCredits",
+      "aliases": [
+        "GAMECREDITS"
+      ]
+    },
+    {
+      "symbol": "GANA",
+      "name": "GANA",
+      "aliases": []
+    },
+    {
+      "symbol": "GARD",
+      "name": "Hashgard",
+      "aliases": [
+        "HASHGARD"
+      ]
+    },
+    {
+      "symbol": "GAT",
+      "name": "GAT",
+      "aliases": []
+    },
+    {
+      "symbol": "GAVEL",
+      "name": "GAVEL",
+      "aliases": []
+    },
+    {
+      "symbol": "GBT",
+      "name": "Grabity",
+      "aliases": [
+        "GRABITY"
+      ]
+    },
+    {
+      "symbol": "GBX",
+      "name": "Globitex",
+      "aliases": [
+        "GLOBITEX"
+      ]
+    },
+    {
+      "symbol": "GCP",
+      "name": "Globcoin Crypto Platform",
+      "aliases": [
+        "GLOBCOIN",
+        "CRYPTO",
+        "PLATFORM"
+      ]
+    },
+    {
+      "symbol": "GCU",
+      "name": "Global Currency Unit",
+      "aliases": [
+        "GLOBAL",
+        "CURRENCY",
+        "UNIT"
+      ]
+    },
+    {
+      "symbol": "GEE",
+      "name": "Geens NPO",
+      "aliases": [
+        "GEENS",
+        "NPO"
+      ]
+    },
+    {
+      "symbol": "GELD",
+      "name": "GELD",
+      "aliases": []
+    },
+    {
+      "symbol": "GEM",
+      "name": "Gems",
+      "aliases": [
+        "GEMS"
+      ]
+    },
+    {
+      "symbol": "GEN",
+      "name": "DAOstack",
+      "aliases": [
+        "DAOSTACK"
+      ]
+    },
+    {
+      "symbol": "GENE",
+      "name": "GENE TOKEN",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "GET",
+      "name": "GET",
+      "aliases": []
+    },
+    {
+      "symbol": "GFI",
+      "name": "Gravity Finance (Polygon)",
+      "aliases": [
+        "GRAVITY",
+        "FINANCE"
+      ]
+    },
+    {
+      "symbol": "GIF",
+      "name": "GIFcoin Token",
+      "aliases": [
+        "GIFCOIN",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "GIM",
+      "name": "Gimli",
+      "aliases": [
+        "GIMLI"
+      ]
+    },
+    {
+      "symbol": "GLA",
+      "name": "Gladius",
+      "aliases": [
+        "GLADIUS"
+      ]
+    },
+    {
+      "symbol": "GLM",
+      "name": "Golem Network Token (Polygon)",
+      "aliases": [
+        "GOLEM",
+        "NETWORK",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "GLMR",
+      "name": "Moonbeam",
+      "aliases": [
+        "MOONBEAM"
+      ]
+    },
+    {
+      "symbol": "GMC",
+      "name": "Gemmy coin",
+      "aliases": [
+        "GEMMY",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "GMT",
+      "name": "GMT",
+      "aliases": []
+    },
+    {
+      "symbol": "GMX",
+      "name": "GMX",
+      "aliases": []
+    },
+    {
+      "symbol": "GNO",
+      "name": "Gnosis",
+      "aliases": [
+        "GNOSIS"
+      ]
+    },
+    {
+      "symbol": "GNS",
+      "name": "Gains Network",
+      "aliases": [
+        "GAINSNETWORK"
+      ]
+    },
+    {
+      "symbol": "GNT",
+      "name": "Golem",
+      "aliases": [
+        "GOLEM"
+      ]
+    },
+    {
+      "symbol": "GNX",
+      "name": "Genaro X",
+      "aliases": [
+        "GENARO"
+      ]
+    },
+    {
+      "symbol": "GNY",
+      "name": "GNY",
+      "aliases": []
+    },
+    {
+      "symbol": "GO",
+      "name": "GoChain",
+      "aliases": [
+        "GOCHAIN"
+      ]
+    },
+    {
+      "symbol": "GOLDX",
+      "name": "GOLDX",
+      "aliases": []
+    },
+    {
+      "symbol": "GOM",
+      "name": "Gomoney",
+      "aliases": [
+        "GOMONEY"
+      ]
+    },
+    {
+      "symbol": "GOT",
+      "name": "GoToken",
+      "aliases": [
+        "GOTOKEN"
+      ]
+    },
+    {
+      "symbol": "GRAIL",
+      "name": "Camelot",
+      "aliases": [
+        "CAMELOT"
+      ]
+    },
+    {
+      "symbol": "GRID",
+      "name": "GRID",
+      "aliases": []
+    },
+    {
+      "symbol": "GRMD",
+      "name": "GreenMed",
+      "aliases": [
+        "GREENMED"
+      ]
+    },
+    {
+      "symbol": "GROO",
+      "name": "Groocoin",
+      "aliases": [
+        "GROOCOIN"
+      ]
+    },
+    {
+      "symbol": "GROW",
+      "name": "Growchain",
+      "aliases": [
+        "GROWCHAIN"
+      ]
+    },
+    {
+      "symbol": "GRS",
+      "name": "Groestlcoin",
+      "aliases": [
+        "GROESTLCOIN"
+      ]
+    },
+    {
+      "symbol": "GRT",
+      "name": "The Graph",
+      "aliases": [
+        "GRAPH",
+        "THEGRAPH"
+      ]
+    },
+    {
+      "symbol": "GRUMPY",
+      "name": "Grumpy Cat (Polygon)",
+      "aliases": [
+        "CAT"
+      ]
+    },
+    {
+      "symbol": "GSC",
+      "name": "Global Social Chain",
+      "aliases": [
+        "GLOBAL",
+        "SOCIAL",
+        "CHAIN"
+      ]
+    },
+    {
+      "symbol": "GSE",
+      "name": "GSENetwork",
+      "aliases": [
+        "GSENETWORK"
+      ]
+    },
+    {
+      "symbol": "GTC",
+      "name": "GTC Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "GTKT",
+      "name": "GTKT",
+      "aliases": []
+    },
+    {
+      "symbol": "GTO",
+      "name": "Gifto",
+      "aliases": [
+        "GIFTO"
+      ]
+    },
+    {
+      "symbol": "GUESS",
+      "name": "GUESS",
+      "aliases": []
+    },
+    {
+      "symbol": "GULD",
+      "name": "GULD ERC20",
+      "aliases": [
+        "ERC20"
+      ]
+    },
+    {
+      "symbol": "GUP",
+      "name": "GUP",
+      "aliases": []
+    },
+    {
+      "symbol": "GUSD",
+      "name": "Gemini dollar",
+      "aliases": [
+        "GEMINI",
+        "DOLLAR"
+      ]
+    },
+    {
+      "symbol": "GVT",
+      "name": "Genesis Vision",
+      "aliases": [
+        "GENESIS",
+        "VISION"
+      ]
+    },
+    {
+      "symbol": "GXC",
+      "name": "GXC",
+      "aliases": []
+    },
+    {
+      "symbol": "GXVC",
+      "name": "Genevieve VC",
+      "aliases": [
+        "GENEVIEVE"
+      ]
+    },
+    {
+      "symbol": "GZB",
+      "name": "GigziBlack",
+      "aliases": [
+        "GIGZIBLACK"
+      ]
+    },
+    {
+      "symbol": "GZE",
+      "name": "GazeCoin",
+      "aliases": [
+        "GAZECOIN"
+      ]
+    },
+    {
+      "symbol": "GZR",
+      "name": "Gizer",
+      "aliases": [
+        "GIZER"
+      ]
+    },
+    {
+      "symbol": "HAK",
+      "name": "Shaka",
+      "aliases": [
+        "SHAKA"
+      ]
+    },
+    {
+      "symbol": "HAND",
+      "name": "ShowHand",
+      "aliases": [
+        "SHOWHAND"
+      ]
+    },
+    {
+      "symbol": "HAPPY",
+      "name": "Happiness",
+      "aliases": [
+        "HAPPINESS"
+      ]
+    },
+    {
+      "symbol": "HARD",
+      "name": "Hard Protocol",
+      "aliases": [
+        "HARDPROTOCOL"
+      ]
+    },
+    {
+      "symbol": "HAT",
+      "name": "Hawala Today",
+      "aliases": [
+        "HAWALA",
+        "TODAY"
+      ]
+    },
+    {
+      "symbol": "HB",
+      "name": "HeartBout",
+      "aliases": [
+        "HEARTBOUT"
+      ]
+    },
+    {
+      "symbol": "HBAR",
+      "name": "Hedera",
+      "aliases": [
+        "HEDERA"
+      ]
+    },
+    {
+      "symbol": "HBT",
+      "name": "Hubiits",
+      "aliases": [
+        "HUBIITS"
+      ]
+    },
+    {
+      "symbol": "HBZ",
+      "name": "Helbiz",
+      "aliases": [
+        "HELBIZ"
+      ]
+    },
+    {
+      "symbol": "HDL",
+      "name": "HOLDER.TECH",
+      "aliases": [
+        "HOLDERTECH"
+      ]
+    },
+    {
+      "symbol": "HDP",
+      "name": "HEdpAY",
+      "aliases": [
+        "HEDPAY"
+      ]
+    },
+    {
+      "symbol": "HEDG",
+      "name": "Hedge Trade",
+      "aliases": [
+        "HEDGE",
+        "TRADE"
+      ]
+    },
+    {
+      "symbol": "HEM",
+      "name": "Hemelios",
+      "aliases": [
+        "HEMELIOS"
+      ]
+    },
+    {
+      "symbol": "HER",
+      "name": "HeroNodeToken",
+      "aliases": [
+        "HERONODETOKEN"
+      ]
+    },
+    {
+      "symbol": "HEX",
+      "name": "HEX (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "HEY",
+      "name": "HeyToken",
+      "aliases": [
+        "HEYTOKEN"
+      ]
+    },
+    {
+      "symbol": "HFT",
+      "name": "Hashflow",
+      "aliases": [
+        "HASHFLOW"
+      ]
+    },
+    {
+      "symbol": "HGT",
+      "name": "HGT",
+      "aliases": []
+    },
+    {
+      "symbol": "HIBT",
+      "name": "HiBTC Token",
+      "aliases": [
+        "HIBTC",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "HIG",
+      "name": "ethereumhigh",
+      "aliases": [
+        "ETHEREUMHIGH"
+      ]
+    },
+    {
+      "symbol": "HINT",
+      "name": "Hintchain",
+      "aliases": [
+        "HINTCHAIN"
+      ]
+    },
+    {
+      "symbol": "HKG",
+      "name": "HKG",
+      "aliases": []
+    },
+    {
+      "symbol": "HKN",
+      "name": "Hacken",
+      "aliases": [
+        "HACKEN"
+      ]
+    },
+    {
+      "symbol": "HKY",
+      "name": "Hicky",
+      "aliases": [
+        "HICKY"
+      ]
+    },
+    {
+      "symbol": "HLX",
+      "name": "Helex",
+      "aliases": [
+        "HELEX"
+      ]
+    },
+    {
+      "symbol": "HMC",
+      "name": "Hms Token",
+      "aliases": [
+        "HMS",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "HMQ",
+      "name": "HMQ",
+      "aliases": []
+    },
+    {
+      "symbol": "HNST",
+      "name": "Honest",
+      "aliases": [
+        "HONEST"
+      ]
+    },
+    {
+      "symbol": "HNT",
+      "name": "Helium",
+      "aliases": [
+        "HELIUM"
+      ]
+    },
+    {
+      "symbol": "HODL",
+      "name": "HODLCoin",
+      "aliases": [
+        "HODLCOIN"
+      ]
+    },
+    {
+      "symbol": "HONOR",
+      "name": "Honor (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "HOPR",
+      "name": "Hopr Token (Polygon)",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "HORSE",
+      "name": "HORSE",
+      "aliases": []
+    },
+    {
+      "symbol": "HOT",
+      "name": "Holo",
+      "aliases": [
+        "HOLO"
+      ]
+    },
+    {
+      "symbol": "HPB",
+      "name": "High Performance Blockchain",
+      "aliases": [
+        "HIGH",
+        "PERFORMANCE",
+        "BLOCKCHAIN"
+      ]
+    },
+    {
+      "symbol": "HST",
+      "name": "HST",
+      "aliases": []
+    },
+    {
+      "symbol": "HT",
+      "name": "HuobiToken",
+      "aliases": [
+        "HUOBITOKEN"
+      ]
+    },
+    {
+      "symbol": "HUSD",
+      "name": "HUSD (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "HV",
+      "name": "HighVibe",
+      "aliases": [
+        "HIGHVIBE"
+      ]
+    },
+    {
+      "symbol": "HVN",
+      "name": "Hive Project",
+      "aliases": [
+        "HIVE",
+        "PROJECT"
+      ]
+    },
+    {
+      "symbol": "HYC",
+      "name": "Hycon",
+      "aliases": [
+        "HYCON"
+      ]
+    },
+    {
+      "symbol": "HYDRO",
+      "name": "Hydro",
+      "aliases": []
+    },
+    {
+      "symbol": "ICD",
+      "name": "ICEDIUM",
+      "aliases": [
+        "ICEDIUM"
+      ]
+    },
+    {
+      "symbol": "ICE",
+      "name": "Ice",
+      "aliases": []
+    },
+    {
+      "symbol": "ICN",
+      "name": "ICN",
+      "aliases": []
+    },
+    {
+      "symbol": "ICO",
+      "name": "ICO",
+      "aliases": []
+    },
+    {
+      "symbol": "ICOS",
+      "name": "ICOS",
+      "aliases": []
+    },
+    {
+      "symbol": "ICP",
+      "name": "Internet Computer",
+      "aliases": [
+        "INTERNETCOMPUTER"
+      ]
+    },
+    {
+      "symbol": "ICX",
+      "name": "ICON",
+      "aliases": [
+        "ICON"
+      ]
+    },
+    {
+      "symbol": "IDEA",
+      "name": "IDEA Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "IDH",
+      "name": "indaHash Coin",
+      "aliases": [
+        "INDAHASH",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "IDXM",
+      "name": "IDEX Membership",
+      "aliases": [
+        "IDEX",
+        "MEMBERSHIP"
+      ]
+    },
+    {
+      "symbol": "IETH",
+      "name": "iEthereum",
+      "aliases": [
+        "IETHEREUM"
+      ]
+    },
+    {
+      "symbol": "IFT",
+      "name": "InvestFeed",
+      "aliases": [
+        "INVESTFEED"
+      ]
+    },
+    {
+      "symbol": "IFUND",
+      "name": "Unifund (Polygon)",
+      "aliases": [
+        "UNIFUND"
+      ]
+    },
+    {
+      "symbol": "IG",
+      "name": "IG",
+      "aliases": []
+    },
+    {
+      "symbol": "IHF",
+      "name": "Invictus Hyperion",
+      "aliases": [
+        "INVICTUS",
+        "HYPERION"
+      ]
+    },
+    {
+      "symbol": "IHT",
+      "name": "I HOUSE TOKEN",
+      "aliases": [
+        "HOUSE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "IIC",
+      "name": "IIC",
+      "aliases": []
+    },
+    {
+      "symbol": "IKB",
+      "name": "IKB",
+      "aliases": []
+    },
+    {
+      "symbol": "IMC",
+      "name": "Immune Coin",
+      "aliases": [
+        "IMMUNE",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "IMT",
+      "name": "MoneyToken",
+      "aliases": [
+        "MONEYTOKEN"
+      ]
+    },
+    {
+      "symbol": "IMX",
+      "name": "Immutable",
+      "aliases": [
+        "IMMUTABLE",
+        "IMMUTABLEX"
+      ]
+    },
+    {
+      "symbol": "IND",
+      "name": "Indorse",
+      "aliases": [
+        "INDORSE"
+      ]
+    },
+    {
+      "symbol": "ING",
+      "name": "IUNGO",
+      "aliases": [
+        "IUNGO"
+      ]
+    },
+    {
+      "symbol": "INJ",
+      "name": "Injective",
+      "aliases": [
+        "INJECTIVE"
+      ]
+    },
+    {
+      "symbol": "INRM",
+      "name": "Integrated Money",
+      "aliases": [
+        "INTEGRATED",
+        "MONEY"
+      ]
+    },
+    {
+      "symbol": "INS",
+      "name": "INS",
+      "aliases": []
+    },
+    {
+      "symbol": "INSTAR",
+      "name": "Insights Network",
+      "aliases": [
+        "INSIGHTS",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "INT",
+      "name": "Internet Node Token",
+      "aliases": [
+        "INTERNET",
+        "NODE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "INV",
+      "name": "Invacio Coin",
+      "aliases": [
+        "INVACIO",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "INVOX",
+      "name": "Invox Finance",
+      "aliases": [
+        "FINANCE"
+      ]
+    },
+    {
+      "symbol": "INXT",
+      "name": "Internxt",
+      "aliases": [
+        "INTERNXT"
+      ]
+    },
+    {
+      "symbol": "IOT",
+      "name": "IoTコイン",
+      "aliases": []
+    },
+    {
+      "symbol": "IOTA",
+      "name": "IOTA",
+      "aliases": []
+    },
+    {
+      "symbol": "IOTX",
+      "name": "IoTeX",
+      "aliases": [
+        "IOTEX"
+      ]
+    },
+    {
+      "symbol": "IOV",
+      "name": "IOV",
+      "aliases": []
+    },
+    {
+      "symbol": "IPL",
+      "name": "InsurePal token",
+      "aliases": [
+        "INSUREPAL",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "IPSX",
+      "name": "IPSX",
+      "aliases": []
+    },
+    {
+      "symbol": "IQ",
+      "name": "Everipedia IQ(pos) (Polygon)",
+      "aliases": [
+        "EVERIPEDIA"
+      ]
+    },
+    {
+      "symbol": "IRON",
+      "name": "Iron Stablecoin (Polygon)",
+      "aliases": [
+        "STABLECOIN"
+      ]
+    },
+    {
+      "symbol": "ISR",
+      "name": "Insureum Token",
+      "aliases": [
+        "INSUREUM",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "IST34",
+      "name": "IST34 Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ITC",
+      "name": "IoT Chain",
+      "aliases": [
+        "IOT",
+        "CHAIN"
+      ]
+    },
+    {
+      "symbol": "ITT",
+      "name": "ITT Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "IUC",
+      "name": "UNICOIN",
+      "aliases": [
+        "UNICOIN"
+      ]
+    },
+    {
+      "symbol": "IVY",
+      "name": "IvyKoin Public Network Tokens",
+      "aliases": [
+        "IVYKOIN",
+        "PUBLIC",
+        "NETWORK",
+        "TOKENS"
+      ]
+    },
+    {
+      "symbol": "IXT",
+      "name": "IXT",
+      "aliases": []
+    },
+    {
+      "symbol": "J8T",
+      "name": "J8T Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "JBX",
+      "name": "JBOX",
+      "aliases": [
+        "JBOX"
+      ]
+    },
+    {
+      "symbol": "JC",
+      "name": "Jesus Coin",
+      "aliases": [
+        "JESUS",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "JET",
+      "name": "JET",
+      "aliases": []
+    },
+    {
+      "symbol": "JETCOINS",
+      "name": "JetCoins",
+      "aliases": []
+    },
+    {
+      "symbol": "JNT",
+      "name": "JNT",
+      "aliases": []
+    },
+    {
+      "symbol": "JOB",
+      "name": "JOBCHAIN",
+      "aliases": [
+        "JOBCHAIN"
+      ]
+    },
+    {
+      "symbol": "JONES",
+      "name": "Jones DAO",
+      "aliases": [
+        "JONESDAO"
+      ]
+    },
+    {
+      "symbol": "JOT",
+      "name": "Jury.Online",
+      "aliases": [
+        "JURYONLINE"
+      ]
+    },
+    {
+      "symbol": "JOY",
+      "name": "JOYSO",
+      "aliases": [
+        "JOYSO"
+      ]
+    },
+    {
+      "symbol": "JRT",
+      "name": "Jarvis Reward Token (Polygon)",
+      "aliases": [
+        "JARVIS",
+        "REWARD",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "JST",
+      "name": "JUST",
+      "aliases": [
+        "JUST"
+      ]
+    },
+    {
+      "symbol": "JUP",
+      "name": "Jupiter",
+      "aliases": [
+        "JUPITER"
+      ]
+    },
+    {
+      "symbol": "KAI",
+      "name": "KardiaChain",
+      "aliases": [
+        "KARDIACHAIN"
+      ]
+    },
+    {
+      "symbol": "KAM",
+      "name": "Kamari",
+      "aliases": [
+        "KAMARI"
+      ]
+    },
+    {
+      "symbol": "KAN",
+      "name": "KAN",
+      "aliases": []
+    },
+    {
+      "symbol": "KAOS",
+      "name": "KAOSCANDY (TRC10)",
+      "aliases": [
+        "KAOSCANDY"
+      ]
+    },
+    {
+      "symbol": "KAVA",
+      "name": "Kava",
+      "aliases": []
+    },
+    {
+      "symbol": "KAVA",
+      "name": "Kava",
+      "aliases": []
+    },
+    {
+      "symbol": "KC",
+      "name": "KMCC",
+      "aliases": [
+        "KMCC"
+      ]
+    },
+    {
+      "symbol": "KDA",
+      "name": "Kadena",
+      "aliases": [
+        "KADENA"
+      ]
+    },
+    {
+      "symbol": "KEE",
+      "name": "CryptoKEE",
+      "aliases": [
+        "CRYPTOKEE"
+      ]
+    },
+    {
+      "symbol": "KEEP",
+      "name": "Keep Token (Polygon)",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "KEY",
+      "name": "SelfKey",
+      "aliases": [
+        "SELFKEY"
+      ]
+    },
+    {
+      "symbol": "KICK",
+      "name": "KICK",
+      "aliases": []
+    },
+    {
+      "symbol": "KIN",
+      "name": "Kin",
+      "aliases": []
+    },
+    {
+      "symbol": "KIND",
+      "name": "Kind Ads Token",
+      "aliases": [
+        "ADS",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "KLAY",
+      "name": "Klaytn",
+      "aliases": [
+        "KLAYTN"
+      ]
+    },
+    {
+      "symbol": "KLIMA",
+      "name": "KlimaDAO",
+      "aliases": [
+        "KLIMADAO"
+      ]
+    },
+    {
+      "symbol": "KMD",
+      "name": "Komodo",
+      "aliases": [
+        "KOMODO"
+      ]
+    },
+    {
+      "symbol": "KMTBA",
+      "name": "Korea Medical TBA",
+      "aliases": [
+        "KOREA",
+        "MEDICAL",
+        "TBA"
+      ]
+    },
+    {
+      "symbol": "KNC",
+      "name": "Kyber Network",
+      "aliases": [
+        "KYBER",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "KNDC",
+      "name": "KanadeCoin",
+      "aliases": [
+        "KANADECOIN"
+      ]
+    },
+    {
+      "symbol": "KNT",
+      "name": "Kora Network Token",
+      "aliases": [
+        "KORA",
+        "NETWORK",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "KPR",
+      "name": "KPRCoin",
+      "aliases": [
+        "KPRCOIN"
+      ]
+    },
+    {
+      "symbol": "KREX",
+      "name": "KRONN",
+      "aliases": [
+        "KRONN"
+      ]
+    },
+    {
+      "symbol": "KRILL",
+      "name": "Krill (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "KRL",
+      "name": "Kryll",
+      "aliases": [
+        "KRYLL"
+      ]
+    },
+    {
+      "symbol": "KRS",
+      "name": "Koris",
+      "aliases": [
+        "KORIS"
+      ]
+    },
+    {
+      "symbol": "KSM",
+      "name": "Kusama",
+      "aliases": [
+        "KUSAMA"
+      ]
+    },
+    {
+      "symbol": "KUE",
+      "name": "Kuende Token",
+      "aliases": [
+        "KUENDE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "KWATT",
+      "name": "4NEW",
+      "aliases": [
+        "4NEW"
+      ]
+    },
+    {
+      "symbol": "KWENTA",
+      "name": "Kwenta",
+      "aliases": []
+    },
+    {
+      "symbol": "KZN",
+      "name": "KaizenCoin",
+      "aliases": [
+        "KAIZENCOIN"
+      ]
+    },
+    {
+      "symbol": "L-BTC",
+      "name": "Liquid-BTC",
+      "aliases": [
+        "LIQUIDBTC"
+      ]
+    },
+    {
+      "symbol": "L-USDT",
+      "name": "Liquid USDt",
+      "aliases": [
+        "LIQUID",
+        "USDT"
+      ]
+    },
+    {
+      "symbol": "LA",
+      "name": "LATOKEN",
+      "aliases": [
+        "LATOKEN"
+      ]
+    },
+    {
+      "symbol": "LALA",
+      "name": "LALA World Token",
+      "aliases": [
+        "WORLD",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "LATX",
+      "name": "LAtiumX",
+      "aliases": [
+        "LATIUMX"
+      ]
+    },
+    {
+      "symbol": "LBA",
+      "name": "CRED (old LibraToken)",
+      "aliases": [
+        "CRED"
+      ]
+    },
+    {
+      "symbol": "LBC",
+      "name": "Library",
+      "aliases": [
+        "LIBRARY"
+      ]
+    },
+    {
+      "symbol": "LCS",
+      "name": "LocalCoinSwap Cryptoshare",
+      "aliases": [
+        "LOCALCOINSWAP",
+        "CRYPTOSHARE"
+      ]
+    },
+    {
+      "symbol": "LCT",
+      "name": "LiquorChain Token",
+      "aliases": [
+        "LIQUORCHAIN",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "LCX",
+      "name": "LCX",
+      "aliases": []
+    },
+    {
+      "symbol": "LDC",
+      "name": "LEADCOIN",
+      "aliases": [
+        "LEADCOIN"
+      ]
+    },
+    {
+      "symbol": "LDO",
+      "name": "Lido DAO",
+      "aliases": [
+        "LIDO",
+        "LIDODAO"
+      ]
+    },
+    {
+      "symbol": "LDX",
+      "name": "LondonCoin",
+      "aliases": [
+        "LONDONCOIN"
+      ]
+    },
+    {
+      "symbol": "LEDU",
+      "name": "LEDU",
+      "aliases": []
+    },
+    {
+      "symbol": "LEMO",
+      "name": "Lemo",
+      "aliases": []
+    },
+    {
+      "symbol": "LEND",
+      "name": "Aave (ERC20)",
+      "aliases": [
+        "AAVE"
+      ]
+    },
+    {
+      "symbol": "LEO",
+      "name": "Leo Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "LEV",
+      "name": "Leverj",
+      "aliases": [
+        "LEVERJ"
+      ]
+    },
+    {
+      "symbol": "LEVEL",
+      "name": "Level Finance",
+      "aliases": [
+        "LEVELFINANCE"
+      ]
+    },
+    {
+      "symbol": "LFR",
+      "name": "LifeRun Coin",
+      "aliases": [
+        "LIFERUN",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "LG",
+      "name": "LG",
+      "aliases": []
+    },
+    {
+      "symbol": "LGD",
+      "name": "Legends",
+      "aliases": [
+        "LEGENDS"
+      ]
+    },
+    {
+      "symbol": "LGO",
+      "name": "LGO",
+      "aliases": []
+    },
+    {
+      "symbol": "LGR",
+      "name": "Logarithm",
+      "aliases": [
+        "LOGARITHM"
+      ]
+    },
+    {
+      "symbol": "LIBER",
+      "name": "Libereum",
+      "aliases": [
+        "LIBEREUM"
+      ]
+    },
+    {
+      "symbol": "LIF",
+      "name": "LIF",
+      "aliases": []
+    },
+    {
+      "symbol": "LIFE",
+      "name": "LIFE",
+      "aliases": []
+    },
+    {
+      "symbol": "LIKE",
+      "name": "LikeCoin",
+      "aliases": [
+        "LIKECOIN"
+      ]
+    },
+    {
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "aliases": [
+        "CHAINLINK"
+      ]
+    },
+    {
+      "symbol": "LIT",
+      "name": "Litentry (Polygon)",
+      "aliases": [
+        "LITENTRY"
+      ]
+    },
+    {
+      "symbol": "LIVE",
+      "name": "LIVE Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "LKY",
+      "name": "Linkey Token",
+      "aliases": [
+        "LINKEY",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "LML",
+      "name": "LML",
+      "aliases": []
+    },
+    {
+      "symbol": "LNC",
+      "name": "Linker Coin",
+      "aliases": [
+        "LINKER",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "LND",
+      "name": "Lendingblock",
+      "aliases": [
+        "LENDINGBLOCK"
+      ]
+    },
+    {
+      "symbol": "LOC",
+      "name": "LockChain",
+      "aliases": [
+        "LOCKCHAIN"
+      ]
+    },
+    {
+      "symbol": "LOCI",
+      "name": "LOCIcoin",
+      "aliases": [
+        "LOCICOIN"
+      ]
+    },
+    {
+      "symbol": "LOCUS",
+      "name": "Locus Chain",
+      "aliases": [
+        "CHAIN"
+      ]
+    },
+    {
+      "symbol": "LOK",
+      "name": "LookRev Old",
+      "aliases": [
+        "LOOKREV",
+        "OLD"
+      ]
+    },
+    {
+      "symbol": "LOOK",
+      "name": "LookRev",
+      "aliases": [
+        "LOOKREV"
+      ]
+    },
+    {
+      "symbol": "LOOKS",
+      "name": "LooksRare",
+      "aliases": [
+        "LOOKSRARE"
+      ]
+    },
+    {
+      "symbol": "LOOM",
+      "name": "LOOM",
+      "aliases": []
+    },
+    {
+      "symbol": "LPOOL",
+      "name": "Launchpool Token (Polygon)",
+      "aliases": [
+        "LAUNCHPOOL",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "LPT",
+      "name": "Livepeer",
+      "aliases": [
+        "LIVEPEER"
+      ]
+    },
+    {
+      "symbol": "LRC",
+      "name": "Loopring",
+      "aliases": [
+        "LOOPRING"
+      ]
+    },
+    {
+      "symbol": "LSK",
+      "name": "Lisk",
+      "aliases": [
+        "LISK"
+      ]
+    },
+    {
+      "symbol": "LTC",
+      "name": "Litecoin",
+      "aliases": [
+        "LITECOIN"
+      ]
+    },
+    {
+      "symbol": "LTO",
+      "name": "LTO Network",
+      "aliases": [
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "LUC",
+      "name": "LUCToken",
+      "aliases": [
+        "LUCTOKEN"
+      ]
+    },
+    {
+      "symbol": "LUCK",
+      "name": "LUCK",
+      "aliases": []
+    },
+    {
+      "symbol": "LUM",
+      "name": "Lumino Coin",
+      "aliases": [
+        "LUMINO",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "LUN",
+      "name": "LUN",
+      "aliases": []
+    },
+    {
+      "symbol": "LUNA",
+      "name": "Terra",
+      "aliases": [
+        "TERRA"
+      ]
+    },
+    {
+      "symbol": "LUNC",
+      "name": "Terra Classic",
+      "aliases": [
+        "TERRACLASSIC"
+      ]
+    },
+    {
+      "symbol": "LYM",
+      "name": "Lympo",
+      "aliases": [
+        "LYMPO"
+      ]
+    },
+    {
+      "symbol": "LYRA",
+      "name": "Lyra",
+      "aliases": []
+    },
+    {
+      "symbol": "MAD",
+      "name": "MAD",
+      "aliases": []
+    },
+    {
+      "symbol": "MAGIC",
+      "name": "Magic",
+      "aliases": []
+    },
+    {
+      "symbol": "MAN",
+      "name": "MAN",
+      "aliases": []
+    },
+    {
+      "symbol": "MANA",
+      "name": "Decentraland",
+      "aliases": [
+        "DECENTRALAND"
+      ]
+    },
+    {
+      "symbol": "MART",
+      "name": "Martcoin",
+      "aliases": [
+        "MARTCOIN"
+      ]
+    },
+    {
+      "symbol": "MAS",
+      "name": "MIDAS PROTOCOL",
+      "aliases": [
+        "MIDAS",
+        "PROTOCOL"
+      ]
+    },
+    {
+      "symbol": "MASK",
+      "name": "Mask Network",
+      "aliases": [
+        "MASKNETWORK"
+      ]
+    },
+    {
+      "symbol": "MATIC",
+      "name": "Polygon",
+      "aliases": [
+        "POLYGON"
+      ]
+    },
+    {
+      "symbol": "MAUSDC",
+      "name": "Matic Aave Interest Bearing USDC (Polygon)",
+      "aliases": [
+        "MATIC",
+        "AAVE",
+        "INTEREST",
+        "BEARING",
+        "USDC"
+      ]
+    },
+    {
+      "symbol": "MBCASH",
+      "name": "MBCash",
+      "aliases": []
+    },
+    {
+      "symbol": "MBRS",
+      "name": "Embers",
+      "aliases": [
+        "EMBERS"
+      ]
+    },
+    {
+      "symbol": "MCAP",
+      "name": "MCAP",
+      "aliases": []
+    },
+    {
+      "symbol": "MCI",
+      "name": "Musiconomi",
+      "aliases": [
+        "MUSICONOMI"
+      ]
+    },
+    {
+      "symbol": "MCO",
+      "name": "Crypto.com",
+      "aliases": [
+        "CRYPTOCOM"
+      ]
+    },
+    {
+      "symbol": "MDA",
+      "name": "MDA",
+      "aliases": []
+    },
+    {
+      "symbol": "MDS",
+      "name": "MediShares",
+      "aliases": [
+        "MEDISHARES"
+      ]
+    },
+    {
+      "symbol": "MDT",
+      "name": "Measurable Data Token",
+      "aliases": [
+        "MEASURABLE",
+        "DATA",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "MEDX",
+      "name": "MEDX TOKEN",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "MESG",
+      "name": "MESG",
+      "aliases": []
+    },
+    {
+      "symbol": "MESH",
+      "name": "BlockMesh",
+      "aliases": [
+        "BLOCKMESH"
+      ]
+    },
+    {
+      "symbol": "MEST",
+      "name": "Monaco Estate",
+      "aliases": [
+        "MONACO",
+        "ESTATE"
+      ]
+    },
+    {
+      "symbol": "MET",
+      "name": "Metronome",
+      "aliases": [
+        "METRONOME"
+      ]
+    },
+    {
+      "symbol": "METIS",
+      "name": "Metis",
+      "aliases": []
+    },
+    {
+      "symbol": "METM",
+      "name": "MetaMorph",
+      "aliases": [
+        "METAMORPH"
+      ]
+    },
+    {
+      "symbol": "MEW",
+      "name": "cat in a dogs world",
+      "aliases": []
+    },
+    {
+      "symbol": "MFG",
+      "name": "SyncFab Manufacturing",
+      "aliases": [
+        "SYNCFAB",
+        "MANUFACTURING"
+      ]
+    },
+    {
+      "symbol": "MFT",
+      "name": "Mainframe Token",
+      "aliases": [
+        "MAINFRAME",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "MFTU",
+      "name": "Mainstream For The Underground",
+      "aliases": [
+        "MAINSTREAM",
+        "FOR",
+        "THE",
+        "UNDERGROUND"
+      ]
+    },
+    {
+      "symbol": "MGO",
+      "name": "MGO",
+      "aliases": []
+    },
+    {
+      "symbol": "MIC",
+      "name": "Mindexcoin",
+      "aliases": [
+        "MINDEXCOIN"
+      ]
+    },
+    {
+      "symbol": "MILC",
+      "name": "Micro Licensing Coin",
+      "aliases": [
+        "MICRO",
+        "LICENSING",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "MIMATIC",
+      "name": "miMATIC (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "MINA",
+      "name": "Mina",
+      "aliases": []
+    },
+    {
+      "symbol": "MIOTA",
+      "name": "IOTA",
+      "aliases": [
+        "IOTA"
+      ]
+    },
+    {
+      "symbol": "MIT",
+      "name": "Mychatcoin",
+      "aliases": [
+        "MYCHATCOIN"
+      ]
+    },
+    {
+      "symbol": "MITX",
+      "name": "Morpheus Infrastructure Token",
+      "aliases": [
+        "MORPHEUS",
+        "INFRASTRUCTURE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "MIX",
+      "name": "MIX Blockchain",
+      "aliases": [
+        "BLOCKCHAIN"
+      ]
+    },
+    {
+      "symbol": "MKR",
+      "name": "Maker",
+      "aliases": [
+        "MAKER"
+      ]
+    },
+    {
+      "symbol": "MKT",
+      "name": "Mikado",
+      "aliases": [
+        "MIKADO"
+      ]
+    },
+    {
+      "symbol": "MLN",
+      "name": "Melonport",
+      "aliases": [
+        "MELONPORT"
+      ]
+    },
+    {
+      "symbol": "MNE",
+      "name": "MNE",
+      "aliases": []
+    },
+    {
+      "symbol": "MNT",
+      "name": "Media Network Token",
+      "aliases": [
+        "MEDIA",
+        "NETWORK",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "MNTP",
+      "name": "Goldmint MNT Prelaunch Token",
+      "aliases": [
+        "GOLDMINT",
+        "MNT",
+        "PRELAUNCH",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "MOC",
+      "name": "Moss Coin",
+      "aliases": [
+        "MOSS",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "MOD",
+      "name": "Modum",
+      "aliases": [
+        "MODUM"
+      ]
+    },
+    {
+      "symbol": "MOON",
+      "name": "Polywolf (Polygon)",
+      "aliases": [
+        "POLYWOLF"
+      ]
+    },
+    {
+      "symbol": "MORE",
+      "name": "Mithril Ore",
+      "aliases": [
+        "MITHRIL",
+        "ORE"
+      ]
+    },
+    {
+      "symbol": "MOT",
+      "name": "MOT",
+      "aliases": []
+    },
+    {
+      "symbol": "MOVE",
+      "name": "Mover (Polygon)",
+      "aliases": [
+        "MOVER"
+      ]
+    },
+    {
+      "symbol": "MOVED",
+      "name": "Twinkle",
+      "aliases": [
+        "TWINKLE"
+      ]
+    },
+    {
+      "symbol": "MOVR",
+      "name": "Moonriver",
+      "aliases": [
+        "MOONRIVER"
+      ]
+    },
+    {
+      "symbol": "MOZO",
+      "name": "Mozo Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "MPL",
+      "name": "Maple",
+      "aliases": [
+        "MAPLE"
+      ]
+    },
+    {
+      "symbol": "MRK",
+      "name": "Mark",
+      "aliases": [
+        "MARK"
+      ]
+    },
+    {
+      "symbol": "MRL",
+      "name": "Marcelo",
+      "aliases": [
+        "MARCELO"
+      ]
+    },
+    {
+      "symbol": "MRP",
+      "name": "MoneyRebel Token",
+      "aliases": [
+        "MONEYREBEL",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "MRPH",
+      "name": "Morpheus.Network",
+      "aliases": [
+        "MORPHEUSNETWORK"
+      ]
+    },
+    {
+      "symbol": "MRS",
+      "name": "Marsan Exchange token",
+      "aliases": [
+        "MARSAN",
+        "EXCHANGE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "MRV",
+      "name": "MRV",
+      "aliases": []
+    },
+    {
+      "symbol": "MSP",
+      "name": "Mothership",
+      "aliases": [
+        "MOTHERSHIP"
+      ]
+    },
+    {
+      "symbol": "MST",
+      "name": "Magicstone (Polygon)",
+      "aliases": [
+        "MAGICSTONE"
+      ]
+    },
+    {
+      "symbol": "MTA",
+      "name": "Meta (Polygon)",
+      "aliases": [
+        "META"
+      ]
+    },
+    {
+      "symbol": "MTC",
+      "name": "MTC Mesh Network",
+      "aliases": [
+        "MESH",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "MTH",
+      "name": "Monetha",
+      "aliases": [
+        "MONETHA"
+      ]
+    },
+    {
+      "symbol": "MTL",
+      "name": "MetalPay",
+      "aliases": [
+        "METALPAY"
+      ]
+    },
+    {
+      "symbol": "MTN",
+      "name": "MedToken",
+      "aliases": [
+        "MEDTOKEN"
+      ]
+    },
+    {
+      "symbol": "MTR",
+      "name": "Mitrav",
+      "aliases": [
+        "MITRAV"
+      ]
+    },
+    {
+      "symbol": "MTRC",
+      "name": "MTRCToken",
+      "aliases": [
+        "MTRCTOKEN"
+      ]
+    },
+    {
+      "symbol": "MTX",
+      "name": "MTX",
+      "aliases": []
+    },
+    {
+      "symbol": "MUSD",
+      "name": "MASTER USD",
+      "aliases": [
+        "MASTER",
+        "USD"
+      ]
+    },
+    {
+      "symbol": "MUSIC",
+      "name": "Musicoin",
+      "aliases": [
+        "MUSICOIN"
+      ]
+    },
+    {
+      "symbol": "MUXE",
+      "name": "MUXE",
+      "aliases": []
+    },
+    {
+      "symbol": "MVL",
+      "name": "Mass Vehicle Ledger Token",
+      "aliases": [
+        "MASS",
+        "VEHICLE",
+        "LEDGER",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "MVP",
+      "name": "Merculet",
+      "aliases": [
+        "MERCULET"
+      ]
+    },
+    {
+      "symbol": "MWAT",
+      "name": "RED MWAT",
+      "aliases": [
+        "RED"
+      ]
+    },
+    {
+      "symbol": "MXC",
+      "name": "Machine Xchange Coin",
+      "aliases": [
+        "MACHINE",
+        "XCHANGE",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "MYD",
+      "name": "MYD",
+      "aliases": []
+    },
+    {
+      "symbol": "MYRO",
+      "name": "Myro",
+      "aliases": []
+    },
+    {
+      "symbol": "MYST",
+      "name": "Mysterium",
+      "aliases": [
+        "MYSTERIUM"
+      ]
+    },
+    {
+      "symbol": "NAC",
+      "name": "Nami ICO",
+      "aliases": [
+        "NAMI",
+        "ICO"
+      ]
+    },
+    {
+      "symbol": "NANJ",
+      "name": "NANJCOIN",
+      "aliases": [
+        "NANJCOIN"
+      ]
+    },
+    {
+      "symbol": "NANO",
+      "name": "Nano",
+      "aliases": []
+    },
+    {
+      "symbol": "NAS",
+      "name": "Nebula",
+      "aliases": [
+        "NEBULA"
+      ]
+    },
+    {
+      "symbol": "NAVI",
+      "name": "NaviToken",
+      "aliases": [
+        "NAVITOKEN"
+      ]
+    },
+    {
+      "symbol": "NBAI",
+      "name": "NebulaAiToken",
+      "aliases": [
+        "NEBULAAITOKEN"
+      ]
+    },
+    {
+      "symbol": "NBC",
+      "name": "Niobium",
+      "aliases": [
+        "NIOBIUM"
+      ]
+    },
+    {
+      "symbol": "NCASH",
+      "name": "NucleusVision",
+      "aliases": [
+        "NUCLEUSVISION"
+      ]
+    },
+    {
+      "symbol": "NCC",
+      "name": "NeuroChain Clausius",
+      "aliases": [
+        "NEUROCHAIN",
+        "CLAUSIUS"
+      ]
+    },
+    {
+      "symbol": "NCDT",
+      "name": "Nuco Cloud",
+      "aliases": [
+        "NUCO",
+        "CLOUD"
+      ]
+    },
+    {
+      "symbol": "NCT",
+      "name": "Nectar",
+      "aliases": [
+        "NECTAR"
+      ]
+    },
+    {
+      "symbol": "NDC",
+      "name": "Neverdie",
+      "aliases": [
+        "NEVERDIE"
+      ]
+    },
+    {
+      "symbol": "NDX",
+      "name": "nDEX",
+      "aliases": [
+        "NDEX"
+      ]
+    },
+    {
+      "symbol": "NEAR",
+      "name": "NEAR Protocol",
+      "aliases": [
+        "NEARPROTOCOL"
+      ]
+    },
+    {
+      "symbol": "NEC",
+      "name": "Ethfinex Nectar Token",
+      "aliases": [
+        "ETHFINEX",
+        "NECTAR",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "NEEO",
+      "name": "NEEO",
+      "aliases": []
+    },
+    {
+      "symbol": "NEO",
+      "name": "NEO",
+      "aliases": []
+    },
+    {
+      "symbol": "NET",
+      "name": "NIMIQ",
+      "aliases": [
+        "NIMIQ"
+      ]
+    },
+    {
+      "symbol": "NEU",
+      "name": "NEU Fund",
+      "aliases": [
+        "FUND"
+      ]
+    },
+    {
+      "symbol": "NEWB",
+      "name": "Newbium",
+      "aliases": [
+        "NEWBIUM"
+      ]
+    },
+    {
+      "symbol": "NEXO",
+      "name": "NEXO",
+      "aliases": []
+    },
+    {
+      "symbol": "NFT",
+      "name": "APENFT",
+      "aliases": [
+        "APENFT"
+      ]
+    },
+    {
+      "symbol": "NGC",
+      "name": "NAGA Coin",
+      "aliases": [
+        "NAGA",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "NIA",
+      "name": "IONIA",
+      "aliases": [
+        "IONIA"
+      ]
+    },
+    {
+      "symbol": "NIM",
+      "name": "Nimiq",
+      "aliases": [
+        "NIMIQ"
+      ]
+    },
+    {
+      "symbol": "NIMFA",
+      "name": "Ninfa Money",
+      "aliases": [
+        "NINFA",
+        "MONEY"
+      ]
+    },
+    {
+      "symbol": "NIO",
+      "name": "Autonio",
+      "aliases": [
+        "AUTONIO"
+      ]
+    },
+    {
+      "symbol": "NIX",
+      "name": "NIX Platform",
+      "aliases": [
+        "PLATFORM"
+      ]
+    },
+    {
+      "symbol": "NLYA",
+      "name": "Nollya Coin",
+      "aliases": [
+        "NOLLYA",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "NMR",
+      "name": "Numeraire",
+      "aliases": [
+        "NUMERAIRE"
+      ]
+    },
+    {
+      "symbol": "NOAH",
+      "name": "NOAHCOIN",
+      "aliases": [
+        "NOAHCOIN"
+      ]
+    },
+    {
+      "symbol": "NOBS",
+      "name": "No BS Crypto",
+      "aliases": [
+        "CRYPTO"
+      ]
+    },
+    {
+      "symbol": "NOIA",
+      "name": "NOIA Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "NOS",
+      "name": "NOS",
+      "aliases": []
+    },
+    {
+      "symbol": "NOX",
+      "name": "NOX",
+      "aliases": []
+    },
+    {
+      "symbol": "NPER",
+      "name": "NPER",
+      "aliases": []
+    },
+    {
+      "symbol": "NPX",
+      "name": "NapoleonX",
+      "aliases": [
+        "NAPOLEONX"
+      ]
+    },
+    {
+      "symbol": "NPXS",
+      "name": "Pundi X Token",
+      "aliases": [
+        "PUNDI",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "NTK",
+      "name": "NeuroToken",
+      "aliases": [
+        "NEUROTOKEN"
+      ]
+    },
+    {
+      "symbol": "NTO",
+      "name": "Fujinto",
+      "aliases": [
+        "FUJINTO"
+      ]
+    },
+    {
+      "symbol": "NTWK",
+      "name": "Network",
+      "aliases": [
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "NUG",
+      "name": "Nuggets Token",
+      "aliases": [
+        "NUGGETS",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "NULS (ERC20)",
+      "name": "NULS (ERC20)",
+      "aliases": [
+        "NULS"
+      ]
+    },
+    {
+      "symbol": "NXC",
+      "name": "Nexium",
+      "aliases": [
+        "NEXIUM"
+      ]
+    },
+    {
+      "symbol": "NXX",
+      "name": "NXX",
+      "aliases": []
+    },
+    {
+      "symbol": "O2O",
+      "name": "O2OPAY",
+      "aliases": [
+        "O2OPAY"
+      ]
+    },
+    {
+      "symbol": "OAK",
+      "name": "OAK",
+      "aliases": []
+    },
+    {
+      "symbol": "OAX",
+      "name": "OAX",
+      "aliases": []
+    },
+    {
+      "symbol": "OCC",
+      "name": "Original Crypto Coin",
+      "aliases": [
+        "ORIGINAL",
+        "CRYPTO",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "OCEAN",
+      "name": "Ocean Protocol",
+      "aliases": [
+        "OCEANPROTOCOL"
+      ]
+    },
+    {
+      "symbol": "OCN",
+      "name": "OCoin",
+      "aliases": [
+        "OCOIN"
+      ]
+    },
+    {
+      "symbol": "ODE",
+      "name": "ODEM Token",
+      "aliases": [
+        "ODEM",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "OGN",
+      "name": "OriginToken",
+      "aliases": [
+        "ORIGINTOKEN"
+      ]
+    },
+    {
+      "symbol": "OHM",
+      "name": "Olympus",
+      "aliases": [
+        "OLYMPUS"
+      ]
+    },
+    {
+      "symbol": "OHNI",
+      "name": "Ohni",
+      "aliases": []
+    },
+    {
+      "symbol": "OIL",
+      "name": "Oiler (Polygon)",
+      "aliases": [
+        "OILER"
+      ]
+    },
+    {
+      "symbol": "OKB",
+      "name": "OKB (ERC20)",
+      "aliases": []
+    },
+    {
+      "symbol": "OLE",
+      "name": "Olive",
+      "aliases": [
+        "OLIVE"
+      ]
+    },
+    {
+      "symbol": "OLT",
+      "name": "OneLedger Token",
+      "aliases": [
+        "ONELEDGER",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "OM",
+      "name": "MANTRA DAO (ERC20)",
+      "aliases": [
+        "MANTRA",
+        "DAO"
+      ]
+    },
+    {
+      "symbol": "OMEN",
+      "name": "Augury Finance (Polygon)",
+      "aliases": [
+        "AUGURY",
+        "FINANCE"
+      ]
+    },
+    {
+      "symbol": "OMG",
+      "name": "OMG Network",
+      "aliases": [
+        "OMGNETWORK"
+      ]
+    },
+    {
+      "symbol": "OMX",
+      "name": "Omix",
+      "aliases": [
+        "OMIX"
+      ]
+    },
+    {
+      "symbol": "ONE",
+      "name": "Harmony",
+      "aliases": [
+        "HARMONY"
+      ]
+    },
+    {
+      "symbol": "ONEK",
+      "name": "One K Token",
+      "aliases": [
+        "ONE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ONG",
+      "name": "onG",
+      "aliases": []
+    },
+    {
+      "symbol": "ONL",
+      "name": "On.Live",
+      "aliases": [
+        "ONLIVE"
+      ]
+    },
+    {
+      "symbol": "ONOT",
+      "name": "ONO Token",
+      "aliases": [
+        "ONO",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ONT",
+      "name": "Ontology",
+      "aliases": [
+        "ONTOLOGY"
+      ]
+    },
+    {
+      "symbol": "OP",
+      "name": "Optimism",
+      "aliases": [
+        "OPTIMISM"
+      ]
+    },
+    {
+      "symbol": "OPEN",
+      "name": "OPEN",
+      "aliases": []
+    },
+    {
+      "symbol": "OPQ",
+      "name": "Opacity",
+      "aliases": [
+        "OPACITY"
+      ]
+    },
+    {
+      "symbol": "OPT",
+      "name": "Opus Foundation",
+      "aliases": [
+        "OPUS",
+        "FOUNDATION"
+      ]
+    },
+    {
+      "symbol": "OPTI",
+      "name": "OptiToken",
+      "aliases": [
+        "OPTITOKEN"
+      ]
+    },
+    {
+      "symbol": "ORAI",
+      "name": "Oraichain Token (Polygon)",
+      "aliases": [
+        "ORAICHAIN",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ORBS",
+      "name": "Orbs",
+      "aliases": []
+    },
+    {
+      "symbol": "ORCA",
+      "name": "Orca",
+      "aliases": []
+    },
+    {
+      "symbol": "ORDI",
+      "name": "Ordinals",
+      "aliases": [
+        "ORDINALS"
+      ]
+    },
+    {
+      "symbol": "ORI",
+      "name": "Origami Network",
+      "aliases": [
+        "ORIGAMI",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "ORME",
+      "name": "Ormeus Coin",
+      "aliases": [
+        "ORMEUS",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "ORS",
+      "name": "OriginSport Token",
+      "aliases": [
+        "ORIGINSPORT",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "OST",
+      "name": "Simple Token 'OST'",
+      "aliases": [
+        "SIMPLE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "OTN",
+      "name": "Open Trading Network",
+      "aliases": [
+        "OPEN",
+        "TRADING",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "OVR",
+      "name": "OVR (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "OWN",
+      "name": "OWNDATA",
+      "aliases": [
+        "OWNDATA"
+      ]
+    },
+    {
+      "symbol": "OXT",
+      "name": "Orchid (Polygon)",
+      "aliases": [
+        "ORCHID"
+      ]
+    },
+    {
+      "symbol": "PAI",
+      "name": "PCHAIN",
+      "aliases": [
+        "PCHAIN"
+      ]
+    },
+    {
+      "symbol": "PAID",
+      "name": "Paid Network (Polygon)",
+      "aliases": [
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "PAL",
+      "name": "PolicyPal Network (ERC20)",
+      "aliases": [
+        "POLICYPAL",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "PAR",
+      "name": "Par Stablecoin (Polygon)",
+      "aliases": [
+        "STABLECOIN"
+      ]
+    },
+    {
+      "symbol": "PARETO",
+      "name": "PARETO",
+      "aliases": []
+    },
+    {
+      "symbol": "PART",
+      "name": "Particl",
+      "aliases": [
+        "PARTICL"
+      ]
+    },
+    {
+      "symbol": "PASS",
+      "name": "Blockpass",
+      "aliases": [
+        "BLOCKPASS"
+      ]
+    },
+    {
+      "symbol": "PAT",
+      "name": "PATRON",
+      "aliases": [
+        "PATRON"
+      ]
+    },
+    {
+      "symbol": "PATENTS",
+      "name": "PATENTS",
+      "aliases": []
+    },
+    {
+      "symbol": "PATH",
+      "name": "PATH",
+      "aliases": []
+    },
+    {
+      "symbol": "PATR",
+      "name": "PATRIOT",
+      "aliases": [
+        "PATRIOT"
+      ]
+    },
+    {
+      "symbol": "PAX",
+      "name": "Paxos Standard",
+      "aliases": [
+        "PAXOS",
+        "STANDARD"
+      ]
+    },
+    {
+      "symbol": "PAXG",
+      "name": "PAX Gold",
+      "aliases": [
+        "PAXGOLD"
+      ]
+    },
+    {
+      "symbol": "PAY",
+      "name": "TenX Pay Token",
+      "aliases": [
+        "TENX",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "PBL",
+      "name": "PBL",
+      "aliases": []
+    },
+    {
+      "symbol": "PBT",
+      "name": "Primalbase Token (PBT)",
+      "aliases": [
+        "PRIMALBASE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "PBTC",
+      "name": "Ptokens BTC (Polygon)",
+      "aliases": [
+        "PTOKENS",
+        "BTC"
+      ]
+    },
+    {
+      "symbol": "PCH",
+      "name": "POPCHAIN CASH",
+      "aliases": [
+        "POPCHAIN",
+        "CASH"
+      ]
+    },
+    {
+      "symbol": "PCL",
+      "name": "PECULIUM",
+      "aliases": [
+        "PECULIUM"
+      ]
+    },
+    {
+      "symbol": "PCLOLD",
+      "name": "PCLOLD",
+      "aliases": []
+    },
+    {
+      "symbol": "PCLOLD2",
+      "name": "PCLOLD2",
+      "aliases": []
+    },
+    {
+      "symbol": "PDATA",
+      "name": "PDATA",
+      "aliases": []
+    },
+    {
+      "symbol": "PEG",
+      "name": "PEG Network Token",
+      "aliases": [
+        "NETWORK",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "PENDLE",
+      "name": "Pendle",
+      "aliases": []
+    },
+    {
+      "symbol": "PEOPLE",
+      "name": "ConstitutionDAO",
+      "aliases": [
+        "CONSTITUTIONDAO"
+      ]
+    },
+    {
+      "symbol": "PEP",
+      "name": "PEP Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "PEPE",
+      "name": "Pepe",
+      "aliases": []
+    },
+    {
+      "symbol": "PERP",
+      "name": "Perpetual Protocol",
+      "aliases": [
+        "PERPETUAL"
+      ]
+    },
+    {
+      "symbol": "PET",
+      "name": "PETHEREUM",
+      "aliases": [
+        "PETHEREUM"
+      ]
+    },
+    {
+      "symbol": "PETC",
+      "name": "Petcoin",
+      "aliases": [
+        "PETCOIN"
+      ]
+    },
+    {
+      "symbol": "PETRO",
+      "name": "PETRO",
+      "aliases": []
+    },
+    {
+      "symbol": "PEXT",
+      "name": "PEX-Token",
+      "aliases": [
+        "PEXTOKEN"
+      ]
+    },
+    {
+      "symbol": "PFR",
+      "name": "PayFair",
+      "aliases": [
+        "PAYFAIR"
+      ]
+    },
+    {
+      "symbol": "PHI",
+      "name": "PHI Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "PIPL",
+      "name": "PIPL Coin",
+      "aliases": [
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "PIRL",
+      "name": "Pirl",
+      "aliases": []
+    },
+    {
+      "symbol": "PIT",
+      "name": "Paypite v2",
+      "aliases": [
+        "PAYPITE"
+      ]
+    },
+    {
+      "symbol": "PIVX",
+      "name": "PivX",
+      "aliases": []
+    },
+    {
+      "symbol": "PIX",
+      "name": "PIX",
+      "aliases": []
+    },
+    {
+      "symbol": "PKG",
+      "name": "PKG Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "PKT",
+      "name": "PlayKey",
+      "aliases": [
+        "PLAYKEY"
+      ]
+    },
+    {
+      "symbol": "PLASMA",
+      "name": "PLASMA",
+      "aliases": []
+    },
+    {
+      "symbol": "PLAY",
+      "name": "HeroCoin",
+      "aliases": [
+        "HEROCOIN"
+      ]
+    },
+    {
+      "symbol": "PLBT",
+      "name": "Polybius",
+      "aliases": [
+        "POLYBIUS"
+      ]
+    },
+    {
+      "symbol": "PLG",
+      "name": "Pledgecamp",
+      "aliases": [
+        "PLEDGECAMP"
+      ]
+    },
+    {
+      "symbol": "PLR",
+      "name": "Pillar Project",
+      "aliases": [
+        "PILLAR",
+        "PROJECT"
+      ]
+    },
+    {
+      "symbol": "PLU",
+      "name": "Pluton",
+      "aliases": [
+        "PLUTON"
+      ]
+    },
+    {
+      "symbol": "PMA",
+      "name": "PumaPay",
+      "aliases": [
+        "PUMAPAY"
+      ]
+    },
+    {
+      "symbol": "PMNT",
+      "name": "Paymon",
+      "aliases": [
+        "PAYMON"
+      ]
+    },
+    {
+      "symbol": "PNK",
+      "name": "Pinakion",
+      "aliases": [
+        "PINAKION"
+      ]
+    },
+    {
+      "symbol": "PNODE",
+      "name": "Pinknode Token (Polygon)",
+      "aliases": [
+        "PINKNODE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "POA",
+      "name": "POA Network",
+      "aliases": [
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "POA20",
+      "name": "POA ERC20 on Foundation",
+      "aliases": [
+        "POA",
+        "ERC20",
+        "FOUNDATION"
+      ]
+    },
+    {
+      "symbol": "POE",
+      "name": "Po.et Tokens",
+      "aliases": [
+        "POET",
+        "TOKENS"
+      ]
+    },
+    {
+      "symbol": "POIN",
+      "name": "Potatoin",
+      "aliases": [
+        "POTATOIN"
+      ]
+    },
+    {
+      "symbol": "POLL",
+      "name": "ClearPoll",
+      "aliases": [
+        "CLEARPOLL"
+      ]
+    },
+    {
+      "symbol": "POLY",
+      "name": "Polymath Network",
+      "aliases": [
+        "POLYMATH",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "POLYBUNNY",
+      "name": "Polygon Bunny Token (Polygon)",
+      "aliases": [
+        "POLYGON",
+        "BUNNY",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "POLYDOGE",
+      "name": "Polydoge (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "POND",
+      "name": "Marlin Pond (Polygon)",
+      "aliases": [
+        "MARLIN"
+      ]
+    },
+    {
+      "symbol": "POOL",
+      "name": "Stake Pool",
+      "aliases": [
+        "STAKE"
+      ]
+    },
+    {
+      "symbol": "POPCAT",
+      "name": "Popcat",
+      "aliases": []
+    },
+    {
+      "symbol": "POPY",
+      "name": "POPPY (TRC10)",
+      "aliases": [
+        "POPPY"
+      ]
+    },
+    {
+      "symbol": "POS",
+      "name": "PoSToken",
+      "aliases": [
+        "POSTOKEN"
+      ]
+    },
+    {
+      "symbol": "POWR",
+      "name": "PowerLedger",
+      "aliases": [
+        "POWERLEDGER"
+      ]
+    },
+    {
+      "symbol": "PPC",
+      "name": "Peercoin",
+      "aliases": [
+        "PEERCOIN"
+      ]
+    },
+    {
+      "symbol": "PPDEX",
+      "name": "Pepedex (Polygon)",
+      "aliases": [
+        "PEPEDEX"
+      ]
+    },
+    {
+      "symbol": "PPP",
+      "name": "PayPie",
+      "aliases": [
+        "PAYPIE"
+      ]
+    },
+    {
+      "symbol": "PPT",
+      "name": "Populous",
+      "aliases": [
+        "POPULOUS"
+      ]
+    },
+    {
+      "symbol": "PRE",
+      "name": "Presearch",
+      "aliases": [
+        "PRESEARCH"
+      ]
+    },
+    {
+      "symbol": "PRG",
+      "name": "PRG",
+      "aliases": []
+    },
+    {
+      "symbol": "PRIX",
+      "name": "Privatix",
+      "aliases": [
+        "PRIVATIX"
+      ]
+    },
+    {
+      "symbol": "PRL",
+      "name": "Oyster Pearl",
+      "aliases": [
+        "OYSTER",
+        "PEARL"
+      ]
+    },
+    {
+      "symbol": "PRO",
+      "name": "Propy",
+      "aliases": [
+        "PROPY"
+      ]
+    },
+    {
+      "symbol": "PRON",
+      "name": "PronCoin",
+      "aliases": [
+        "PRONCOIN"
+      ]
+    },
+    {
+      "symbol": "PROPS",
+      "name": "Props",
+      "aliases": []
+    },
+    {
+      "symbol": "PRPS",
+      "name": "Purpose",
+      "aliases": [
+        "PURPOSE"
+      ]
+    },
+    {
+      "symbol": "PRQ",
+      "name": "Parsiq token (Polygon)",
+      "aliases": [
+        "PARSIQ",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "PRS",
+      "name": "Persians",
+      "aliases": [
+        "PERSIANS"
+      ]
+    },
+    {
+      "symbol": "PRSP",
+      "name": "PRSP",
+      "aliases": []
+    },
+    {
+      "symbol": "PST",
+      "name": "Primas Token",
+      "aliases": [
+        "PRIMAS",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "PT",
+      "name": "PornToken",
+      "aliases": [
+        "PORNTOKEN"
+      ]
+    },
+    {
+      "symbol": "PTC",
+      "name": "ParrotCoin",
+      "aliases": [
+        "PARROTCOIN"
+      ]
+    },
+    {
+      "symbol": "PTON",
+      "name": "PTON",
+      "aliases": []
+    },
+    {
+      "symbol": "PTOY",
+      "name": "PTOY",
+      "aliases": []
+    },
+    {
+      "symbol": "PTT",
+      "name": "Proton Token",
+      "aliases": [
+        "PROTON",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "PTWO",
+      "name": "PornTokenV2",
+      "aliases": [
+        "PORNTOKENV2"
+      ]
+    },
+    {
+      "symbol": "PUC",
+      "name": "Pour Coin",
+      "aliases": [
+        "POUR",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "PUNDIX",
+      "name": "Pundi X",
+      "aliases": [
+        "PUNDIX"
+      ]
+    },
+    {
+      "symbol": "PUP",
+      "name": "Pup Token (Polygon)",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "PUSD",
+      "name": "PUSD (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "PXG",
+      "name": "PlayGame",
+      "aliases": [
+        "PLAYGAME"
+      ]
+    },
+    {
+      "symbol": "PXT",
+      "name": "Populous XBRL Token (PXT)",
+      "aliases": [
+        "POPULOUS",
+        "XBRL",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "PYLNT",
+      "name": "Pylon",
+      "aliases": [
+        "PYLON"
+      ]
+    },
+    {
+      "symbol": "PYQ",
+      "name": "PYQ (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "PYTH",
+      "name": "Pyth Network",
+      "aliases": [
+        "PYTHNETWORK"
+      ]
+    },
+    {
+      "symbol": "QASH",
+      "name": "QASH",
+      "aliases": []
+    },
+    {
+      "symbol": "QAU",
+      "name": "QAU",
+      "aliases": []
+    },
+    {
+      "symbol": "QBIT",
+      "name": "Qubitica",
+      "aliases": [
+        "QUBITICA"
+      ]
+    },
+    {
+      "symbol": "QBX",
+      "name": "qiibeeToken",
+      "aliases": [
+        "QIIBEETOKEN"
+      ]
+    },
+    {
+      "symbol": "QI",
+      "name": "Qi Dao (Polygon)",
+      "aliases": [
+        "DAO"
+      ]
+    },
+    {
+      "symbol": "QKC",
+      "name": "QuarkChain Token",
+      "aliases": [
+        "QUARKCHAIN",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "QNT",
+      "name": "Quant",
+      "aliases": [
+        "QUANT"
+      ]
+    },
+    {
+      "symbol": "QRG",
+      "name": "QRG",
+      "aliases": []
+    },
+    {
+      "symbol": "QRL",
+      "name": "Quantum Resistant Ledger",
+      "aliases": [
+        "QUANTUM",
+        "RESISTANT",
+        "LEDGER"
+      ]
+    },
+    {
+      "symbol": "QSP",
+      "name": "Quantstamp Token",
+      "aliases": [
+        "QUANTSTAMP",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "QTQ",
+      "name": "TiiQu's Q Token",
+      "aliases": [
+        "TIIQUS",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "QTUM",
+      "name": "Qtum",
+      "aliases": []
+    },
+    {
+      "symbol": "QUICK",
+      "name": "Quickswap (Polygon)",
+      "aliases": [
+        "QUICKSWAP"
+      ]
+    },
+    {
+      "symbol": "QUN",
+      "name": "QunQunCommunities",
+      "aliases": [
+        "QUNQUNCOMMUNITIES"
+      ]
+    },
+    {
+      "symbol": "QVT",
+      "name": "QVT",
+      "aliases": []
+    },
+    {
+      "symbol": "R",
+      "name": "Revian",
+      "aliases": [
+        "REVIAN"
+      ]
+    },
+    {
+      "symbol": "RAMP",
+      "name": "RAMP",
+      "aliases": []
+    },
+    {
+      "symbol": "RAO",
+      "name": "RadioYo",
+      "aliases": [
+        "RADIOYO"
+      ]
+    },
+    {
+      "symbol": "RARI",
+      "name": "Rarible (Polygon)",
+      "aliases": [
+        "RARIBLE"
+      ]
+    },
+    {
+      "symbol": "RATING",
+      "name": "Rating",
+      "aliases": []
+    },
+    {
+      "symbol": "RAY",
+      "name": "Raydium",
+      "aliases": [
+        "RAYDIUM"
+      ]
+    },
+    {
+      "symbol": "RBLX",
+      "name": "Rublix",
+      "aliases": [
+        "RUBLIX"
+      ]
+    },
+    {
+      "symbol": "RCN",
+      "name": "Ripio Credit Network",
+      "aliases": [
+        "RIPIO",
+        "CREDIT",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "RCT",
+      "name": "realchain",
+      "aliases": [
+        "REALCHAIN"
+      ]
+    },
+    {
+      "symbol": "RDN",
+      "name": "Raiden Network",
+      "aliases": [
+        "RAIDEN",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "RDNT",
+      "name": "Radiant Capital",
+      "aliases": [
+        "RADIANT"
+      ]
+    },
+    {
+      "symbol": "REA",
+      "name": "Realisto",
+      "aliases": [
+        "REALISTO"
+      ]
+    },
+    {
+      "symbol": "REAL",
+      "name": "Real Estate Asset Ledger",
+      "aliases": [
+        "ESTATE",
+        "ASSET",
+        "LEDGER"
+      ]
+    },
+    {
+      "symbol": "REBL",
+      "name": "Rebellious",
+      "aliases": [
+        "REBELLIOUS"
+      ]
+    },
+    {
+      "symbol": "RED",
+      "name": "Red Community Token",
+      "aliases": [
+        "COMMUNITY",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "REDC",
+      "name": "RedCab",
+      "aliases": [
+        "REDCAB"
+      ]
+    },
+    {
+      "symbol": "REEF",
+      "name": "Reef",
+      "aliases": []
+    },
+    {
+      "symbol": "REF",
+      "name": "RefToken",
+      "aliases": [
+        "REFTOKEN"
+      ]
+    },
+    {
+      "symbol": "REM",
+      "name": "REMME",
+      "aliases": [
+        "REMME"
+      ]
+    },
+    {
+      "symbol": "REMI",
+      "name": "REMI",
+      "aliases": []
+    },
+    {
+      "symbol": "REN",
+      "name": "Ren",
+      "aliases": []
+    },
+    {
+      "symbol": "RENBTC",
+      "name": "RenBTC (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "RENDER",
+      "name": "Render",
+      "aliases": [
+        "RNDR"
+      ]
+    },
+    {
+      "symbol": "RENDOGE",
+      "name": "Rendoge (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "RENFIL",
+      "name": "renFIL (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "REP",
+      "name": "Augur",
+      "aliases": [
+        "AUGUR"
+      ]
+    },
+    {
+      "symbol": "REQ",
+      "name": "Request",
+      "aliases": [
+        "REQUEST"
+      ]
+    },
+    {
+      "symbol": "RET",
+      "name": "RealTract",
+      "aliases": [
+        "REALTRACT"
+      ]
+    },
+    {
+      "symbol": "REVV",
+      "name": "REVV (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "REX",
+      "name": "REX",
+      "aliases": []
+    },
+    {
+      "symbol": "RFR",
+      "name": "Refereum",
+      "aliases": [
+        "REFEREUM"
+      ]
+    },
+    {
+      "symbol": "RFUEL",
+      "name": "RioDeFi (ERC20)",
+      "aliases": [
+        "RIODEFI"
+      ]
+    },
+    {
+      "symbol": "RGS",
+      "name": "Rusgas",
+      "aliases": [
+        "RUSGAS"
+      ]
+    },
+    {
+      "symbol": "RHOC",
+      "name": "RHOC",
+      "aliases": []
+    },
+    {
+      "symbol": "RING",
+      "name": "Darwinia Network Native Token",
+      "aliases": [
+        "DARWINIA",
+        "NETWORK",
+        "NATIVE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "RIPT",
+      "name": "RiptideCoin",
+      "aliases": [
+        "RIPTIDECOIN"
+      ]
+    },
+    {
+      "symbol": "RISE",
+      "name": "Rise",
+      "aliases": []
+    },
+    {
+      "symbol": "RIYA",
+      "name": "Etheriya",
+      "aliases": [
+        "ETHERIYA"
+      ]
+    },
+    {
+      "symbol": "RKT",
+      "name": "Rock",
+      "aliases": [
+        "ROCK"
+      ]
+    },
+    {
+      "symbol": "RLC",
+      "name": "iExec RLC",
+      "aliases": [
+        "IEXEC"
+      ]
+    },
+    {
+      "symbol": "RLT",
+      "name": "RLT",
+      "aliases": []
+    },
+    {
+      "symbol": "RLTY",
+      "name": "SMARTRealty",
+      "aliases": [
+        "SMARTREALTY"
+      ]
+    },
+    {
+      "symbol": "RLX",
+      "name": "Relex",
+      "aliases": [
+        "RELEX"
+      ]
+    },
+    {
+      "symbol": "RMC",
+      "name": "RemiCoin",
+      "aliases": [
+        "REMICOIN"
+      ]
+    },
+    {
+      "symbol": "RMESH",
+      "name": "RightMesh Token",
+      "aliases": [
+        "RIGHTMESH",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "RNDR",
+      "name": "Render Token",
+      "aliases": [
+        "RENDER",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "RNT",
+      "name": "OneRoot Network",
+      "aliases": [
+        "ONEROOT",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "RNTB",
+      "name": "RNTB Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ROC",
+      "name": "ROC",
+      "aliases": []
+    },
+    {
+      "symbol": "ROCK",
+      "name": "Rocket Token",
+      "aliases": [
+        "ROCKET",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ROCK2",
+      "name": "ICE ROCK MINING",
+      "aliases": [
+        "ICE",
+        "ROCK",
+        "MINING"
+      ]
+    },
+    {
+      "symbol": "ROCK2PAY",
+      "name": "ICE ROCK MINING",
+      "aliases": [
+        "ICE",
+        "ROCK",
+        "MINING"
+      ]
+    },
+    {
+      "symbol": "ROK",
+      "name": "Rocketchain",
+      "aliases": [
+        "ROCKETCHAIN"
+      ]
+    },
+    {
+      "symbol": "ROLL",
+      "name": "Polyroll Token (Polygon)",
+      "aliases": [
+        "POLYROLL",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "ROM",
+      "name": "ROMToken",
+      "aliases": [
+        "ROMTOKEN"
+      ]
+    },
+    {
+      "symbol": "ROSE",
+      "name": "Oasis Network",
+      "aliases": [
+        "OASIS",
+        "OASISNETWORK"
+      ]
+    },
+    {
+      "symbol": "ROUND",
+      "name": "ROUND",
+      "aliases": []
+    },
+    {
+      "symbol": "ROUTE",
+      "name": "Route (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "RPL",
+      "name": "Rocket Pool",
+      "aliases": [
+        "ROCKETPOOL"
+      ]
+    },
+    {
+      "symbol": "RSK",
+      "name": "Rootstock",
+      "aliases": [
+        "ROOTSTOCK"
+      ]
+    },
+    {
+      "symbol": "RSR",
+      "name": "Reserve Rights",
+      "aliases": [
+        "RESERVERIGHTS"
+      ]
+    },
+    {
+      "symbol": "RTB",
+      "name": "AB-CHAIN RTB Token",
+      "aliases": [
+        "ABCHAIN",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "RTH",
+      "name": "Rotharium",
+      "aliases": [
+        "ROTHARIUM"
+      ]
+    },
+    {
+      "symbol": "RTN",
+      "name": "RiderToken",
+      "aliases": [
+        "RIDERTOKEN"
+      ]
+    },
+    {
+      "symbol": "RUFF",
+      "name": "RUFF",
+      "aliases": []
+    },
+    {
+      "symbol": "RUNE",
+      "name": "THORChain",
+      "aliases": [
+        "THORCHAIN"
+      ]
+    },
+    {
+      "symbol": "RVN",
+      "name": "Ravencoin",
+      "aliases": [
+        "RAVENCOIN"
+      ]
+    },
+    {
+      "symbol": "RVT",
+      "name": "Rivetz",
+      "aliases": [
+        "RIVETZ"
+      ]
+    },
+    {
+      "symbol": "RYLT",
+      "name": "RoyaltyCOIN",
+      "aliases": [
+        "ROYALTYCOIN"
+      ]
+    },
+    {
+      "symbol": "SAC",
+      "name": "SAC",
+      "aliases": []
+    },
+    {
+      "symbol": "SAI",
+      "name": "Dai Stablecoin v1.0 (old contract)",
+      "aliases": [
+        "DAI",
+        "STABLECOIN",
+        "V10"
+      ]
+    },
+    {
+      "symbol": "SALT",
+      "name": "Salt Lending Token",
+      "aliases": [
+        "LENDING",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SAMO",
+      "name": "Samoyedcoin",
+      "aliases": [
+        "SAMOYEDCOIN"
+      ]
+    },
+    {
+      "symbol": "SAN",
+      "name": "Santiment",
+      "aliases": [
+        "SANTIMENT"
+      ]
+    },
+    {
+      "symbol": "SAND",
+      "name": "The Sandbox",
+      "aliases": [
+        "SANDBOX",
+        "THESANDBOX"
+      ]
+    },
+    {
+      "symbol": "SATS",
+      "name": "1000SATS",
+      "aliases": [
+        "1000SATS"
+      ]
+    },
+    {
+      "symbol": "SBA",
+      "name": "simplyBrand",
+      "aliases": [
+        "SIMPLYBRAND"
+      ]
+    },
+    {
+      "symbol": "SC",
+      "name": "Siacoin",
+      "aliases": [
+        "SIACOIN"
+      ]
+    },
+    {
+      "symbol": "SCANDI",
+      "name": "Scandiweb Coin",
+      "aliases": [
+        "SCANDIWEB",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "SCC",
+      "name": "SCC (TRC10)",
+      "aliases": []
+    },
+    {
+      "symbol": "SCL",
+      "name": "SocialCoin",
+      "aliases": [
+        "SOCIALCOIN"
+      ]
+    },
+    {
+      "symbol": "SCRL",
+      "name": "SCRL",
+      "aliases": []
+    },
+    {
+      "symbol": "SCT",
+      "name": "SCT (TRC10)",
+      "aliases": []
+    },
+    {
+      "symbol": "SDS",
+      "name": "Safedollar.fi Share 2.0 (Polygon)",
+      "aliases": [
+        "SAFEDOLLARFI",
+        "SHARE"
+      ]
+    },
+    {
+      "symbol": "SEED",
+      "name": "Sesameseed (TRC10)",
+      "aliases": [
+        "SESAMESEED"
+      ]
+    },
+    {
+      "symbol": "SEELE",
+      "name": "SeeleToken",
+      "aliases": [
+        "SEELETOKEN"
+      ]
+    },
+    {
+      "symbol": "SEI",
+      "name": "Sei",
+      "aliases": []
+    },
+    {
+      "symbol": "SENC",
+      "name": "Sentinel Chain",
+      "aliases": [
+        "SENTINEL",
+        "CHAIN"
+      ]
+    },
+    {
+      "symbol": "SENSATORI",
+      "name": "SenSatorI Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SENT",
+      "name": "SENTinel",
+      "aliases": [
+        "SENTINEL"
+      ]
+    },
+    {
+      "symbol": "SET",
+      "name": "SET",
+      "aliases": []
+    },
+    {
+      "symbol": "SEXY",
+      "name": "Sexy Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SFP",
+      "name": "SafePal",
+      "aliases": [
+        "SAFEPAL"
+      ]
+    },
+    {
+      "symbol": "SGEL",
+      "name": "SGELDER",
+      "aliases": [
+        "SGELDER"
+      ]
+    },
+    {
+      "symbol": "SGN",
+      "name": "Signals Network Token",
+      "aliases": [
+        "SIGNALS",
+        "NETWORK",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SGP",
+      "name": "SGPay",
+      "aliases": [
+        "SGPAY"
+      ]
+    },
+    {
+      "symbol": "SGR",
+      "name": "Sugar Exchange",
+      "aliases": [
+        "SUGAR",
+        "EXCHANGE"
+      ]
+    },
+    {
+      "symbol": "SGT",
+      "name": "StatusGenesis",
+      "aliases": [
+        "STATUSGENESIS"
+      ]
+    },
+    {
+      "symbol": "SHFT",
+      "name": "Shyft Network",
+      "aliases": [
+        "SHYFT",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "SHIB",
+      "name": "Shiba Inu",
+      "aliases": [
+        "SHIBA",
+        "SHIBAINU"
+      ]
+    },
+    {
+      "symbol": "SHIP",
+      "name": "ShipChain",
+      "aliases": [
+        "SHIPCHAIN"
+      ]
+    },
+    {
+      "symbol": "SHIT",
+      "name": "SHIT",
+      "aliases": []
+    },
+    {
+      "symbol": "SHL",
+      "name": "Oyster Shell",
+      "aliases": [
+        "OYSTER",
+        "SHELL"
+      ]
+    },
+    {
+      "symbol": "SHP",
+      "name": "Sharpe Platform Token",
+      "aliases": [
+        "SHARPE",
+        "PLATFORM",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SIFT",
+      "name": "SIFT",
+      "aliases": []
+    },
+    {
+      "symbol": "SIG",
+      "name": "Signal",
+      "aliases": [
+        "SIGNAL"
+      ]
+    },
+    {
+      "symbol": "SKB",
+      "name": "Sakura Bloom",
+      "aliases": [
+        "SAKURA",
+        "BLOOM"
+      ]
+    },
+    {
+      "symbol": "SKE",
+      "name": "Super Keep Token",
+      "aliases": [
+        "SUPER",
+        "KEEP",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SKIN",
+      "name": "SKIN",
+      "aliases": []
+    },
+    {
+      "symbol": "SKL",
+      "name": "SKALE",
+      "aliases": [
+        "SKALE"
+      ]
+    },
+    {
+      "symbol": "SKM",
+      "name": "Skrumble Token",
+      "aliases": [
+        "SKRUMBLE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SKO1",
+      "name": "Sikoba",
+      "aliases": [
+        "SIKOBA"
+      ]
+    },
+    {
+      "symbol": "SKR",
+      "name": "SKR Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SKRP",
+      "name": "SKRP (Phase 1-E)",
+      "aliases": []
+    },
+    {
+      "symbol": "SKYM",
+      "name": "Skymap Token",
+      "aliases": [
+        "SKYMAP",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SLT",
+      "name": "Smartlands",
+      "aliases": [
+        "SMARTLANDS"
+      ]
+    },
+    {
+      "symbol": "SLY",
+      "name": "SELFLLERY",
+      "aliases": [
+        "SELFLLERY"
+      ]
+    },
+    {
+      "symbol": "SMART",
+      "name": "Smart Billions",
+      "aliases": [
+        "BILLIONS"
+      ]
+    },
+    {
+      "symbol": "SMS",
+      "name": "Speed Mining Services",
+      "aliases": [
+        "SPEED",
+        "MINING",
+        "SERVICES"
+      ]
+    },
+    {
+      "symbol": "SMT",
+      "name": "SmartMesh",
+      "aliases": [
+        "SMARTMESH"
+      ]
+    },
+    {
+      "symbol": "SNBL",
+      "name": "Snowball",
+      "aliases": [
+        "SNOWBALL"
+      ]
+    },
+    {
+      "symbol": "SNC",
+      "name": "SNC",
+      "aliases": []
+    },
+    {
+      "symbol": "SND",
+      "name": "Sandcoin",
+      "aliases": [
+        "SANDCOIN"
+      ]
+    },
+    {
+      "symbol": "SNG",
+      "name": "SINERGIA",
+      "aliases": [
+        "SINERGIA"
+      ]
+    },
+    {
+      "symbol": "SNGLS",
+      "name": "SingularDTV",
+      "aliases": [
+        "SINGULARDTV"
+      ]
+    },
+    {
+      "symbol": "SNIP",
+      "name": "SNIP",
+      "aliases": []
+    },
+    {
+      "symbol": "SNM",
+      "name": "SNM",
+      "aliases": []
+    },
+    {
+      "symbol": "SNOV",
+      "name": "SNOV",
+      "aliases": []
+    },
+    {
+      "symbol": "SNT",
+      "name": "Status Network Token",
+      "aliases": [
+        "STATUS",
+        "NETWORK",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SNTR",
+      "name": "Silent Notary Token",
+      "aliases": [
+        "SILENT",
+        "NOTARY",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SNX",
+      "name": "Synthetix",
+      "aliases": [
+        "SYNTHETIX"
+      ]
+    },
+    {
+      "symbol": "SOAR",
+      "name": "Soarcoin",
+      "aliases": [
+        "SOARCOIN"
+      ]
+    },
+    {
+      "symbol": "SOC",
+      "name": "All Sports Coin",
+      "aliases": [
+        "ALL",
+        "SPORTS",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "SOL",
+      "name": "Solana",
+      "aliases": [
+        "SOLANA"
+      ]
+    },
+    {
+      "symbol": "SONIQ",
+      "name": "Soniq Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SOUL",
+      "name": "CryptoSoul",
+      "aliases": [
+        "CRYPTOSOUL"
+      ]
+    },
+    {
+      "symbol": "SPANK",
+      "name": "SpankChain",
+      "aliases": [
+        "SPANKCHAIN"
+      ]
+    },
+    {
+      "symbol": "SPARC",
+      "name": "SPARC",
+      "aliases": []
+    },
+    {
+      "symbol": "SPARTA",
+      "name": "SPARTA",
+      "aliases": []
+    },
+    {
+      "symbol": "SPD",
+      "name": "Spindle",
+      "aliases": [
+        "SPINDLE"
+      ]
+    },
+    {
+      "symbol": "SPELL",
+      "name": "Spell",
+      "aliases": []
+    },
+    {
+      "symbol": "SPF",
+      "name": "Sportify",
+      "aliases": [
+        "SPORTIFY"
+      ]
+    },
+    {
+      "symbol": "SPHTX",
+      "name": "SPHTX Token (ERC20)",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SPI",
+      "name": "Shopping.io (Polygon)",
+      "aliases": [
+        "SHOPPINGIO"
+      ]
+    },
+    {
+      "symbol": "SPICE",
+      "name": "SPiCE VC Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SPN",
+      "name": "Sapien",
+      "aliases": [
+        "SAPIEN"
+      ]
+    },
+    {
+      "symbol": "SPX",
+      "name": "SP8DE Token",
+      "aliases": [
+        "SP8DE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SRAT",
+      "name": "Spacerat (Polygon)",
+      "aliases": [
+        "SPACERAT"
+      ]
+    },
+    {
+      "symbol": "SRM",
+      "name": "Serum",
+      "aliases": [
+        "SERUM"
+      ]
+    },
+    {
+      "symbol": "SRN",
+      "name": "Sirin Labs",
+      "aliases": [
+        "SIRIN",
+        "LABS"
+      ]
+    },
+    {
+      "symbol": "SS",
+      "name": "Sharder",
+      "aliases": [
+        "SHARDER"
+      ]
+    },
+    {
+      "symbol": "SSH",
+      "name": "StreamShares",
+      "aliases": [
+        "STREAMSHARES"
+      ]
+    },
+    {
+      "symbol": "SSP",
+      "name": "smartshare token",
+      "aliases": [
+        "SMARTSHARE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SSX",
+      "name": "Stakeshare (Polygon)",
+      "aliases": [
+        "STAKESHARE"
+      ]
+    },
+    {
+      "symbol": "STAC",
+      "name": "Starter Coin",
+      "aliases": [
+        "STARTER",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "STACK",
+      "name": "Stacker Ventures Token(pos) (Polygon)",
+      "aliases": [
+        "STACKER",
+        "VENTURES",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "STACS",
+      "name": "STACS",
+      "aliases": []
+    },
+    {
+      "symbol": "STAKE",
+      "name": "Stake (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "STAR",
+      "name": "Star Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "STASIA",
+      "name": "Stasia",
+      "aliases": []
+    },
+    {
+      "symbol": "STB",
+      "name": "STABLE Token",
+      "aliases": [
+        "STABLE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "STC",
+      "name": "StrikeCoin Token",
+      "aliases": [
+        "STRIKECOIN",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "STEEM",
+      "name": "Steem",
+      "aliases": []
+    },
+    {
+      "symbol": "STK",
+      "name": "STK Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "STN",
+      "name": "Saturn Network",
+      "aliases": [
+        "SATURN",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "STORH",
+      "name": "Storh",
+      "aliases": []
+    },
+    {
+      "symbol": "STORJ",
+      "name": "Storj",
+      "aliases": []
+    },
+    {
+      "symbol": "STORM",
+      "name": "Storm Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "STP",
+      "name": "StashPay",
+      "aliases": [
+        "STASHPAY"
+      ]
+    },
+    {
+      "symbol": "STQ",
+      "name": "Storiqa",
+      "aliases": [
+        "STORIQA"
+      ]
+    },
+    {
+      "symbol": "STR",
+      "name": "Staker",
+      "aliases": [
+        "STAKER"
+      ]
+    },
+    {
+      "symbol": "STRAX",
+      "name": "Stratis",
+      "aliases": [
+        "STRATIS"
+      ]
+    },
+    {
+      "symbol": "STRC",
+      "name": "STRC",
+      "aliases": []
+    },
+    {
+      "symbol": "STU",
+      "name": "Student Coin",
+      "aliases": [
+        "STUDENT",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "STX",
+      "name": "Stacks",
+      "aliases": [
+        "STACKS"
+      ]
+    },
+    {
+      "symbol": "SUB",
+      "name": "Substratum",
+      "aliases": [
+        "SUBSTRATUM"
+      ]
+    },
+    {
+      "symbol": "SUDO",
+      "name": "Sudo",
+      "aliases": []
+    },
+    {
+      "symbol": "SUI",
+      "name": "Sui",
+      "aliases": []
+    },
+    {
+      "symbol": "SUN",
+      "name": "Sun Token",
+      "aliases": [
+        "SUNTOKEN"
+      ]
+    },
+    {
+      "symbol": "SUNC",
+      "name": "Sun Chain",
+      "aliases": [
+        "SUN",
+        "CHAIN"
+      ]
+    },
+    {
+      "symbol": "SUR",
+      "name": "Suretly",
+      "aliases": [
+        "SURETLY"
+      ]
+    },
+    {
+      "symbol": "SURE",
+      "name": "inSure DeFi",
+      "aliases": [
+        "INSURE",
+        "DEFI"
+      ]
+    },
+    {
+      "symbol": "SUSD",
+      "name": "USD Synth (sUSD)",
+      "aliases": [
+        "USD",
+        "SYNTH"
+      ]
+    },
+    {
+      "symbol": "SUSHI",
+      "name": "SushiSwap",
+      "aliases": [
+        "SUSHISWAP"
+      ]
+    },
+    {
+      "symbol": "SVD",
+      "name": "savedroid",
+      "aliases": [
+        "SAVEDROID"
+      ]
+    },
+    {
+      "symbol": "SWFTC",
+      "name": "SwftCoin",
+      "aliases": [
+        "SWFTCOIN"
+      ]
+    },
+    {
+      "symbol": "SWISE",
+      "name": "Stakewise (Polygon)",
+      "aliases": [
+        "STAKEWISE"
+      ]
+    },
+    {
+      "symbol": "SWM",
+      "name": "Swarm Fund Token",
+      "aliases": [
+        "SWARM",
+        "FUND",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SWT",
+      "name": "Swarm City Token",
+      "aliases": [
+        "SWARM",
+        "CITY",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "SXDT",
+      "name": "Spectre.ai D-Token",
+      "aliases": [
+        "SPECTREAI",
+        "DTOKEN"
+      ]
+    },
+    {
+      "symbol": "SXP",
+      "name": "Solar",
+      "aliases": [
+        "SOLAR",
+        "SWIPE"
+      ]
+    },
+    {
+      "symbol": "SXUT",
+      "name": "Spectre.ai U-Token",
+      "aliases": [
+        "SPECTREAI",
+        "UTOKEN"
+      ]
+    },
+    {
+      "symbol": "SYN",
+      "name": "Synapse",
+      "aliases": [
+        "SYNAPSE"
+      ]
+    },
+    {
+      "symbol": "T",
+      "name": "Threshold",
+      "aliases": [
+        "THRESHOLD"
+      ]
+    },
+    {
+      "symbol": "TAAS",
+      "name": "Token-as-a-Service",
+      "aliases": [
+        "TOKENASASERVICE"
+      ]
+    },
+    {
+      "symbol": "TALAO",
+      "name": "Talao",
+      "aliases": []
+    },
+    {
+      "symbol": "TAN",
+      "name": "Taklimakan Network",
+      "aliases": [
+        "TAKLIMAKAN",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "TAP",
+      "name": "Tapmydata (Polygon)",
+      "aliases": [
+        "TAPMYDATA"
+      ]
+    },
+    {
+      "symbol": "TAU",
+      "name": "Lamden Tau",
+      "aliases": [
+        "LAMDEN"
+      ]
+    },
+    {
+      "symbol": "TAUD",
+      "name": "TrueAUD",
+      "aliases": [
+        "TRUEAUD"
+      ]
+    },
+    {
+      "symbol": "TBC2",
+      "name": "TBC2",
+      "aliases": []
+    },
+    {
+      "symbol": "TBT",
+      "name": "TBitBot",
+      "aliases": [
+        "TBITBOT"
+      ]
+    },
+    {
+      "symbol": "TBX",
+      "name": "Tokenbox",
+      "aliases": [
+        "TOKENBOX"
+      ]
+    },
+    {
+      "symbol": "TCA",
+      "name": "TangguoTao Token",
+      "aliases": [
+        "TANGGUOTAO",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "TCAD",
+      "name": "TrueCAD",
+      "aliases": [
+        "TRUECAD"
+      ]
+    },
+    {
+      "symbol": "TCH",
+      "name": "ThoreCash",
+      "aliases": [
+        "THORECASH"
+      ]
+    },
+    {
+      "symbol": "TCNX",
+      "name": "Tercet Network",
+      "aliases": [
+        "TERCET",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "TDH",
+      "name": "TrustedHealth",
+      "aliases": [
+        "TRUSTEDHEALTH"
+      ]
+    },
+    {
+      "symbol": "TEAM",
+      "name": "TEAM",
+      "aliases": []
+    },
+    {
+      "symbol": "TEL",
+      "name": "Telcoin",
+      "aliases": [
+        "TELCOIN"
+      ]
+    },
+    {
+      "symbol": "TEMCO",
+      "name": "TEMCO",
+      "aliases": []
+    },
+    {
+      "symbol": "TEN",
+      "name": "Tokenomy",
+      "aliases": [
+        "TOKENOMY"
+      ]
+    },
+    {
+      "symbol": "TENX",
+      "name": "TenX Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "TERC",
+      "name": "TronEuropeRewardCoin (TRC10)",
+      "aliases": [
+        "TRONEUROPEREWARDCOIN"
+      ]
+    },
+    {
+      "symbol": "TFD",
+      "name": "TE-FOOD",
+      "aliases": [
+        "TEFOOD"
+      ]
+    },
+    {
+      "symbol": "TFL",
+      "name": "TrueFlip",
+      "aliases": [
+        "TRUEFLIP"
+      ]
+    },
+    {
+      "symbol": "TGAME",
+      "name": "TGAME",
+      "aliases": []
+    },
+    {
+      "symbol": "TGBP",
+      "name": "TrueGBP",
+      "aliases": [
+        "TRUEGBP"
+      ]
+    },
+    {
+      "symbol": "TGT",
+      "name": "Target Coin",
+      "aliases": [
+        "TARGET",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "THALES",
+      "name": "Thales",
+      "aliases": []
+    },
+    {
+      "symbol": "THAR",
+      "name": "Thar token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "THETA",
+      "name": "Theta Network",
+      "aliases": [
+        "THETANETWORK"
+      ]
+    },
+    {
+      "symbol": "THKD",
+      "name": "TrueHKD",
+      "aliases": [
+        "TRUEHKD"
+      ]
+    },
+    {
+      "symbol": "THR",
+      "name": "ThoreCoin",
+      "aliases": [
+        "THORECOIN"
+      ]
+    },
+    {
+      "symbol": "THRT",
+      "name": "ThriveToken",
+      "aliases": [
+        "THRIVETOKEN"
+      ]
+    },
+    {
+      "symbol": "THUG",
+      "name": "THUG",
+      "aliases": []
+    },
+    {
+      "symbol": "TIA",
+      "name": "Celestia",
+      "aliases": [
+        "CELESTIA"
+      ]
+    },
+    {
+      "symbol": "TIC",
+      "name": "Thingschain",
+      "aliases": [
+        "THINGSCHAIN"
+      ]
+    },
+    {
+      "symbol": "TICO",
+      "name": "Topinvestmentcoin",
+      "aliases": [
+        "TOPINVESTMENTCOIN"
+      ]
+    },
+    {
+      "symbol": "TIDAL",
+      "name": "Tidal Token (Polygon)",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "TIE",
+      "name": "TieToken",
+      "aliases": [
+        "TIETOKEN"
+      ]
+    },
+    {
+      "symbol": "TIG",
+      "name": "Tigereum",
+      "aliases": [
+        "TIGEREUM"
+      ]
+    },
+    {
+      "symbol": "TIME",
+      "name": "Chrono.tech",
+      "aliases": [
+        "CHRONOTECH"
+      ]
+    },
+    {
+      "symbol": "TIO",
+      "name": "TIO",
+      "aliases": []
+    },
+    {
+      "symbol": "TIOX",
+      "name": "Trade Token X",
+      "aliases": [
+        "TRADE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "TITAN",
+      "name": "Iron Titanium Token (Polygon)",
+      "aliases": [
+        "IRON",
+        "TITANIUM",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "TIX",
+      "name": "Blocktix",
+      "aliases": [
+        "BLOCKTIX"
+      ]
+    },
+    {
+      "symbol": "TKA",
+      "name": "Tokia",
+      "aliases": [
+        "TOKIA"
+      ]
+    },
+    {
+      "symbol": "TKLN",
+      "name": "Taklimakan Network",
+      "aliases": [
+        "TAKLIMAKAN",
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "TKN",
+      "name": "TokenCard",
+      "aliases": [
+        "TOKENCARD"
+      ]
+    },
+    {
+      "symbol": "TKR",
+      "name": "TKRToken",
+      "aliases": [
+        "TKRTOKEN"
+      ]
+    },
+    {
+      "symbol": "TLM",
+      "name": "Alien Worlds",
+      "aliases": [
+        "ALIENWORLDS"
+      ]
+    },
+    {
+      "symbol": "TLX",
+      "name": "Telex",
+      "aliases": [
+        "TELEX"
+      ]
+    },
+    {
+      "symbol": "TMT",
+      "name": "Traxia Membership Token",
+      "aliases": [
+        "TRAXIA",
+        "MEMBERSHIP",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "TMTG",
+      "name": "TMTG",
+      "aliases": []
+    },
+    {
+      "symbol": "TNS",
+      "name": "Transcodium",
+      "aliases": [
+        "TRANSCODIUM"
+      ]
+    },
+    {
+      "symbol": "TNT",
+      "name": "Tierion Network Token",
+      "aliases": [
+        "TIERION",
+        "NETWORK",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "TOK",
+      "name": "TOKOK",
+      "aliases": [
+        "TOKOK"
+      ]
+    },
+    {
+      "symbol": "TOKA",
+      "name": "TOKA",
+      "aliases": []
+    },
+    {
+      "symbol": "TOMO",
+      "name": "TomoChain",
+      "aliases": [
+        "TOMOCHAIN"
+      ]
+    },
+    {
+      "symbol": "TON",
+      "name": "Toncoin",
+      "aliases": [
+        "TONCOIN",
+        "TELEGRAM"
+      ]
+    },
+    {
+      "symbol": "TONE",
+      "name": "Tronone (TRC10)",
+      "aliases": [
+        "TRONONE"
+      ]
+    },
+    {
+      "symbol": "TOOR",
+      "name": "ToorCoin",
+      "aliases": [
+        "TOORCOIN"
+      ]
+    },
+    {
+      "symbol": "TORN",
+      "name": "Torn Token (Polygon)",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "TRA",
+      "name": "Terra Token (ERC20)",
+      "aliases": [
+        "TERRA",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "TRAC",
+      "name": "Trace",
+      "aliases": [
+        "TRACE"
+      ]
+    },
+    {
+      "symbol": "TRAK",
+      "name": "TrakInvest Token",
+      "aliases": [
+        "TRAKINVEST",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "TRB",
+      "name": "Tellor Tributes (Polygon)",
+      "aliases": [
+        "TELLOR",
+        "TRIBUTES"
+      ]
+    },
+    {
+      "symbol": "TRC",
+      "name": "The Real Coin",
+      "aliases": [
+        "THE",
+        "REAL",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "TRCN",
+      "name": "The Real Coin",
+      "aliases": [
+        "THE",
+        "REAL",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "TRCT",
+      "name": "Tracto",
+      "aliases": [
+        "TRACTO"
+      ]
+    },
+    {
+      "symbol": "TRDT",
+      "name": "Trident Group",
+      "aliases": [
+        "TRIDENT",
+        "GROUP"
+      ]
+    },
+    {
+      "symbol": "TRIBE",
+      "name": "Tribe",
+      "aliases": []
+    },
+    {
+      "symbol": "TRST",
+      "name": "TRST",
+      "aliases": []
+    },
+    {
+      "symbol": "TRUC",
+      "name": "CommunityNodeToken (TRC10)",
+      "aliases": [
+        "COMMUNITYNODETOKEN"
+      ]
+    },
+    {
+      "symbol": "TRV",
+      "name": "TrustVerse",
+      "aliases": [
+        "TRUSTVERSE"
+      ]
+    },
+    {
+      "symbol": "TRX",
+      "name": "TRON",
+      "aliases": [
+        "TRON"
+      ]
+    },
+    {
+      "symbol": "TSW",
+      "name": "TeslaWatt",
+      "aliases": [
+        "TESLAWATT"
+      ]
+    },
+    {
+      "symbol": "TSY",
+      "name": "TronSociety (TRC10)",
+      "aliases": [
+        "TRONSOCIETY"
+      ]
+    },
+    {
+      "symbol": "TT",
+      "name": "ThunderCore",
+      "aliases": [
+        "THUNDERCORE"
+      ]
+    },
+    {
+      "symbol": "TTA",
+      "name": "Tend Token",
+      "aliases": [
+        "TEND",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "TTC",
+      "name": "TTC Protocol",
+      "aliases": [
+        "PROTOCOL"
+      ]
+    },
+    {
+      "symbol": "TTU",
+      "name": "TaTaTu",
+      "aliases": [
+        "TATATU"
+      ]
+    },
+    {
+      "symbol": "TTV",
+      "name": "TV-TWO: Token for Television",
+      "aliases": [
+        "TVTWO",
+        "TOKEN",
+        "FOR",
+        "TELEVISION"
+      ]
+    },
+    {
+      "symbol": "TUDA",
+      "name": "TudaToken",
+      "aliases": [
+        "TUDATOKEN"
+      ]
+    },
+    {
+      "symbol": "TUNE",
+      "name": "TUNE",
+      "aliases": []
+    },
+    {
+      "symbol": "TUSD",
+      "name": "TrueUSD",
+      "aliases": [
+        "TRUEUSD"
+      ]
+    },
+    {
+      "symbol": "TWN",
+      "name": "The World News",
+      "aliases": [
+        "THE",
+        "WORLD",
+        "NEWS"
+      ]
+    },
+    {
+      "symbol": "TWT",
+      "name": "Trust Wallet",
+      "aliases": [
+        "TRUSTWALLET"
+      ]
+    },
+    {
+      "symbol": "TXT",
+      "name": "TuneTrade Token",
+      "aliases": [
+        "TUNETRADE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "UBQ",
+      "name": "Ubiq",
+      "aliases": [
+        "UBIQ"
+      ]
+    },
+    {
+      "symbol": "UBT",
+      "name": "UniBright",
+      "aliases": [
+        "UNIBRIGHT"
+      ]
+    },
+    {
+      "symbol": "UCASH",
+      "name": "UCASH",
+      "aliases": []
+    },
+    {
+      "symbol": "UCN",
+      "name": "UChain Token",
+      "aliases": [
+        "UCHAIN",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "UFR",
+      "name": "Upfiring",
+      "aliases": [
+        "UPFIRING"
+      ]
+    },
+    {
+      "symbol": "UKG",
+      "name": "UnikoinGold",
+      "aliases": [
+        "UNIKOINGOLD"
+      ]
+    },
+    {
+      "symbol": "UMA",
+      "name": "UMA",
+      "aliases": []
+    },
+    {
+      "symbol": "UMAMI",
+      "name": "Umami",
+      "aliases": []
+    },
+    {
+      "symbol": "UMKA",
+      "name": "UMKA",
+      "aliases": []
+    },
+    {
+      "symbol": "UMX",
+      "name": "Unimex.network (Polygon)",
+      "aliases": [
+        "UNIMEXNETWORK"
+      ]
+    },
+    {
+      "symbol": "UNI",
+      "name": "Uniswap",
+      "aliases": [
+        "UNISWAP"
+      ]
+    },
+    {
+      "symbol": "UNICORN",
+      "name": "Unicorn",
+      "aliases": []
+    },
+    {
+      "symbol": "UOS",
+      "name": "Ultra Token",
+      "aliases": [
+        "ULTRA",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "UP",
+      "name": "UpToken",
+      "aliases": [
+        "UPTOKEN"
+      ]
+    },
+    {
+      "symbol": "UPBTC",
+      "name": "Universal Bitcoin",
+      "aliases": [
+        "UNIVERSAL",
+        "BITCOIN"
+      ]
+    },
+    {
+      "symbol": "UPEUR",
+      "name": "Universal Euro",
+      "aliases": [
+        "UNIVERSAL",
+        "EURO"
+      ]
+    },
+    {
+      "symbol": "UPP",
+      "name": "Sentinel Protocol",
+      "aliases": [
+        "SENTINEL",
+        "PROTOCOL"
+      ]
+    },
+    {
+      "symbol": "UPT",
+      "name": "Universal Protocol Token",
+      "aliases": [
+        "UNIVERSAL",
+        "PROTOCOL",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "UPUSD",
+      "name": "Universal US Dollar",
+      "aliases": [
+        "UNIVERSAL",
+        "DOLLAR"
+      ]
+    },
+    {
+      "symbol": "UQC",
+      "name": "Uquid Coin",
+      "aliases": [
+        "UQUID",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "URB",
+      "name": "Urbit Data",
+      "aliases": [
+        "URBIT",
+        "DATA"
+      ]
+    },
+    {
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "aliases": [
+        "USDCOIN"
+      ]
+    },
+    {
+      "symbol": "USDM",
+      "name": "Mether (USDM)",
+      "aliases": [
+        "METHER"
+      ]
+    },
+    {
+      "symbol": "USDS",
+      "name": "StableUSD",
+      "aliases": [
+        "STABLEUSD"
+      ]
+    },
+    {
+      "symbol": "USDT",
+      "name": "Tether",
+      "aliases": [
+        "TETHER"
+      ]
+    },
+    {
+      "symbol": "USG",
+      "name": "USGold",
+      "aliases": [
+        "USGOLD"
+      ]
+    },
+    {
+      "symbol": "UST",
+      "name": "Wrapped UST Token (Polygon)",
+      "aliases": [
+        "WRAPPED",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "USTC",
+      "name": "TerraClassicUSD",
+      "aliases": []
+    },
+    {
+      "symbol": "UTK",
+      "name": "UTK",
+      "aliases": []
+    },
+    {
+      "symbol": "UTT",
+      "name": "United Traders Token",
+      "aliases": [
+        "UNITED",
+        "TRADERS",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "UUNIO",
+      "name": "UUNIO",
+      "aliases": []
+    },
+    {
+      "symbol": "UUU",
+      "name": "U Networks",
+      "aliases": [
+        "NETWORKS"
+      ]
+    },
+    {
+      "symbol": "VALOR",
+      "name": "ValorToken",
+      "aliases": [
+        "VALORTOKEN"
+      ]
+    },
+    {
+      "symbol": "VD",
+      "name": "Bitcoin Card",
+      "aliases": [
+        "BITCOIN",
+        "CARD"
+      ]
+    },
+    {
+      "symbol": "VDG",
+      "name": "VeriDocGlobal",
+      "aliases": [
+        "VERIDOCGLOBAL"
+      ]
+    },
+    {
+      "symbol": "VDOC",
+      "name": "Duty of Care Token",
+      "aliases": [
+        "DUTY",
+        "CARE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "VEE",
+      "name": "BLOCKv",
+      "aliases": [
+        "BLOCKV"
+      ]
+    },
+    {
+      "symbol": "VEGAN",
+      "name": "Vegan",
+      "aliases": []
+    },
+    {
+      "symbol": "VELA",
+      "name": "Vela Exchange",
+      "aliases": [
+        "VELAEXCHANGE"
+      ]
+    },
+    {
+      "symbol": "VEN",
+      "name": "Vechain (ERC20)",
+      "aliases": [
+        "VECHAIN"
+      ]
+    },
+    {
+      "symbol": "VENUS",
+      "name": "VENUS",
+      "aliases": []
+    },
+    {
+      "symbol": "VERI",
+      "name": "Veritas",
+      "aliases": [
+        "VERITAS"
+      ]
+    },
+    {
+      "symbol": "VERSI",
+      "name": "VersiCoin",
+      "aliases": [
+        "VERSICOIN"
+      ]
+    },
+    {
+      "symbol": "VES",
+      "name": "Vestella",
+      "aliases": [
+        "VESTELLA"
+      ]
+    },
+    {
+      "symbol": "VET",
+      "name": "VeChain",
+      "aliases": [
+        "VECHAIN"
+      ]
+    },
+    {
+      "symbol": "VGX",
+      "name": "Voyager",
+      "aliases": [
+        "VOYAGER"
+      ]
+    },
+    {
+      "symbol": "VIA",
+      "name": "Viacoin",
+      "aliases": [
+        "VIACOIN"
+      ]
+    },
+    {
+      "symbol": "VIB",
+      "name": "VIB",
+      "aliases": []
+    },
+    {
+      "symbol": "VIBE",
+      "name": "VIBE Coin",
+      "aliases": [
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "VIBEX",
+      "name": "VIBEX Exchange Token",
+      "aliases": [
+        "EXCHANGE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "VIDT",
+      "name": "V-ID Token",
+      "aliases": [
+        "VID",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "VIEW",
+      "name": "Viewly",
+      "aliases": [
+        "VIEWLY"
+      ]
+    },
+    {
+      "symbol": "VIKKY",
+      "name": "VIKKY Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "VIN",
+      "name": "VIN",
+      "aliases": []
+    },
+    {
+      "symbol": "VIT",
+      "name": "Vice Industry Token",
+      "aliases": [
+        "VICE",
+        "INDUSTRY",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "VITE",
+      "name": "ViteToken",
+      "aliases": [
+        "VITETOKEN"
+      ]
+    },
+    {
+      "symbol": "VIU",
+      "name": "VIU",
+      "aliases": []
+    },
+    {
+      "symbol": "VLD",
+      "name": "Valid",
+      "aliases": [
+        "VALID"
+      ]
+    },
+    {
+      "symbol": "VOC",
+      "name": "VORMACOIN",
+      "aliases": [
+        "VORMACOIN"
+      ]
+    },
+    {
+      "symbol": "VOISE",
+      "name": "Voise",
+      "aliases": []
+    },
+    {
+      "symbol": "VRE",
+      "name": "Vrenelium",
+      "aliases": [
+        "VRENELIUM"
+      ]
+    },
+    {
+      "symbol": "VRO",
+      "name": "VeraOne (ERC20)",
+      "aliases": [
+        "VERAONE"
+      ]
+    },
+    {
+      "symbol": "VRS",
+      "name": "Veros",
+      "aliases": [
+        "VEROS"
+      ]
+    },
+    {
+      "symbol": "VRTX",
+      "name": "Vertex",
+      "aliases": [
+        "VERTEX"
+      ]
+    },
+    {
+      "symbol": "VSF",
+      "name": "VeriSafe",
+      "aliases": [
+        "VERISAFE"
+      ]
+    },
+    {
+      "symbol": "VSL",
+      "name": "Vdice",
+      "aliases": [
+        "VDICE"
+      ]
+    },
+    {
+      "symbol": "VSP",
+      "name": "Vespertoken (Polygon)",
+      "aliases": [
+        "VESPERTOKEN"
+      ]
+    },
+    {
+      "symbol": "VTC",
+      "name": "Vertcoin",
+      "aliases": [
+        "VERTCOIN"
+      ]
+    },
+    {
+      "symbol": "VX",
+      "name": "VX Network",
+      "aliases": [
+        "NETWORK"
+      ]
+    },
+    {
+      "symbol": "VZT",
+      "name": "Vezt",
+      "aliases": [
+        "VEZT"
+      ]
+    },
+    {
+      "symbol": "WAB",
+      "name": "WABnetwork",
+      "aliases": [
+        "WABNETWORK"
+      ]
+    },
+    {
+      "symbol": "WABI",
+      "name": "WaBi",
+      "aliases": []
+    },
+    {
+      "symbol": "WAK",
+      "name": "Wak Coin",
+      "aliases": [
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "WAN",
+      "name": "Wanchain",
+      "aliases": [
+        "WANCHAIN"
+      ]
+    },
+    {
+      "symbol": "WATT",
+      "name": "WorkChain App Token",
+      "aliases": [
+        "WORKCHAIN",
+        "APP",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "WAVES",
+      "name": "Waves",
+      "aliases": []
+    },
+    {
+      "symbol": "WAX",
+      "name": "WAX (ERC20)",
+      "aliases": []
+    },
+    {
+      "symbol": "WBA",
+      "name": "WeBetCrypto",
+      "aliases": [
+        "WEBETCRYPTO"
+      ]
+    },
+    {
+      "symbol": "WBTC",
+      "name": "Wrapped Bitcoin",
+      "aliases": [
+        "WRAPPED",
+        "BITCOIN"
+      ]
+    },
+    {
+      "symbol": "WCELO",
+      "name": "Wrapped Celo (Polygon)",
+      "aliases": [
+        "WRAPPED",
+        "CELO"
+      ]
+    },
+    {
+      "symbol": "WCT",
+      "name": "WePower",
+      "aliases": [
+        "WEPOWER"
+      ]
+    },
+    {
+      "symbol": "WDNT",
+      "name": "WINDBELLOWS",
+      "aliases": [
+        "WINDBELLOWS"
+      ]
+    },
+    {
+      "symbol": "WEB",
+      "name": "Webcoin",
+      "aliases": [
+        "WEBCOIN"
+      ]
+    },
+    {
+      "symbol": "WEN",
+      "name": "Wen",
+      "aliases": []
+    },
+    {
+      "symbol": "WETH",
+      "name": "WETH",
+      "aliases": []
+    },
+    {
+      "symbol": "WEX",
+      "name": "Waultswap Polygon (Polygon)",
+      "aliases": [
+        "WAULTSWAP",
+        "POLYGON"
+      ]
+    },
+    {
+      "symbol": "WFIL",
+      "name": "Wrapped Filecoin(pos) (Polygon)",
+      "aliases": [
+        "WRAPPED",
+        "FILECOIN"
+      ]
+    },
+    {
+      "symbol": "WHEN",
+      "name": "WHEN Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "WHO",
+      "name": "WhoHas",
+      "aliases": [
+        "WHOHAS"
+      ]
+    },
+    {
+      "symbol": "WIB",
+      "name": "Wibson Token",
+      "aliases": [
+        "WIBSON",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "WIC",
+      "name": "WickNote",
+      "aliases": [
+        "WICKNOTE"
+      ]
+    },
+    {
+      "symbol": "WIF",
+      "name": "dogwifhat",
+      "aliases": [
+        "DOGWIFHAT"
+      ]
+    },
+    {
+      "symbol": "WILC",
+      "name": "Wrapped ILCOIN",
+      "aliases": [
+        "WRAPPED",
+        "ILCOIN"
+      ]
+    },
+    {
+      "symbol": "WILD",
+      "name": "WILD Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "WIN",
+      "name": "WINkLink",
+      "aliases": [
+        "WINKLINK"
+      ]
+    },
+    {
+      "symbol": "WINGS",
+      "name": "WINGS",
+      "aliases": []
+    },
+    {
+      "symbol": "WISH",
+      "name": "MyWish",
+      "aliases": [
+        "MYWISH"
+      ]
+    },
+    {
+      "symbol": "WLD",
+      "name": "Worldcoin",
+      "aliases": [
+        "WORLDCOIN"
+      ]
+    },
+    {
+      "symbol": "WMATIC",
+      "name": "Wrapped MATIC (Polygon)",
+      "aliases": [
+        "WRAPPED",
+        "MATIC"
+      ]
+    },
+    {
+      "symbol": "WMK",
+      "name": "WemarkToken",
+      "aliases": [
+        "WEMARKTOKEN"
+      ]
+    },
+    {
+      "symbol": "WNK",
+      "name": "Woonk",
+      "aliases": [
+        "WOONK"
+      ]
+    },
+    {
+      "symbol": "WOLF",
+      "name": "Moonwolf.io (Polygon)",
+      "aliases": [
+        "MOONWOLFIO"
+      ]
+    },
+    {
+      "symbol": "WOLK",
+      "name": "Wolk Token",
+      "aliases": [
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "WOO",
+      "name": "WOO Network",
+      "aliases": [
+        "WOONETWORK"
+      ]
+    },
+    {
+      "symbol": "WOOFY",
+      "name": "Woofy (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "WORK",
+      "name": "Aworker",
+      "aliases": [
+        "AWORKER"
+      ]
+    },
+    {
+      "symbol": "WPR",
+      "name": "WePower Token",
+      "aliases": [
+        "WEPOWER",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "WRC",
+      "name": "Worldcore",
+      "aliases": [
+        "WORLDCORE"
+      ]
+    },
+    {
+      "symbol": "WRK",
+      "name": "WorkCoin",
+      "aliases": [
+        "WORKCOIN"
+      ]
+    },
+    {
+      "symbol": "WTC",
+      "name": "Walton (ERC20)",
+      "aliases": [
+        "WALTON"
+      ]
+    },
+    {
+      "symbol": "WTT",
+      "name": "WTT",
+      "aliases": []
+    },
+    {
+      "symbol": "WYS",
+      "name": "wystoken",
+      "aliases": [
+        "WYSTOKEN"
+      ]
+    },
+    {
+      "symbol": "WYV",
+      "name": "WyvernToken",
+      "aliases": [
+        "WYVERNTOKEN"
+      ]
+    },
+    {
+      "symbol": "X2Y2",
+      "name": "X2Y2",
+      "aliases": []
+    },
+    {
+      "symbol": "X8X",
+      "name": "X8X",
+      "aliases": []
+    },
+    {
+      "symbol": "XAUR",
+      "name": "Xaurum",
+      "aliases": [
+        "XAURUM"
+      ]
+    },
+    {
+      "symbol": "XAUT",
+      "name": "Tether Gold",
+      "aliases": [
+        "TETHER",
+        "GOLD"
+      ]
+    },
+    {
+      "symbol": "XBL",
+      "name": "Billionaire Token",
+      "aliases": [
+        "BILLIONAIRE",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "XBP",
+      "name": "BlitzPredict",
+      "aliases": [
+        "BLITZPREDICT"
+      ]
+    },
+    {
+      "symbol": "XCC",
+      "name": "CoinCrowd",
+      "aliases": [
+        "COINCROWD"
+      ]
+    },
+    {
+      "symbol": "XCHF",
+      "name": "CryptoFranc",
+      "aliases": [
+        "CRYPTOFRANC"
+      ]
+    },
+    {
+      "symbol": "XCL",
+      "name": "CLASSIE",
+      "aliases": [
+        "CLASSIE"
+      ]
+    },
+    {
+      "symbol": "XCLR",
+      "name": "ClearCoin",
+      "aliases": [
+        "CLEARCOIN"
+      ]
+    },
+    {
+      "symbol": "XDCE",
+      "name": "XinFin XDCE",
+      "aliases": [
+        "XINFIN"
+      ]
+    },
+    {
+      "symbol": "XEM",
+      "name": "NEM",
+      "aliases": [
+        "NEM"
+      ]
+    },
+    {
+      "symbol": "XES",
+      "name": "Proxeus",
+      "aliases": [
+        "PROXEUS"
+      ]
+    },
+    {
+      "symbol": "XET",
+      "name": "ETERNAL TOKEN",
+      "aliases": [
+        "ETERNAL",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "XFS",
+      "name": "Fanship",
+      "aliases": [
+        "FANSHIP"
+      ]
+    },
+    {
+      "symbol": "XGG",
+      "name": "Going Gems",
+      "aliases": [
+        "GOING",
+        "GEMS"
+      ]
+    },
+    {
+      "symbol": "XGM",
+      "name": "XGM",
+      "aliases": []
+    },
+    {
+      "symbol": "XGT",
+      "name": "XGT",
+      "aliases": []
+    },
+    {
+      "symbol": "XID",
+      "name": "XID",
+      "aliases": []
+    },
+    {
+      "symbol": "XIV",
+      "name": "Inverse (Polygon)",
+      "aliases": [
+        "INVERSE"
+      ]
+    },
+    {
+      "symbol": "XLM",
+      "name": "Stellar",
+      "aliases": [
+        "STELLAR"
+      ]
+    },
+    {
+      "symbol": "XMCT",
+      "name": "XMED Chain Token",
+      "aliases": [
+        "XMED",
+        "CHAIN",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "XMR",
+      "name": "Monero",
+      "aliases": [
+        "MONERO"
+      ]
+    },
+    {
+      "symbol": "XMX",
+      "name": "XMAX",
+      "aliases": [
+        "XMAX"
+      ]
+    },
+    {
+      "symbol": "XNK",
+      "name": "Ink Protocol",
+      "aliases": [
+        "INK",
+        "PROTOCOL"
+      ]
+    },
+    {
+      "symbol": "XNN",
+      "name": "XENON",
+      "aliases": [
+        "XENON"
+      ]
+    },
+    {
+      "symbol": "XNT",
+      "name": "XNT",
+      "aliases": []
+    },
+    {
+      "symbol": "XOV",
+      "name": "XOVBank",
+      "aliases": [
+        "XOVBANK"
+      ]
+    },
+    {
+      "symbol": "XPA",
+      "name": "XPlay",
+      "aliases": [
+        "XPLAY"
+      ]
+    },
+    {
+      "symbol": "XPAT",
+      "name": "Pangea Arbitration Token",
+      "aliases": [
+        "PANGEA",
+        "ARBITRATION",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "XPN",
+      "name": "PANTHEON X",
+      "aliases": [
+        "PANTHEON"
+      ]
+    },
+    {
+      "symbol": "XRC",
+      "name": "xRhodium",
+      "aliases": [
+        "XRHODIUM"
+      ]
+    },
+    {
+      "symbol": "XRL",
+      "name": "XRL",
+      "aliases": []
+    },
+    {
+      "symbol": "XRP",
+      "name": "Ripple",
+      "aliases": [
+        "RIPPLE"
+      ]
+    },
+    {
+      "symbol": "XSC",
+      "name": "XSC",
+      "aliases": []
+    },
+    {
+      "symbol": "XSN",
+      "name": "Stakenet",
+      "aliases": [
+        "STAKENET"
+      ]
+    },
+    {
+      "symbol": "XST",
+      "name": "Stealth",
+      "aliases": [
+        "STEALTH"
+      ]
+    },
+    {
+      "symbol": "XTX",
+      "name": "Xtock",
+      "aliases": [
+        "XTOCK"
+      ]
+    },
+    {
+      "symbol": "XTZ",
+      "name": "Tezos",
+      "aliases": [
+        "TEZOS"
+      ]
+    },
+    {
+      "symbol": "XUSD ",
+      "name": "Synth sUSD (Polygon)",
+      "aliases": [
+        "SYNTH",
+        "SUSD"
+      ]
+    },
+    {
+      "symbol": "XVS",
+      "name": "Venus",
+      "aliases": [
+        "VENUS"
+      ]
+    },
+    {
+      "symbol": "XYM",
+      "name": "Symbol",
+      "aliases": [
+        "SYMBOL"
+      ]
+    },
+    {
+      "symbol": "XYO",
+      "name": "XY Oracle",
+      "aliases": [
+        "ORACLE"
+      ]
+    },
+    {
+      "symbol": "YEE",
+      "name": "Yee - A Blockchain-powered & Cloud-based socia",
+      "aliases": [
+        "BLOCKCHAINPOWERED",
+        "CLOUDBASED",
+        "SOCIA"
+      ]
+    },
+    {
+      "symbol": "YEED",
+      "name": "YGGDRASH",
+      "aliases": [
+        "YGGDRASH"
+      ]
+    },
+    {
+      "symbol": "YELD",
+      "name": "Polyyeld Token (Polygon)",
+      "aliases": [
+        "POLYYELD",
+        "TOKEN"
+      ]
+    },
+    {
+      "symbol": "YFI",
+      "name": "yearn.finance",
+      "aliases": [
+        "YEARN"
+      ]
+    },
+    {
+      "symbol": "YNN",
+      "name": "YANG",
+      "aliases": [
+        "YANG"
+      ]
+    },
+    {
+      "symbol": "YOP",
+      "name": "YOP (Polygon)",
+      "aliases": []
+    },
+    {
+      "symbol": "YOYOW",
+      "name": "YOYOW",
+      "aliases": []
+    },
+    {
+      "symbol": "YUP",
+      "name": "YUP",
+      "aliases": []
+    },
+    {
+      "symbol": "YUPIE",
+      "name": "YUPIE",
+      "aliases": []
+    },
+    {
+      "symbol": "ZAP",
+      "name": "ZAP",
+      "aliases": []
+    },
+    {
+      "symbol": "ZCL",
+      "name": "ZClassic",
+      "aliases": [
+        "ZCLASSIC"
+      ]
+    },
+    {
+      "symbol": "ZCN",
+      "name": "0chain",
+      "aliases": [
+        "0CHAIN"
+      ]
+    },
+    {
+      "symbol": "ZCO",
+      "name": "Zebi Coin",
+      "aliases": [
+        "ZEBI",
+        "COIN"
+      ]
+    },
+    {
+      "symbol": "ZEC",
+      "name": "Zcash",
+      "aliases": [
+        "ZCASH"
+      ]
+    },
+    {
+      "symbol": "ZEN",
+      "name": "Horizen",
+      "aliases": [
+        "HORIZEN"
+      ]
+    },
+    {
+      "symbol": "ZEUS",
+      "name": "ZeusNetwork",
+      "aliases": [
+        "ZEUSNETWORK"
+      ]
+    },
+    {
+      "symbol": "ZIL",
+      "name": "Zilliqa",
+      "aliases": [
+        "ZILLIQA"
+      ]
+    },
+    {
+      "symbol": "ZIL (ERC20)",
+      "name": "Zilliqa (ERC20)",
+      "aliases": [
+        "ZILLIQA"
+      ]
+    },
+    {
+      "symbol": "ZINC",
+      "name": "ZINC",
+      "aliases": []
+    },
+    {
+      "symbol": "ZIP",
+      "name": "Zipper",
+      "aliases": [
+        "ZIPPER"
+      ]
+    },
+    {
+      "symbol": "ZIPT",
+      "name": "Zippie",
+      "aliases": [
+        "ZIPPIE"
+      ]
+    },
+    {
+      "symbol": "ZIX",
+      "name": "ZIX",
+      "aliases": []
+    },
+    {
+      "symbol": "ZLA",
+      "name": "Zilla",
+      "aliases": [
+        "ZILLA"
+      ]
+    },
+    {
+      "symbol": "ZMN",
+      "name": "ZMINE",
+      "aliases": [
+        "ZMINE"
+      ]
+    },
+    {
+      "symbol": "ZPR",
+      "name": "ZPER",
+      "aliases": [
+        "ZPER"
+      ]
+    },
+    {
+      "symbol": "ZRX",
+      "name": "0x",
+      "aliases": [
+        "ZEROX"
+      ]
+    },
+    {
+      "symbol": "ZSC",
+      "name": "ZeusShieldCoin",
+      "aliases": [
+        "ZEUSSHIELDCOIN"
+      ]
+    },
+    {
+      "symbol": "ZST",
+      "name": "Zeus Exchange",
+      "aliases": [
+        "ZEUS",
+        "EXCHANGE"
+      ]
+    },
+    {
+      "symbol": "ZTX",
+      "name": "ZTX",
+      "aliases": []
+    },
+    {
+      "symbol": "ZXC",
+      "name": "0xcert Protocol Token",
+      "aliases": [
+        "0XCERT",
+        "PROTOCOL",
+        "TOKEN"
+      ]
+    }
+  ],
+  "blacklist": [
+    "THE",
+    "AND",
+    "FOR",
+    "ARE",
+    "BUT",
+    "NOT",
+    "YOU",
+    "ALL",
+    "CAN",
+    "HER",
+    "WAS",
+    "ONE",
+    "OUR",
+    "OUT",
+    "DAY",
+    "GET",
+    "HAS",
+    "HIM",
+    "HIS",
+    "HOW",
+    "ITS",
+    "MAY",
+    "NEW",
+    "NOW",
+    "OLD",
+    "SEE",
+    "TWO",
+    "WHO",
+    "BOY",
+    "DID",
+    "IVE",
+    "LET",
+    "PUT",
+    "SAY",
+    "SHE",
+    "TOO",
+    "USE",
+    "WHY",
+    "WAY",
+    "WILL",
+    "YES",
+    "YET",
+    "BEEN",
+    "CALL",
+    "CAME",
+    "COME",
+    "DOES",
+    "DONE",
+    "DOWN",
+    "EACH",
+    "FIND",
+    "FIRST",
+    "FROM",
+    "GIVE",
+    "GOOD",
+    "GREAT",
+    "HAVE",
+    "HERE",
+    "INTO",
+    "JUST",
+    "KNOW",
+    "LAST",
+    "LIKE",
+    "LONG",
+    "LOOK",
+    "MADE",
+    "MAKE",
+    "MANY",
+    "MORE",
+    "MOST",
+    "MUCH",
+    "MUST",
+    "NAME",
+    "NEED",
+    "NEXT",
+    "ONLY",
+    "OVER",
+    "PART",
+    "SAID",
+    "SAME",
+    "SHOW",
+    "SOME",
+    "SUCH",
+    "TAKE",
+    "THAN",
+    "THAT",
+    "THEM",
+    "THEN",
+    "THERE",
+    "THESE",
+    "THEY",
+    "THIS",
+    "TIME",
+    "VERY",
+    "WANT",
+    "WELL",
+    "WERE",
+    "WHAT",
+    "WHEN",
+    "WHERE",
+    "WHICH",
+    "WITH",
+    "WORK",
+    "YEAR",
+    "YOUR",
+    "ABOUT",
+    "AFTER",
+    "AGAIN",
+    "ALSO",
+    "BACK",
+    "BECAUSE",
+    "BEFORE",
+    "BEING",
+    "BETWEEN",
+    "BOTH",
+    "COULD",
+    "DURING",
+    "EVERY",
+    "FOLLOW",
+    "GOING",
+    "HOWEVER",
+    "LARGE",
+    "LATER",
+    "LITTLE",
+    "NEVER",
+    "NUMBER",
+    "OTHER",
+    "PLACE",
+    "POINT",
+    "RIGHT",
+    "SHOULD",
+    "SMALL",
+    "STILL",
+    "THEIR",
+    "THINK",
+    "THROUGH",
+    "UNDER",
+    "UNTIL",
+    "USING",
+    "WHILE",
+    "WORLD",
+    "WOULD",
+    "WRITE",
+    "PUMP",
+    "DUMP",
+    "MOON",
+    "BULL",
+    "BEAR",
+    "HOLD",
+    "SHORT",
+    "TRADE",
+    "PRICE",
+    "CHART",
+    "NEWS",
+    "ALERT",
+    "WHALE",
+    "PROFIT",
+    "LOSS",
+    "SCAM",
+    "CRYPTO",
+    "TOKEN",
+    "COIN",
+    "MARKET",
+    "TREND",
+    "VOLUME",
+    "HIGH",
+    "LOW",
+    "BUY",
+    "SELL",
+    "MINING",
+    "STAKING",
+    "WALLET",
+    "EXCHANGE",
+    "BLOCK",
+    "CHAIN",
+    "LONG",
+    "ATH",
+    "ATL",
+    "FOMO",
+    "FUD",
+    "HODL",
+    "REKT",
+    "DYOR",
+    "NFA",
+    "GMT",
+    "UTC",
+    "EST",
+    "PST",
+    "CEO",
+    "CTO",
+    "CFO",
+    "USA",
+    "NYC",
+    "LOS"
+  ]
+}

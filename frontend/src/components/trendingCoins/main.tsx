@@ -5,6 +5,7 @@ import { telegramAPI } from '../../services/api';
 interface TrendingCoin {
   symbol: string;
   mentions: number;
+  channelCount?: number; // How many channels mentioned this coin
   trend: 'hot' | 'rising' | 'normal';
   sentiment: {
     positive: number;
@@ -50,7 +51,7 @@ const TrendingCoins: React.FC = () => {
         <h2 className="section-title">
           <span className="gradient-text">🪙 Top Trending Coins</span>
         </h2>
-        <p className="section-subtitle">Most mentioned coins in Telegram channels (updates every 15 min)</p>
+        <p className="section-subtitle">Most mentioned coins in Telegram channels (last 48 hours • updates every 15 min)</p>
       </div>
 
       {loading ? (
@@ -83,6 +84,11 @@ const TrendingCoins: React.FC = () => {
                 <div className="coin-mentions">
                   <span className="mentions-count">{coin.mentions}</span>
                   <span className="mentions-label">mentions</span>
+                  {coin.channelCount && coin.channelCount > 1 && (
+                    <span className="channel-count" title={`Mentioned in ${coin.channelCount} channels`}>
+                      • {coin.channelCount} ch
+                    </span>
+                  )}
                 </div>
                 {/* Sentiment Progress Bar */}
                 <div className="sentiment-bar">
