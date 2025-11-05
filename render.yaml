@@ -1,0 +1,51 @@
+services:
+  # Backend API Service
+  - type: web
+    name: thasalltoday-backend
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false  # Add in Render Dashboard
+      - key: JWT_SECRET
+        sync: false  # Add in Render Dashboard
+      - key: TELEGRAM_API_ID
+        sync: false  # Add in Render Dashboard
+      - key: TELEGRAM_API_HASH
+        sync: false  # Add in Render Dashboard
+      - key: TELEGRAM_SESSION
+        sync: false  # Add in Render Dashboard
+      - key: TELEGRAM_PHONE
+        sync: false  # Add in Render Dashboard
+    healthCheckPath: /api/health
+    autoDeploy: true  # Otomatik deploy: Her push'ta yeniden build
+    
+  # Frontend Static Site
+  - type: web
+    name: thasalltoday-frontend
+    runtime: static
+    plan: free
+    region: oregon
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+    autoDeploy: true  # Otomatik deploy: Her push'ta yeniden build
+    envVars:
+      - key: VITE_API_URL
+        value: https://thasalltoday-backend.onrender.com  # Backend URL'inizi buraya yazın
+

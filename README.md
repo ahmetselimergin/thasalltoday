@@ -261,19 +261,39 @@ kill -9 <PID>
 
 ## 📦 Deployment
 
-### Frontend (Vercel)
+### 🚀 Quick Deploy with Render (Recommended)
+
+**Otomatik build ve deploy için `render.yaml` kullanın!**
+
+```bash
+git push origin main
+# Render otomatik olarak her push'ta build edip deploy eder!
+```
+
+👉 **Detaylı deployment rehberi**: [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+**Özellikler:**
+- ✅ **Otomatik Build**: Her git push'ta otomatik build
+- ✅ **Otomatik Deploy**: Build başarılı olursa deploy
+- ✅ **Free Plan**: 750 saat/ay ücretsiz
+- ✅ **HTTPS**: Otomatik SSL sertifikası
+- ✅ **Monitoring**: Logs, metrics, health checks
+
+### Backend + Frontend (Render)
+
+1. GitHub repo'nuzu [Render.com](https://render.com)'a bağlayın
+2. **New Blueprint** → Repository seçin
+3. `render.yaml` otomatik algılanacak
+4. Environment variables ekleyin (MongoDB, JWT, Telegram)
+5. **Apply** → Otomatik deploy başlar!
+
+### Alternative: Frontend (Vercel)
 
 ```bash
 cd frontend
 npm run build
 # Deploy dist/ folder to Vercel
 ```
-
-### Backend (Heroku/Railway/Render)
-
-- Update MongoDB URI to cloud instance (MongoDB Atlas)
-- Set environment variables on hosting platform
-- Deploy backend code
 
 ## 🤝 Contributing
 
