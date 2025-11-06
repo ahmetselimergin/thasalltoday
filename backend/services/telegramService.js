@@ -22,7 +22,8 @@ const keywordsData = JSON.parse(
 class TelegramService {
   constructor() {
     this.client = null;
-    // Environment variables'ı constructor'da değil connect'te okuyacağız
+    this.isConnecting = false; // Connection lock to prevent duplicate connections
+    this.connectionPromise = null; // Store pending connection promise
     
     // CACHE SYSTEM: Prevent excessive API calls
     this.cache = {
@@ -76,40 +77,65 @@ class TelegramService {
 
   async connect() {
     try {
+      // If already connected, return existing client
       if (this.client && this.client.connected) {
+        console.log('✅ Using existing Telegram connection');
         return this.client;
       }
 
-      // Environment variables'ı burada oku - dotenv.config()'ten sonra
-      const session = new StringSession(process.env.TELEGRAM_SESSION || '');
-      const apiId = parseInt(process.env.TELEGRAM_API_ID);
-      const apiHash = process.env.TELEGRAM_API_HASH;
-      const phoneNumber = process.env.TELEGRAM_PHONE;
+      // If connection is in progress, wait for it
+      if (this.isConnecting && this.connectionPromise) {
+        console.log('⏳ Connection in progress, waiting...');
+        return await this.connectionPromise;
+      }
 
-      console.log('🔧 Telegram Config:', {
-        apiId: apiId,
-        hasApiHash: !!apiHash,
-        hasSession: !!process.env.TELEGRAM_SESSION,
-        phone: phoneNumber
-      });
+      // Set connection lock
+      this.isConnecting = true;
+      console.log('🔌 Initiating new Telegram connection...');
 
-      this.client = new TelegramClient(session, apiId, apiHash, {
-        connectionRetries: 5,
-      });
+      // Create connection promise
+      this.connectionPromise = (async () => {
+        try {
+          // Environment variables'ı burada oku - dotenv.config()'ten sonra
+          const session = new StringSession(process.env.TELEGRAM_SESSION || '');
+          const apiId = parseInt(process.env.TELEGRAM_API_ID);
+          const apiHash = process.env.TELEGRAM_API_HASH;
+          const phoneNumber = process.env.TELEGRAM_PHONE;
 
-      await this.client.start({
-        phoneNumber: async () => phoneNumber,
-        password: async () => await input.text('Please enter your password: '),
-        phoneCode: async () => await input.text('Please enter the code you received: '),
-        onError: (err) => console.log(err),
-      });
+          console.log('🔧 Telegram Config:', {
+            apiId: apiId,
+            hasApiHash: !!apiHash,
+            hasSession: !!process.env.TELEGRAM_SESSION,
+            phone: phoneNumber
+          });
 
-      console.log('✅ Telegram client connected successfully');
-      console.log('Session string:', this.client.session.save());
-      
-      return this.client;
+          this.client = new TelegramClient(session, apiId, apiHash, {
+            connectionRetries: 5,
+          });
+
+          await this.client.start({
+            phoneNumber: async () => phoneNumber,
+            password: async () => await input.text('Please enter your password: '),
+            phoneCode: async () => await input.text('Please enter the code you received: '),
+            onError: (err) => console.log(err),
+          });
+
+          console.log('✅ Telegram client connected successfully');
+          console.log('Session string:', this.client.session.save());
+          
+          return this.client;
+        } finally {
+          // Release connection lock
+          this.isConnecting = false;
+          this.connectionPromise = null;
+        }
+      })();
+
+      return await this.connectionPromise;
     } catch (error) {
       console.error('❌ Telegram connection error:', error);
+      this.isConnecting = false;
+      this.connectionPromise = null;
       throw error;
     }
   }
