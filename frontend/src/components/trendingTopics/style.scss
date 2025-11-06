@@ -61,20 +61,24 @@
 
   .topics-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
     animation: fadeInUp 0.6s ease-out;
+
+    @media (max-width: 1400px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   .topic-card {
     position: relative;
     background: linear-gradient(135deg, rgba(1, 148, 254, 0.1) 0%, rgba(136, 23, 118, 0.1) 100%);
     border: 1px solid rgba(1, 148, 254, 0.3);
-    border-radius: 1rem;
-    padding: 1.5rem;
+    border-radius: 0.75rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.75rem;
     transition: all 0.3s ease;
     overflow: hidden;
     animation: slideIn 0.5s ease-out backwards;
@@ -127,15 +131,15 @@
     .topic-rank {
       position: relative;
       z-index: 1;
-      min-width: 40px;
-      height: 40px;
+      min-width: 35px;
+      height: 35px;
       display: flex;
       align-items: center;
       justify-content: center;
       background: rgba(1, 148, 254, 0.8);
-      border-radius: 0.5rem;
+      border-radius: 0.4rem;
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 0.85rem;
       color: #fff;
       transition: all 0.3s ease;
     }
@@ -143,7 +147,7 @@
     .topic-icon {
       position: relative;
       z-index: 1;
-      font-size: 2rem;
+      font-size: 1.5rem;
       transition: all 0.3s ease;
       filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     }
@@ -155,10 +159,10 @@
       min-width: 0;
 
       .topic-name {
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 600;
         color: #fff;
-        margin: 0 0 0.5rem 0;
+        margin: 0 0 0.35rem 0;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -168,8 +172,8 @@
       .topic-meta {
         display: flex;
         align-items: center;
-        gap: 0.75rem;
-        font-size: 0.8rem;
+        gap: 0.5rem;
+        font-size: 0.75rem;
 
         .topic-mentions {
           color: rgba(1, 148, 254, 0.9);
@@ -178,10 +182,10 @@
 
         .topic-type {
           color: rgba(255, 255, 255, 0.5);
-          padding: 0.15rem 0.5rem;
+          padding: 0.1rem 0.4rem;
           background: rgba(255, 255, 255, 0.1);
           border-radius: 4px;
-          font-size: 0.7rem;
+          font-size: 0.65rem;
         }
       }
     }
@@ -211,30 +215,53 @@
 
   // Responsive
   @media (max-width: 768px) {
-    padding: 1.5rem;
+    padding: 1rem;
 
     .section-header {
+      margin-bottom: 1rem;
+      
       .section-title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+      }
+      
+      .section-subtitle {
+        font-size: 0.85rem;
       }
     }
 
     .topics-grid {
       grid-template-columns: 1fr;
-      gap: 0.75rem;
+      gap: 0.5rem;
     }
 
     .topic-card {
-      padding: 1rem;
+      padding: 0.75rem;
+      gap: 0.5rem;
 
       .topic-rank {
-        min-width: 35px;
-        height: 35px;
-        font-size: 0.85rem;
+        min-width: 30px;
+        height: 30px;
+        font-size: 0.75rem;
       }
 
       .topic-icon {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+      }
+      
+      .topic-info {
+        .topic-name {
+          font-size: 0.85rem;
+          margin: 0 0 0.25rem 0;
+        }
+        
+        .topic-meta {
+          font-size: 0.7rem;
+          gap: 0.4rem;
+          
+          .topic-type {
+            font-size: 0.6rem;
+          }
+        }
       }
     }
   }

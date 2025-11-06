@@ -53,11 +53,15 @@ const TelegramTrends: React.FC = () => {
     <div className="telegram-trends-page">
       <Container fluid>
 
-        {/* Trending Coins Component */}
-        <TrendingCoins />
-
-        {/* Trending Topics Component */}
-        <TrendingTopics />
+        {/* Trending Section - Coins & Topics Side by Side */}
+        <div className="row trending-row">
+          <div className="col-12 col-xl-6 trending-col">
+            <TrendingCoins />
+          </div>
+          <div className="col-12 col-xl-6 trending-col">
+            <TrendingTopics />
+          </div>
+        </div>
 
         {loading && (
           <div className="loading-spinner">

@@ -10,6 +10,24 @@
     padding: 0 2rem;
   }
 
+  // Trending Row - Side by Side Layout
+  .trending-row {
+    margin-bottom: 2rem;
+    
+    .trending-col {
+      padding: 0 0.5rem;
+      
+      @media (max-width: 1399px) {
+        padding: 0;
+        margin-bottom: 1.5rem;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
   // Loading Spinner
   .loading-spinner {
     display: flex;
