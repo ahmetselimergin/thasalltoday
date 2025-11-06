@@ -148,7 +148,16 @@ class TelegramService {
         return cachedData;
       }
 
-      // Sadece gerçek Telegram API kullan - Mock data yok!
+      // LOCAL DEVELOPMENT: Use mock data if session not configured
+      const isDevelopment = process.env.NODE_ENV !== 'production';
+      const hasSession = process.env.TELEGRAM_SESSION && process.env.TELEGRAM_SESSION.length > 10;
+      
+      if (isDevelopment && !hasSession) {
+        console.log('🔧 DEVELOPMENT MODE: Using mock data (no Telegram session configured)');
+        return this.getMockChannelsData();
+      }
+
+      // PRODUCTION: Use real Telegram API
       console.log('📱 Fetching REAL Telegram data from API...');
       console.log('📋 Environment check:', {
         apiId: !!process.env.TELEGRAM_API_ID,
@@ -656,6 +665,80 @@ class TelegramService {
       console.error('Error getting trending topics:', error);
       throw error;
     }
+  }
+
+  // MOCK DATA for local development
+  getMockChannelsData() {
+    const now = Math.floor(Date.now() / 1000);
+    const oneHourAgo = now - 3600;
+    const twoHoursAgo = now - 7200;
+
+    return [
+      {
+        username: '@bitcoin',
+        title: 'Bitcoin News',
+        participantsCount: 125000,
+        recentMessages: [
+          { id: 1, text: '$BTC is showing strong momentum! 🚀 Price breaking through resistance.', date: now - 300, views: 1500 },
+          { id: 2, text: 'BULLISH: Bitcoin ETF inflows reaching new highs 📈', date: now - 1200, views: 2300 },
+          { id: 3, text: '$ETH is following $BTC uptrend. Market sentiment is POSITIVE 💎', date: now - 2400, views: 1800 },
+          { id: 4, text: 'BREAKING: Major institution announces $SOL purchase', date: oneHourAgo, views: 3200 },
+          { id: 5, text: '$DOGE community excited about upcoming updates 🐕', date: twoHoursAgo, views: 980 }
+        ],
+        messageTimeRange: {
+          oldest: new Date(twoHoursAgo * 1000).toISOString(),
+          newest: new Date((now - 300) * 1000).toISOString()
+        }
+      },
+      {
+        username: '@coindesk',
+        title: 'CoinDesk',
+        participantsCount: 98000,
+        recentMessages: [
+          { id: 10, text: 'Analysis: $BTC dominance increasing as market consolidates', date: now - 500, views: 2100 },
+          { id: 11, text: '$ETH gas fees dropping to yearly lows - BULLISH for adoption', date: now - 1500, views: 1650 },
+          { id: 12, text: 'DeFi protocol reports MASSIVE $LINK integration', date: now - 2800, views: 1420 },
+          { id: 13, text: 'BREAKING: $MATIC announces major partnership', date: oneHourAgo - 300, views: 2890 },
+          { id: 14, text: 'Market update: $ADA showing strength despite bearish indicators', date: twoHoursAgo, views: 1230 }
+        ],
+        messageTimeRange: {
+          oldest: new Date(twoHoursAgo * 1000).toISOString(),
+          newest: new Date((now - 500) * 1000).toISOString()
+        }
+      },
+      {
+        username: '@cointelegraph',
+        title: 'Cointelegraph',
+        participantsCount: 112000,
+        recentMessages: [
+          { id: 20, text: 'URGENT: Whale transfers $50M in $BTC - bullish signal? 🐋', date: now - 600, views: 3400 },
+          { id: 21, text: '$SOL network reaches new transaction record! MOON incoming? 🌙', date: now - 1800, views: 2560 },
+          { id: 22, text: 'Crypto adoption: Major retailer accepts $BTC and $ETH', date: now - 3000, views: 1890 },
+          { id: 23, text: '$XRP lawsuit update - POSITIVE developments for holders', date: oneHourAgo - 600, views: 4200 },
+          { id: 24, text: 'BEARISH warning: Fed meeting could impact $BTC price', date: twoHoursAgo - 200, views: 2100 }
+        ],
+        messageTimeRange: {
+          oldest: new Date((twoHoursAgo - 200) * 1000).toISOString(),
+          newest: new Date((now - 600) * 1000).toISOString()
+        }
+      },
+      {
+        username: '@whale_alert',
+        title: 'Whale Alert',
+        participantsCount: 156000,
+        recentMessages: [
+          { id: 30, text: '🚨 1,250 $BTC transferred from unknown wallet to Binance', date: now - 400, views: 5600 },
+          { id: 31, text: '🐋 MASSIVE $ETH movement detected: 45,000 ETH on the move!', date: now - 1400, views: 4800 },
+          { id: 32, text: '⚠️ $USDT whale alert: $100M transferred', date: now - 2600, views: 3200 },
+          { id: 33, text: '🚀 Bullish signal: Major $SOL accumulation by whales', date: oneHourAgo - 200, views: 3900 },
+          { id: 34, text: '📊 $BNB whale activity increasing - watch closely!', date: twoHoursAgo - 400, views: 2850 }
+        ],
+        messageTimeRange: {
+          oldest: new Date((twoHoursAgo - 400) * 1000).toISOString(),
+          newest: new Date((now - 400) * 1000).toISOString()
+        }
+      }
+    ];
   }
 
   async disconnect() {
