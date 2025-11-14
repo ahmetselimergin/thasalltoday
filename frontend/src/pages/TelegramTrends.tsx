@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import { telegramAPI } from '../services/api';
 import TrendingCoins from '../components/trendingCoins/main';
-import TrendingTopics from '../components/trendingTopics/main';
 import './TelegramTrends.scss';
 
 const TelegramTrends: React.FC = () => {
@@ -18,6 +17,7 @@ const TelegramTrends: React.FC = () => {
   const fetchTrendingChannels = async () => {
     try {
       setLoading(true);
+      setError(''); // Clear previous errors
       const response = await telegramAPI.getTrending();
       if (response.success) {
         setChannels(response.data);
@@ -28,7 +28,15 @@ const TelegramTrends: React.FC = () => {
       }
     } catch (err: any) {
       console.error('Error fetching channels:', err);
-      setError(err.response?.data?.message || 'Failed to fetch Telegram data');
+      const errorMessage = err.response?.data?.message || err.message || 'Failed to fetch Telegram data';
+      setError(errorMessage);
+      
+      // Log detailed error for debugging
+      console.error('Full error details:', {
+        status: err.response?.status,
+        data: err.response?.data,
+        message: err.message
+      });
     } finally {
       setLoading(false);
     }
@@ -55,11 +63,8 @@ const TelegramTrends: React.FC = () => {
 
         {/* Trending Section - Coins & Topics Side by Side */}
         <div className="row trending-row">
-          <div className="col-12 col-xl-6 trending-col">
+          <div className="col-12 trending-col">
             <TrendingCoins />
-          </div>
-          <div className="col-12 col-xl-6 trending-col">
-            <TrendingTopics />
           </div>
         </div>
 

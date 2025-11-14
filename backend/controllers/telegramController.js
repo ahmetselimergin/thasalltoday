@@ -5,6 +5,8 @@ import telegramService from '../services/telegramService.js';
 // @access  Private
 export const getTrendingChannels = async (req, res) => {
   try {
+    // ALWAYS FETCH REAL DATA - No timeout fallback to mock data
+    console.log('🔄 Fetching real-time Telegram channels...');
     const channels = await telegramService.getTrendingChannels();
     
     res.status(200).json({
@@ -147,6 +149,30 @@ export const connectTelegram = async (req, res) => {
     res.status(500).json({
       success: false,
       message: 'Error connecting to Telegram',
+      error: error.message
+    });
+  }
+};
+
+// @desc    Clear cache and force refresh
+// @route   POST /api/telegram/clear-cache
+// @access  Private
+export const clearCache = async (req, res) => {
+  try {
+    const { cacheKey } = req.body; // Optional: 'channels', 'coins', 'topics', or null for all
+    
+    telegramService.clearCache(cacheKey);
+    
+    res.status(200).json({
+      success: true,
+      message: cacheKey ? `Cache cleared for ${cacheKey}` : 'All caches cleared',
+      clearedCache: cacheKey || 'all'
+    });
+  } catch (error) {
+    console.error('Clear cache error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Error clearing cache',
       error: error.message
     });
   }

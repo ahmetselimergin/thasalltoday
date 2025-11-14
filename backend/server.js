@@ -13,6 +13,8 @@ dotenv.config();
 connectDB();
 
 const app = express();
+// Disable ETag to prevent 304 Not Modified for dynamic API responses
+app.set('etag', false);
 
 // Middleware - CORS configuration for production
 const allowedOrigins = [

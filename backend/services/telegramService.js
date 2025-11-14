@@ -30,17 +30,17 @@ class TelegramService {
       channels: {
         data: null,
         timestamp: null,
-        ttl: 15 * 60 * 1000 // 15 minutes cache
+        ttl: 2 * 60 * 1000 // 2 minutes cache for real-time data
       },
       coins: {
         data: null,
         timestamp: null,
-        ttl: 15 * 60 * 1000 // 15 minutes cache
+        ttl: 2 * 60 * 1000 // 2 minutes cache for real-time data
       },
       topics: {
         data: null,
         timestamp: null,
-        ttl: 15 * 60 * 1000 // 15 minutes cache
+        ttl: 2 * 60 * 1000 // 2 minutes cache for real-time data
       }
     };
   }
@@ -101,6 +101,14 @@ class TelegramService {
             throw new Error('TELEGRAM_SESSION is required in non-interactive environment');
           }
           return this.client;
+        } catch (connectError) {
+          // Handle AUTH_KEY_DUPLICATED error - try with empty session
+          if (connectError.message && connectError.message.includes('AUTH_KEY_DUPLICATED')) {
+            console.warn('⚠️  AUTH_KEY_DUPLICATED error - Session may be invalid or used elsewhere');
+            console.log('💡 Tip: Generate a new session using: npm run telegram:auth');
+            throw new Error('Telegram session is invalid. Please regenerate session using telegram:auth script.');
+          }
+          throw connectError;
         } finally {
           this.isConnecting = false;
           this.connectionPromise = null;
@@ -122,16 +130,7 @@ class TelegramService {
         return cachedData;
       }
 
-      // LOCAL DEVELOPMENT: Use mock data if session not configured
-      const isDevelopment = process.env.NODE_ENV !== 'production';
-      const hasSession = process.env.TELEGRAM_SESSION && process.env.TELEGRAM_SESSION.length > 10;
-      
-      if (isDevelopment && !hasSession) {
-        console.log('🔧 DEVELOPMENT MODE: Using mock data (no Telegram session configured)');
-        return this.getMockChannelsData();
-      }
-
-      // PRODUCTION: Use real Telegram API
+      // ALWAYS USE REAL TELEGRAM API
       console.log('📱 Fetching REAL Telegram data from API...');
       console.log('📋 Environment check:', {
         apiId: !!process.env.TELEGRAM_API_ID,
@@ -252,7 +251,7 @@ class TelegramService {
       return channelsData;
     } catch (error) {
       console.error('❌ Failed to fetch Telegram data:', error.message);
-      throw error; // Hata fırlat - mock data kullanma
+      throw error; // Throw error instead of returning mock data
     }
   }
 
@@ -603,7 +602,7 @@ class TelegramService {
 
       // Sort and get top topics
       const topWords = Object.entries(wordFrequency)
-        .filter(([_, count]) => count >= 3) // Minimum 3 mentions
+        .filter(([_, count]) => count >= 2)
         .sort((a, b) => b[1] - a[1])
         .slice(0, 10)
         .map(([word, count]) => ({
@@ -613,7 +612,7 @@ class TelegramService {
         }));
 
       const topPhrases = Object.entries(phraseFrequency)
-        .filter(([_, count]) => count >= 2) // Minimum 2 mentions for phrases
+        .filter(([_, count]) => count >= 1)
         .sort((a, b) => b[1] - a[1])
         .slice(0, 5)
         .map(([phrase, count]) => ({
@@ -711,6 +710,28 @@ class TelegramService {
         }
       }
     ];
+  }
+
+  clearCache(cacheKey = null) {
+    if (cacheKey) {
+      // Clear specific cache
+      this.cache[cacheKey] = {
+        ...this.cache[cacheKey],
+        data: null,
+        timestamp: null
+      };
+      console.log(`🗑️  Cache cleared for '${cacheKey}'`);
+    } else {
+      // Clear all caches
+      Object.keys(this.cache).forEach(key => {
+        this.cache[key] = {
+          ...this.cache[key],
+          data: null,
+          timestamp: null
+        };
+      });
+      console.log('🗑️  All caches cleared');
+    }
   }
 
   async disconnect() {

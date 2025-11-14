@@ -5,7 +5,8 @@ import {
   getTrendingTopics,
   searchMessages,
   getChannelStats,
-  connectTelegram
+  connectTelegram,
+  clearCache
 } from '../controllers/telegramController.js';
 import { protect } from '../middleware/authMiddleware.js';
 
@@ -21,6 +22,7 @@ router.get('/trending-topics', getTrendingTopics);
 router.get('/search', searchMessages);
 router.get('/channel/:username', getChannelStats);
 router.post('/connect', connectTelegram);
+router.post('/clear-cache', clearCache);
 
 export default router;
 
