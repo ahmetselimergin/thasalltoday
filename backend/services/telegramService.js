@@ -77,63 +77,37 @@ class TelegramService {
 
   async connect() {
     try {
-      // If already connected, return existing client
       if (this.client && this.client.connected) {
-        console.log('✅ Using existing Telegram connection');
         return this.client;
       }
-
-      // If connection is in progress, wait for it
       if (this.isConnecting && this.connectionPromise) {
-        console.log('⏳ Connection in progress, waiting...');
         return await this.connectionPromise;
       }
-
-      // Set connection lock
       this.isConnecting = true;
-      console.log('🔌 Initiating new Telegram connection...');
-
-      // Create connection promise
       this.connectionPromise = (async () => {
         try {
-          // Environment variables'ı burada oku - dotenv.config()'ten sonra
-          const session = new StringSession(process.env.TELEGRAM_SESSION || '');
-          const apiId = parseInt(process.env.TELEGRAM_API_ID);
+          const sessionStr = process.env.TELEGRAM_SESSION || '';
+          const apiIdRaw = process.env.TELEGRAM_API_ID;
           const apiHash = process.env.TELEGRAM_API_HASH;
-          const phoneNumber = process.env.TELEGRAM_PHONE;
-
-          console.log('🔧 Telegram Config:', {
-            apiId: apiId,
-            hasApiHash: !!apiHash,
-            hasSession: !!process.env.TELEGRAM_SESSION,
-            phone: phoneNumber
-          });
-
-          this.client = new TelegramClient(session, apiId, apiHash, {
-            connectionRetries: 5,
-          });
-
-          await this.client.start({
-            phoneNumber: async () => phoneNumber,
-            password: async () => await input.text('Please enter your password: '),
-            phoneCode: async () => await input.text('Please enter the code you received: '),
-            onError: (err) => console.log(err),
-          });
-
-          console.log('✅ Telegram client connected successfully');
-          console.log('Session string:', this.client.session.save());
-          
+          const apiId = apiIdRaw ? parseInt(apiIdRaw, 10) : NaN;
+          if (!apiHash || Number.isNaN(apiId)) {
+            throw new Error('Missing TELEGRAM_API_ID or TELEGRAM_API_HASH');
+          }
+          const session = new StringSession(sessionStr);
+          this.client = new TelegramClient(session, apiId, apiHash, { connectionRetries: 5 });
+          if (sessionStr && sessionStr.length > 0) {
+            await this.client.connect();
+          } else {
+            throw new Error('TELEGRAM_SESSION is required in non-interactive environment');
+          }
           return this.client;
         } finally {
-          // Release connection lock
           this.isConnecting = false;
           this.connectionPromise = null;
         }
       })();
-
       return await this.connectionPromise;
     } catch (error) {
-      console.error('❌ Telegram connection error:', error);
       this.isConnecting = false;
       this.connectionPromise = null;
       throw error;
@@ -173,16 +147,14 @@ class TelegramService {
 
       // Popular crypto channels to monitor (Optimized - only ACTIVE channels with recent messages)
       const cryptoChannels = [
-        '@glassnode',         // ✅ Active (19/20 messages)
-        '@coindesk',          // ✅ Active (20/20 messages)
-        '@cointelegraph',     // ✅ Active (20/20 messages)
-        '@whale_alert_io',    // ✅ Active (20/20 messages)
-        '@bitcoin',           // ✅ Active (20/20 messages)
-        '@IntoTheBlock',      // ✅ Active (12/20 messages)
-        '@CryptoWhale',       // 🆕 Alternative to whale_alert
-        '@Blockworks_',       // 🆕 Active crypto news
-        '@TheBlock__',        // 🆕 Active crypto news
-        '@Cointelegraph',     // 🆕 Main channel
+        '@glassnode',
+        '@coindesk',
+        '@cointelegraph',
+        '@whale_alert',
+        '@bitcoin',
+        '@IntoTheBlock',
+        '@Blockworks_',
+        '@TheBlock__'
       ];
 
       const channelsData = [];
@@ -250,7 +222,7 @@ class TelegramService {
               } : null
             };
 
-            console.log(`✅ Fetched ${recentMessages.length} messages from ${channel} (last 48h from ${initialLimit} checked)`);
+            console.log(`✅ Fetched ${recentMessages.length} messages from ${channel}`);
             return channelInfo;
           } catch (err) {
             console.error(`❌ Error fetching ${channel}:`, err.message);
